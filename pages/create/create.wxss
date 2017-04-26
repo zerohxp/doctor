@@ -1,0 +1,86 @@
+@import '../common/css/common.wxss';
+page{
+    height:100%;
+    background-color:#EEECED;
+}
+.weui-cell{
+    background-color:#fff;
+    border-bottom:1px solid #eee;
+    font-size:16px;
+}
+.user_image{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    float:left;
+
+}
+.weui-cell .weui-cell__ft{
+    font-size:16px;
+    color:#333;
+}
+.weui-cell .weui-cell__hd .weui-label{
+    color:#999;
+}
+.weui-cell .weui-cell__hd .weui-label span{
+    color:#FF2F00;
+}
+.weui-cell_select {
+    padding:5px 0 5px 0px;
+}
+.weui-cell_input {
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+.select_area{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:246px;
+    width:100%;
+    z-index:9999;
+    background-color:#FFFFFF;
+}
+picker-view-column{
+    text-align:center;
+}
+.select_area .area_button{
+    font-size:14px;
+    color:#586C94;
+    margin-top:6px;
+    position:relative;
+    padding:10px;
+    display:inline-block;
+    width:100%;
+    font-weight:600;
+}
+.select_area .area_button span:last-child{
+    float:right;
+    margin-right:20px;
+}
+.weui-cells__title{
+    background-color:#FFFFFF;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:14px;
+    padding:10px 15px;
+
+}
+.weui-cells__title span{
+     color:#FF2F00;
+}
+navigator.weui-cell{
+    padding:0px 15px 10px;
+
+}
+.doctor_button{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.weui-select_in-select-after{
+    border:0;
+}
+.weui-input{
+    font-size:16px;
+}

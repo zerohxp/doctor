@@ -1,0 +1,12 @@
+@import '../common/css/common.wxss';
+@import 'doctor.wxss';
+
+.page__hd{
+    margin-top:40px;
+}
+.page__bd{
+    margin-top:-20px;
+}
+.doctor_p span{
+    color:#999999;
+}

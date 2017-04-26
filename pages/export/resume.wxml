@@ -1,0 +1,25 @@
+<view class="page js_show export_resume">
+    <div class="resume_head">
+        <div  class="resume_head_block resume_head_left">
+            <text class="block_line">王倩文</text>
+            <text class="block_line"><text>三甲医院</text><text class="ml5">脑外科</text><text class="ml5">主治医生</text></text>
+            <text class="block_line"><text>女</text><text class="ml5">1998</text><text class="ml5">现居上海</text><text class="ml5">党员</text></text>
+        </div>
+        <div  class="resume_head_block resume_head_image">
+             <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
+        </div>
+        <div  class="resume_head_block resume_head_right">
+            <text class="block_line"></text>
+             <text class="block_line">电话号码：139</text>
+            <text class="block_line">邮箱：XXXXX</text>
+        </div>
+    </div>
+    <div class="resume_content">
+
+    </div>
+     <div class="resume_footer">
+         <button type="primary" class="doctor_button" bindtap="dowbload" loading="{{loading}}"
+        disabled="{{disabled}}"> 下载本地 </button>
+         <button type="primary" class="doctor_button" bindtap="send" > 发送邮箱 </button>
+    </div>
+</view>

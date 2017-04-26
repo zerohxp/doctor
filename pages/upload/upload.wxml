@@ -1,0 +1,18 @@
+
+<view class="page js_show">
+<!--页头-->
+<view class="page__hd">
+    <p>啊啊啊，小程序不支持上传文件</p>
+    <p>烦请移步请至<span>【医途无忧】</span>公众号上传</p>
+    <p>支持上传PDF、Word文档或图片自动生成简历Plus</p>
+</view>
+<!--主体-->
+<view class="page__bd">
+    <image src="" alt="" class="erweima"></image>
+   
+</view>
+<view class="page__ft">
+     <p>受微信限制，小程序内无法直接识别二维码</p>
+    <p>请保存图片至相册后再用微信识别</p>
+</view>
+</view>

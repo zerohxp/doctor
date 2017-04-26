@@ -1,0 +1,57 @@
+@import '../common/css/common.wxss';
+page{
+    height:100%;
+    background-color:#EEECED;
+}
+.page {
+    height:100%;
+}
+.page .page__bd{
+    height:100%;
+}
+.weui-cell{
+    background-color:#fff;
+    font-size:15px;
+    margin-bottom:10px;
+    padding:10px 15px 5px 15px;
+}
+.weui-cell__bd{
+    width:100%;
+}
+.doctor_button{
+    margin-top:10px;
+}
+.no_data{
+    display:block;
+    width:100%;
+    text-align:center;
+    height:75%;
+}
+.data{
+    height:75%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.no_data span{
+    padding-top:50%;
+    display:inline-block;
+}
+.doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:70%;
+    background-color:#fff;
+    border:1px solid #50BE8A;
+    color:#50BE8A;
+    margin-top:10px;
+}
+.weui-cell p{
+    width:100%;
+    display:inline-block;
+}
+.weui-cell p.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:92%;
+}

@@ -1,0 +1,56 @@
+@import '../common/css/common.wxss';
+page{
+    height:100%;
+    background-color:#f4f4f4;
+}
+.page__hd{
+    padding:20px;
+    text-align:center;
+}
+.page__hd p{
+    font-size:16px;
+}
+.page__bd{
+    margin-top:20px;
+    padding:20px;
+    font-size:16px;
+}
+.page__bd .doctor_p{
+    margin-bottom:10px;
+    display:block;
+
+}
+.doctor_choose_block{
+    border:1px solid #D7D7D7;
+    border-radius:10px;
+    padding:12px 20px;
+    margin-bottom:15px;
+    background-color:#fff;
+    color:#333;
+}
+.doctor_choose_block.disabled{
+    background-color:#F2F2F2;
+    color:#999999;
+    border:0;
+}
+.doctor_choose_block.disabled .right{
+    right:10px;
+    position:absolute;
+
+}
+.doctor_choose_block.active{
+    color:#50BE8A;
+    border:1px solid #50BE8A;
+}
+.doctor_a{
+    text-decoration: underline;
+    color:#50BE8A;
+    font-size:16px;
+    text-align:center;
+    display:block;
+     margin-top :20px;
+}
+.doctor_button{
+    margin-top :80px;
+
+}

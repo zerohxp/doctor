@@ -1,0 +1,14 @@
+<view class="page login_page" wx:if="{{pageLoaded}}">
+  <view class="before_login" >
+    <text class="before_login_p">1.获得优质岗位优先推荐权</text>
+    <text class="before_login_p">2.获得多点执业岗位优先推荐权</text>
+    <text class="before_login_p">注：不会在未经允许的情况下泄漏任何信息！</text>
+
+    <div class="my_develop">我职业发展指数：<span>？</span></div>
+    <image src=""></image>
+
+    <button type="primary" class="weui-btn doctor_button" bindtap="loginWX" loading="{{loading}}"
+        disabled="{{disabled}}"> 创建简历Plus </button>
+  </view>
+
+</view>

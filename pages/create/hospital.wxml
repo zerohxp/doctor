@@ -1,0 +1,27 @@
+
+<view class="page js_show">
+<!--页头-->
+<view class="page__hd">
+    <view class="weui-cell weui-cell_input">
+       <view class="weui-cell__bd">
+             <input class="weui-input" placeholder="请输入医院名称"/>
+       </view>
+   </view>
+</view>
+<!--主体-->
+<view class="page__bd">
+<!--
+  <view class="bd_p">
+        <p>输入医院名称关键字</p>
+        <p>查找你所在的医院</p>
+  </view>
+  -->
+  <view class="weui-cell" bindtap="chooseHospital" data-hospital="1">
+     <view class="weui-cell__bd">
+        <p>其他</p>
+        <p>没有匹配的医院时，请选择此项</p>
+     </view>
+  </view>
+</view>
+
+</view>

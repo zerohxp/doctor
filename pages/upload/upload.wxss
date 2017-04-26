@@ -1,0 +1,42 @@
+@import '../common/css/common.wxss';
+page{
+    height:100%;
+    background-color:#EEECED;
+}
+.page__hd{
+    margin-top:80px;
+    padding:10px;
+}
+.page__hd p{
+    text-align:center;
+    font-size:20px;
+    display:block;
+    font-weight:600;
+
+}
+.page__hd p:last-child{
+    font-size:14px;
+    font-weight:normal;
+    margin-top:20px;
+
+}
+.page__hd p span{
+    color:#43AD79;
+}
+.page__bd .erweima{
+    border:1px solid #999;
+    width:200px;
+    height:200px;
+    position:relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:40px;
+    background-color:#fff;
+}
+.page__ft p{
+    font-size:14px;
+    display:block;
+    text-align:center;
+    letter-spacing:-1px;
+    color:#999999;
+}

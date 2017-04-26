@@ -1,0 +1,35 @@
+@import '../common/css/common.wxss'
+page{
+    height:100%;
+}
+.before_login_p{
+    width:100%;
+    padding:0px 10px;
+    display:inline-block;
+    font-size:16px;
+}
+.before_login_p:first-child{
+    margin-top:40px;
+}
+.my_develop{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+    margin-top:50px;
+    font-weight:900;
+    font-size:22px;
+}
+.my_develop span{
+    font-size:32px;
+    padding-left:20px;
+
+}
+.login_page{
+    background-color:#EBEBEB;
+    height:100%;
+}
+.doctor_button,button[type="primary"].doctor_button{
+   bottom:10%;
+    position:absolute;
+    left:15%;
+}

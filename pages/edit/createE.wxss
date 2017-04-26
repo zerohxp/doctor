@@ -1,0 +1,26 @@
+@import '../common/css/common.wxss';
+@import '../create/create.wxss';
+.weui-cell__bd{
+    text-align:right;
+}
+.doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:70%;
+    background-color:#fff;
+    border:1px solid #50BE8A;
+    color:#50BE8A;
+    margin-top:10px;
+}
+.next_a{
+    font-size:15px;
+    color:#50BE8E;
+    margin-bottom:25px;
+    position:absolute;
+    bottom:0;
+    right:15px;
+
+}
+.next_a span{
+    color:#9DA2A5;
+}

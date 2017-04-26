@@ -1,0 +1,114 @@
+
+<view class="page js_show">
+<!--页头-->
+<view class="page__hd">
+     <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="chooseImg">
+                <view class="weui-cell__bd">
+                    <image src="{{userImg}}" alt="" class="user_image"></image>                   
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">
+                    <span>上传图片</span>
+                </view>
+        </view>
+</view>
+<!--主体-->
+<view class="page__bd">
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入真实姓名"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">性别</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindSixChange" value="{{sixIndex}}" range="{{sixs}}">
+                        <view class="weui-select weui-select_in-select-after">{{sixs[sixIndex]}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">出生年月</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{birthday}}"  bindchange="bindBirthdayChange">
+                        <view class="weui-select weui-select_in-select-after">{{birthday}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">现居地</view>
+                </view>
+                <view class="weui-cell__bd" bindtap="chooseArea">
+                     <view class="weui-select weui-select_in-select-after">{{province}} {{city}} {{area}}</view>
+                </view>
+        </view>
+         <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">邮箱</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="邮箱和手机号请至少输入一项"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input type="tel" class="weui-input" placeholder="邮箱和手机号请至少输入一项"/>
+                </view>
+        </view>
+         <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">技术职称</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindSixChange" value="{{technicalIndex}}" range="{{technicals}}">
+                        <view class="weui-select weui-select_in-select-after">{{technicals[technicalIndex]}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cells__title">最近一次工作经历<span>*</span></view>
+         <navigator url="../create/hospital" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">医院</view>
+                </view>
+                <view class="weui-cell__bd">{{hospital}}</view>
+                
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">科室</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入科室"/>
+                </view>
+        </view>
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+</view>
+</view>
+<block wx:if="{{selectArea}}">
+    <view class="backdrop" bindtap="colseArea"></view>
+    <view class="select_area">
+    <div class="area_button"><span bindtap="colseArea">取消</span><span bindtap="sureArea">确定</span></div>
+    <picker-view indicator-style="height: 50px;" style="width: 100%;height:230px;" value="{{place}}"  bindchange="bindAreaChange">
+        <picker-view-column >
+            <view wx:for="{{provinces}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column >
+            <view wx:for="{{citys}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{areas}}" style="line-height: 50px">{{item}}</view> 
+        </picker-view-column>
+    </picker-view>
+    </view>
+</block>

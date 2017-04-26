@@ -1,0 +1,21 @@
+
+<view class="page js_show">
+<!--页头-->
+<view class="page__hd">
+ <p class="doctor_p">我是...{{type[currentSelect]}}<span>（将展示在简历和主页上）</span></p> 
+</view>
+<!--主体-->
+<view class="page__bd">
+   <div class="doctor_choose_block weui-cell {{currentSelect == 0 ? 'active':''}}"  bindtap="selectBlock" data-select="0">
+        我是业务型，门诊、手术量多质高
+    </div>
+     <div class="doctor_choose_block weui-cell {{currentSelect == 1 ? 'active':''}}"  bindtap="selectBlock" data-select="1">
+        我是科研型，写论文、做项目，手到擒来
+    </div>
+     <div class="doctor_choose_block weui-cell {{currentSelect == 2 ? 'active':''}}"  bindtap="selectBlock" data-select="2">
+        我是管理型，带团队我经验丰富
+    </div>
+
+    <button type="primary" class="doctor_button" bindtap="create"> 开始创建 </button>
+</view>
+</view>

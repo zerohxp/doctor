@@ -1,0 +1,25 @@
+{
+  "pages":[
+   "pages/create/create",
+    "pages/plus/doctor",
+   "pages/main/main",
+   "pages/my/my",
+   "pages/my/base",
+   "pages/my/technical",
+   "pages/my/education",
+   "pages/create/hospital", 
+   "pages/edit/createE", 
+   "pages/my/title", 
+    "pages/upload/upload",
+   "pages/plus/capacity",
+    "pages/main/index",
+    "pages/export/export",
+   "pages/export/resume"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0093da",
+    "navigationBarTitleText": "医途无忧",
+    "navigationBarTextStyle":"#fff"
+  }
+}

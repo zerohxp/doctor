@@ -1,0 +1,25 @@
+
+<view class="page js_show">
+
+<view class="page__bd">
+       <p class="no_data" wx-if="{{noData}}"><span>还没有添加教育经历</span></p>
+       <view class="data">
+             <navigator class="weui-cell" url="../edit/createE?id=1">
+                <view class="weui-cell__bd">
+                    <p>2010.5~至今</p>
+                    <p class="ellipsis">学校名称学校名称学校名称学校名称学校名称学校名称学</p>
+                    <p>专业名称</p>
+                </view>
+            </navigator>
+            <navigator class="weui-cell" url="../edit/createE?id=2">
+                <view class="weui-cell__bd">
+                    <p>2010.5~至今</p>
+                    <p class="ellipsis">学校名称学校名称学校名称学校名称学校名称学校名称学</p>
+                    <p>专业名称</p>
+                </view>
+            </navigator>
+       </view>
+       <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>
+       <button type="primary" class="doctor_back" bindtap="back"> 返回【我的简历Plus】 </button>
+</view>
+</view>

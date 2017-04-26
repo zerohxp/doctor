@@ -1,0 +1,72 @@
+
+<view class="page js_show">
+
+<!--主体-->
+<view class="page__bd">
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">学校名称<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入学校名称"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">学历</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindEducationChange" value="{{educationIndex}}" range="{{educations}}">
+                        <view class="weui-select weui-select_in-select-after">{{educations[educationIndex]}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">专业<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入专业名称"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">入学时间<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{entrance}}" fields="month" bindchange="bindEntranceChange">
+                        <view class="weui-select weui-select_in-select-after">{{entrance}}<span wx:if="{{!entrance}}">请选择入学时间</span></view>
+                    </picker>
+                </view>
+        </view>
+         <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">毕业时间</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{graduation}}" fields="month" bindchange="bindGraduationChange">
+                        <view class="weui-select weui-select_in-select-after">{{graduation}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">是否海外教育</view>
+                </view>
+                <view class="weui-cell__bd">
+                   <radio-group class="radio-group" bindchange="radioChange">
+                        <label class="radio">
+                            <radio value="0" checked="{{radio == 0}}"/>是
+                        </label>
+                        <label class="radio">
+                            <radio value="1" checked="{{radio == 1}}"/>否
+                        </label>
+                    </radio-group>
+                </view>
+        </view>
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+
+         <a class="next_a" bindtap="next">跳过,编辑下一项<span>(工作经历)</span>>></a>
+</view>
+</view>
