@@ -4,11 +4,12 @@
 <view class="page__hd">
     <p>啊啊啊，小程序不支持上传文件</p>
     <p>烦请移步请至<span>【医途无忧】</span>公众号上传</p>
-    <p>支持上传PDF、Word文档或图片自动生成简历Plus</p>
+   
 </view>
 <!--主体-->
 <view class="page__bd">
-    <image src="" alt="" class="erweima"></image>
+     <p><i></i>支持上传PDF、Word文档或图片自动生成简历Plus</p>
+    <image src="../common/img/erweima.png" alt="" class="erweima"></image>
    
 </view>
 <view class="page__ft">

@@ -111,3 +111,18 @@ canvas{
 .login_bottom{
     margin-bottom:10px;
 }
+button[type="primary"].doctor_button{
+    width:50%;
+    display:inline-block;
+}
+button[type="primary"].doctor_back{
+   width:26%;
+    display:inline-block;
+    color:#50BE8A;
+    background-color:#fff;
+    border:1px solid #50BE8A;
+    margin-left:10%;
+    margin-right:4%;
+
+
+}

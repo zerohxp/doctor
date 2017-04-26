@@ -1,0 +1,91 @@
+
+<view class="page js_show">
+
+<!--主体-->
+<view class="page__bd">
+        <view class="weui-cell weui-cell_select ">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">单位名称<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <view class="weui-select weui-select_in-select-after"></view>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd ">
+                    <view class="weui-label">科室<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                   <input class="weui-input" />
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">职位<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">是否管理岗位</view>
+                </view>
+                <view class="weui-cell__bd">
+                   <radio-group class="radio-group" bindchange="radioChange1">
+                        <label class="radio">
+                            <radio value="0" checked="{{radio1 == 0}}"/>是
+                        </label>
+                        <label class="radio">
+                            <radio value="1" checked="{{radio1 == 1}}"/>否
+                        </label>
+                    </radio-group>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">是否海外经历</view>
+                </view>
+                <view class="weui-cell__bd">
+                   <radio-group class="radio-group" bindchange="radioChange2">
+                        <label class="radio">
+                            <radio value="0" checked="{{radio2 == 0}}"/>是
+                        </label>
+                        <label class="radio">
+                            <radio value="1" checked="{{radio2 == 1}}"/>否
+                        </label>
+                    </radio-group>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">入职时间<span>*</span></view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{in}}" fields="month" bindchange="bindInChange">
+                        <view class="weui-select weui-select_in-select-after">{{in}}<span wx:if="{{!in}}">请选择入职时间</span></view>
+                    </picker>
+                </view>
+        </view>
+         <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">离职时间</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{out}}" fields="month" bindchange="bindOutChange">
+                        <view class="weui-select weui-select_in-select-after">{{out}}<span wx:if="{{!out}}">至今</span></view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cells__title">工作内容</view>
+        <view class="weui-cell weui-cell_input weui-cell_textarea">
+                <view class="weui-cell__bd">
+                    <textarea  ></textarea>
+                </view>
+        </view>
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+
+         
+</view>
+</view>

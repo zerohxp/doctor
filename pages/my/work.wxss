@@ -67,3 +67,9 @@ page{
 .next_a span{
     color:#9DA2A5;
 }
+.load_more{
+    font-size:16px;
+    text-align:center;
+    display:block;
+
+}

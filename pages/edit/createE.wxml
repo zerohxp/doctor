@@ -67,6 +67,6 @@
          <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
          <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
 
-         <a class="next_a" bindtap="next">跳过,编辑下一项<span>(工作经历)</span>>></a>
+         
 </view>
 </view>

@@ -3,7 +3,7 @@
      <navigator url="../my/my"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd weui-cell_image">
                     <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
-                    <span>张三</span>
+                    <span>{{userInfo.nickName}}</span>
                 </view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">
                      <div class="login_user_right">
@@ -13,9 +13,7 @@
                 </view>
         </navigator>
         
-        <div class="login_top_bottom">
-            <text>社交网络：</text>
-        </div>
+      
     </view>
     <view class="login_center">
         <div class="login_center_block">
@@ -36,6 +34,7 @@
         <text class="before_login_p profession_develop_tit">你的指数超过了XX地区X%的XX，赶紧完善资料提升分数吧！</text>
         <canvas canvas-id="radarCanvas"></canvas> 
 
+        <button type="primary" class="weui-btn doctor_back"  bindtap="next"> 写案例 </button>
          <button type="primary" class="weui-btn doctor_button" loading="{{loading}}"
         disabled="{{disabled}}" bindtap="next">提升指数 </button>
     </view>

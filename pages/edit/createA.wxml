@@ -1,0 +1,27 @@
+
+<view class="page js_show">
+
+<!--主体-->
+<view class="page__bd">
+        <view class="weui-cells__title">活动名称<span>*</span></view>
+        <view class="weui-cell weui-cell_input ">
+               <input class="weui-input" placeholder="请输入担任过重要角色的社会活动"/>
+        </view>
+        <view class="weui-cells__title">角色<span>*</span></view>
+        <view class="weui-cell weui-cell_input">
+                 <input class="weui-input" placeholder="如，主讲人"/>
+        </view>
+        <view class="weui-cells__title">(选填)可上传参加活动的照片</view>
+        <view class="weui-cell weui-cell_image ">
+            <image class="default" src="../common/img/upload_img.png" bindtap="uploadImg" wx:if="{{tempFilePaths.length<3}}"></image>
+           
+        </view>
+        <view class="weui-cell weui-cell_image "  wx:for="{{tempFilePaths}}">
+             <image src="{{item}}" class="upload"></image>
+         </view>
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+
+         
+</view>
+</view>

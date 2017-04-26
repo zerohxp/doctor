@@ -3,6 +3,18 @@ page{
     height:100%;
     background-color:#EEECED;
 }
+.weui-cell_image image{
+   width:60px;
+  height:60px;
+   border-radius:50%;
+   float:left;
+}
+.weui-cell_image span{
+   line-height:60px;
+    float:left;
+    font-size:16px;
+    margin-left:10px;
+}
 .weui-cell{
     background-color:#fff;
     margin-bottom:10px;
@@ -38,4 +50,20 @@ navigator.weui-cell .weui-cell__bd{
 navigator.weui-cell-block{
     margin-bottom:0px;
     padding-bottom:5px;
+}
+.page__hd .weui-cell__ft{
+    font-size:12px;
+}
+.page__hd .weui-cell:first-child{
+    margin-bottom:0px;
+    border-bottom:1px solid #e5e5e5;
+}
+.page__hd .weui-cell:last-child{
+    padding:10px 15px;
+    font-size:16px;
+}
+.page__bd .weui-cell:first-child{
+    margin-bottom:0px;
+    padding:20px 15px 5px;
+
 }

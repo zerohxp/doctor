@@ -74,7 +74,9 @@ Page({
       })
   },
   save:function(){
-
+      wx.reLaunch({
+        url: '../main/index'
+      })
   },
   chooseImg:function(){
       wx.chooseImage({

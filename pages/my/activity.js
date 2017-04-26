@@ -1,14 +1,9 @@
-//education.js
+//title.js
 //获取应用实例
 var app = getApp()
 Page({
   data: {
     noData:false
-  },
-  add:function(){
-    wx.navigateTo({
-      url: '../edit/createE'
-    })
   },
   //事件处理函数
   back:function(){
@@ -24,9 +19,9 @@ Page({
           }
       }
   },
-  next:function(){
+  add:function(){
     wx.navigateTo({
-      url: '../my/work'
+      url: '../edit/createA'
     })
   },
   onLoad: function (option) {

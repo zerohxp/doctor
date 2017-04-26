@@ -21,7 +21,7 @@ page{
 .doctor_button{
     bottom:12%;
     position:absolute;
-    margin-left:15%;
+    margin-left:10%;
 }
 .next_a{
     font-size:15px;

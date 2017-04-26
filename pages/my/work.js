@@ -7,7 +7,7 @@ Page({
   },
   add:function(){
     wx.navigateTo({
-      url: '../edit/createE'
+      url: '../edit/createW'
     })
   },
   //事件处理函数
@@ -26,7 +26,7 @@ Page({
   },
   next:function(){
     wx.navigateTo({
-      url: '../my/work'
+      url: ''
     })
   },
   onLoad: function (option) {

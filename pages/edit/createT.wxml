@@ -1,0 +1,27 @@
+
+<view class="page js_show">
+
+<!--主体-->
+<view class="page__bd">
+        <view class="weui-cells__title">单位<span>*</span></view>
+        <view class="weui-cell weui-cell_input ">
+               <input class="weui-input" placeholder="如，中华医学生物免疫学会"/>
+        </view>
+        <view class="weui-cells__title">职务<span>*</span></view>
+        <view class="weui-cell weui-cell_input">
+                 <input class="weui-input" placeholder="如，副会长"/>
+        </view>
+        <view class="weui-cells__title">(选填)可上传能够证实身份的照片</view>
+        <view class="weui-cell weui-cell_image ">
+            <image class="default" src="../common/img/upload_img.png" bindtap="uploadImg" wx:if="{{tempFilePaths.length<3}}"></image>
+           
+        </view>
+        <view class="weui-cell weui-cell_image "  wx:for="{{tempFilePaths}}">
+             <image src="{{item}}" class="upload"></image>
+         </view>
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+
+         
+</view>
+</view>

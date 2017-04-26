@@ -19,6 +19,11 @@ Page({
           }
       }
   },
+  add:function(){
+    wx.navigateTo({
+      url: '../edit/createT'
+    })
+  },
   onLoad: function (option) {
     var that = this
     //调用应用实例的方法获取全局数据
