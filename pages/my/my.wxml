@@ -1,7 +1,7 @@
 
 <view class="page js_show">
   <view class="page__hd">
-     <navigator  url="../my/base"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <navigator  url="../my/base"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd weui-cell_image">
                     <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
                     <span>{{userInfo.nickName}}</span>
@@ -11,7 +11,7 @@
                 </view>
         </navigator>
         <view class="weui-cell">
-            <span>社交网络：</span>
+            <span>社交网络：</span><i class="sj-icon-1"></i><i class="sj-icon-2"></i><i class="sj-icon-3"></i><i class="sj-icon-4"></i><i class="sj-icon-5"></i>
        </view>
 </view>
 <!--主体-->
@@ -21,7 +21,7 @@
                    <p class="weui-cell_p"><span>764分</span>资料越完善，指数越高哦</p>
                 </view>
         </view>
-        <view class="weui-cells__title">学历/职称</view>
+        <view class="weui-cells__title"><i class="title_icon"></i>学历/职称</view>
         <navigator url="../my/technical" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">职称</view>
@@ -42,19 +42,19 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">社会头衔</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/activity" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/activity" class="weui-cell weui-cell_access weui-cell-block no_bottom" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">社会活动</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <view class="weui-cells__title">工作经验</view>
+        <view class="weui-cells__title"><i class="title_icon"></i>工作经验</view>
         <navigator url="../my/work" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">工作经历</view>
@@ -63,7 +63,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-         <view class="weui-cells__title">业务能力</view>
+         <view class="weui-cells__title"><i class="title_icon"></i>业务能力</view>
         <navigator url="../my/business" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">业务量</view>
@@ -76,7 +76,7 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">擅长</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
@@ -84,16 +84,16 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">案例</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <view class="weui-cells__title">科研能力</view>
+        <view class="weui-cells__title"><i class="title_icon"></i>科研能力</view>
         <navigator url="" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">发表论文</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
@@ -101,7 +101,7 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研项目</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
@@ -109,11 +109,11 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研基金</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-         <view class="weui-cells__title">沟通能力</view>
+         <view class="weui-cells__title"><i class="title_icon"></i>沟通能力</view>
         <navigator url="" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">沟通技巧</view>
@@ -126,7 +126,7 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">英文水平</view>
                 </view>
-                <view class="weui-cell__bd">无</view>
+                <view class="weui-cell__bd color_gray">无</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>

@@ -18,7 +18,7 @@ page{
     border-bottom:1px solid #e1e1e1;
     margin-top:5px;
 }
-.page__bd .weui-cell:last-child{
+.page__ft .weui-cell,.page__bd .weui-cell:last-child{
     border:0;
 }
 .weui-cell__hd_in-select-after{

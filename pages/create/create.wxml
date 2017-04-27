@@ -1,5 +1,5 @@
 
-<view class="page js_show">
+<view class="page js_show has_bottom">
 <!--页头-->
 <view class="page__hd">
      <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="chooseImg">
@@ -98,6 +98,9 @@
                     <input class="weui-input" placeholder="请输入科室" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
+        
+    </view>
+    <view class="page__footer">
          <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
         disabled="{{disabled}}"> 保存 </button>
     </view>
