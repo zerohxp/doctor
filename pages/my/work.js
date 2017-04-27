@@ -26,7 +26,7 @@ Page({
   },
   next:function(){
     wx.navigateTo({
-      url: ''
+      url: '../my/business'
     })
   },
   onLoad: function (option) {

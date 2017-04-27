@@ -3,6 +3,8 @@
 var app = getApp()
 Page({
   data: {
+     disabled: false,
+    loading: false,
     userImg:'',
     sixs:['男','女'],
     sixIndex:0,

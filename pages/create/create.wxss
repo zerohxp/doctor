@@ -1,36 +1,86 @@
 @import '../common/css/common.wxss';
 page{
     height:100%;
-    background-color:#EEECED;
+    background-color:#f5f5f5;
+}
+.page__bd{
+    background-color:#fff;
+    border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+}
+.page__bd .weui-cell{
+   margin-left:15px;
+    padding-left:2px;
+
+}
+.page__ft{
+     border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    margin-top:5px;
+}
+.page__bd .weui-cell:last-child{
+    border:0;
+}
+.weui-cell__hd_in-select-after{
+    padding-left:2px;
 }
 .weui-cell{
     background-color:#fff;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #e1e1e1;
     font-size:16px;
 }
-.user_image{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    float:left;
+.page__hd .weui-cell{
+    border-top:1px solid #e1e1e1;
+margin-top:5px;
+margin-bottom:5px;
 
+}
+.page__hd .weui-label{
+    color:#414b50;
+    font-weight:600;
+
+}
+.user_image{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    margin-right:10px;
+    border:1px solid #0cb0ff;
 }
 .weui-cell .weui-cell__ft{
     font-size:16px;
     color:#333;
 }
+.weui-cell .block{
+    width:100%;
+    position:relative;
+    display:-webkit-box;
+    border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    padding:10px 0px;
+
+}
+.weui-cell .block .weui-cell__ft{
+    right:15px;
+}
+.weui-cell.no-bottom{
+    border-bottom:0;
+    padding:0px 0px 0px 15px;
+}
 .weui-cell .weui-cell__hd .weui-label{
-    color:#999;
+    color:#414b50;
+    font-weight:600;
 }
 .weui-cell .weui-cell__hd .weui-label span{
-    color:#FF2F00;
+    color:#fd8925;
+    margin-left:5px;
 }
 .weui-cell_select {
-    padding:5px 0 5px 0px;
+    padding:2px 0 2px 0px;
 }
 .weui-cell_input {
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:2px;
+    padding-bottom:2px;
 
 }
 .select_area{
@@ -63,12 +113,16 @@ picker-view-column{
     background-color:#FFFFFF;
     margin-top:0;
     margin-bottom:0;
-    font-size:14px;
+    font-size:16px;
     padding:10px 15px;
+    color:#414b50;
+    font-weight:600;
+    
 
 }
 .weui-cells__title span{
-     color:#FF2F00;
+     color:#fd8925;
+     margin-left:5px;
 }
 navigator.weui-cell{
     padding:0px 15px 10px;
@@ -82,5 +136,12 @@ navigator.weui-cell{
     border:0;
 }
 .weui-input{
+    font-size:16px;
+}
+.weui-select-down:before{
+    border-width:0px 2px 2px 0px;
+}
+.weui-input-placeholder{
+    color:#bfbfbf;
     font-size:16px;
 }

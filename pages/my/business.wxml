@@ -1,0 +1,81 @@
+
+<view class="page js_show">
+ <view class="page__hd">
+    <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">请先选择科室</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindOfficeChange" value="{{officeIndex}}" range="{{offices}}">
+                        <view class="weui-select weui-select_in-select-after">{{offices[officeIndex]}}</view>
+                    </picker>
+                </view>
+       </view>
+       <p>不同的科室，需填写业务内容也不同，请如实选择科室。</p>
+ </view>
+<view class="page__bd">
+        <p class="title" wx:if="{{officeIndex != 0 && officeIndex != 7}}"><span>门诊类型</span><span>门诊数量（月均）</span></p>
+         <view class="weui-cell weui-cell_select weui-cell_block" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">普通门诊</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindOutpatientChange1" value="{{outpatientIndex1}}" range="{{outpatients1}}">
+                        <view class="weui-select weui-select_in-select-after">{{outpatients1[outpatientIndex1]}}</view>
+                    </picker>
+                </view>
+        </view>
+       <view class="weui-cell weui-cell_select weui-cell_block" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">专家门诊</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindOutpatientChange2" value="{{outpatientIndex2}}" range="{{outpatients2}}">
+                        <view class="weui-select weui-select_in-select-after">{{outpatients2[outpatientIndex2]}}</view>
+                    </picker>
+                </view>
+        </view>
+       <view class="weui-cell weui-cell_select weui-cell_block weui-cell_block_last" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">特需门诊</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindOutpatientChange3" value="{{outpatientIndex3}}" range="{{outpatients3}}">
+                        <view class="weui-select weui-select_in-select-after">{{outpatients3[outpatientIndex3]}}</view>
+                    </picker>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_select" wx:if="{{officeIndex != 0 && officeIndex != 7 && officeIndex != 3}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">手术数量（月均）</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindOperationChange" value="{{operationIndex}}" range="{{operations}}">
+                        <view class="weui-select weui-select_in-select-after">{{operations[operationIndex]}}</view>
+                    </picker>
+                </view>
+         </view>
+         <view class="weui-cell weui-cell_select" wx:if="{{officeIndex == 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">检查/检验数量（月均）</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindInspectionChange" value="{{inspectionIndex}}" range="{{inspections}}">
+                        <view class="weui-select weui-select_in-select-after">{{inspections[inspectionIndex]}}</view>
+                    </picker>
+                </view>
+         </view>
+         <view class="weui-cell weui-cell_select" wx:if="{{officeIndex == 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">读片数量（月均）</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindFilmChange" value="{{filmIndex}}" range="{{films}}">
+                        <view class="weui-select weui-select_in-select-after">{{films[filmIndex]}}</view>
+                    </picker>
+                </view>
+         </view>
+         <button type="primary" class="doctor_button" bindtap="save"  wx:if="{{officeIndex != 0}}"> 保存 </button>
+         <a class="next_a" bindtap="next">跳过,编辑下一项<span>(发表论文)</span>>></a>
+</view>
+</view>

@@ -1,15 +1,17 @@
 {
   "pages":[
-   "pages/my/my",
-   "pages/main/index",
-    "pages/upload/upload",
     "pages/create/create",
-    "pages/plus/doctor",
+   "pages/main/index",
    "pages/main/main",
+   "pages/my/my",
+    "pages/upload/upload",
+    "pages/plus/doctor",
    "pages/my/base",
    "pages/my/technical",
    "pages/my/education",
    "pages/my/work",
+   "pages/my/business",
+   "pages/my/adept",
    "pages/create/hospital", 
    "pages/edit/createE", 
    "pages/edit/createT", 
@@ -23,7 +25,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#0093da",
+    "navigationBarBackgroundColor": "#00acff",
     "navigationBarTitleText": "医途无忧",
     "navigationBarTextStyle":"#fff"
   }

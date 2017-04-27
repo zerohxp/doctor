@@ -4,10 +4,11 @@
 <view class="page__hd">
      <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="chooseImg">
                 <view class="weui-cell__bd">
-                    <image src="{{userImg}}" alt="" class="user_image"></image>                   
+                    <view class="weui-label">头像</view>
+                                    
                 </view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">
-                    <span>上传图片</span>
+                   <image src="{{userImg}}" alt="" class="user_image"></image>   
                 </view>
         </view>
 </view>
@@ -18,7 +19,7 @@
                     <view class="weui-label">姓名<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入真实姓名"/>
+                    <input class="weui-input" placeholder="请输入真实姓名" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -27,7 +28,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindSixChange" value="{{sixIndex}}" range="{{sixs}}">
-                        <view class="weui-select weui-select_in-select-after">{{sixs[sixIndex]}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{sixs[sixIndex]}}</view>
                     </picker>
                 </view>
         </view>
@@ -37,7 +38,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker mode="date" value="{{birthday}}"  bindchange="bindBirthdayChange">
-                        <view class="weui-select weui-select_in-select-after">{{birthday}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{birthday}}</view>
                     </picker>
                 </view>
         </view>
@@ -46,7 +47,7 @@
                     <view class="weui-label">现居地</view>
                 </view>
                 <view class="weui-cell__bd" bindtap="chooseArea">
-                     <view class="weui-select weui-select_in-select-after">{{province}} {{city}} {{area}}</view>
+                     <view class="weui-select weui-select_in-select-after weui-select-down">{{province}} {{city}} {{area}}</view>
                 </view>
         </view>
          <view class="weui-cell weui-cell_input ">
@@ -54,7 +55,7 @@
                     <view class="weui-label">邮箱</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="邮箱和手机号请至少输入一项"/>
+                    <input class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input ">
@@ -62,7 +63,7 @@
                     <view class="weui-label">手机</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input type="tel" class="weui-input" placeholder="邮箱和手机号请至少输入一项"/>
+                    <input type="number" class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
          <view class="weui-cell weui-cell_select">
@@ -71,29 +72,35 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindSixChange" value="{{technicalIndex}}" range="{{technicals}}">
-                        <view class="weui-select weui-select_in-select-after">{{technicals[technicalIndex]}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{technicals[technicalIndex]}}</view>
                     </picker>
                 </view>
         </view>
-        <view class="weui-cells__title">最近一次工作经历<span>*</span></view>
-         <navigator url="../create/hospital" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        
+</view>
+<view class="page__ft">
+    <view class="weui-cells__title">最近一次工作经历<span>*</span></view>
+         <navigator url="../create/hospital" class="weui-cell weui-cell_access no-bottom" hover-class="weui-cell_active">
+                <view class="block">
                 <view class="weui-cell__hd">
                     <view class="weui-label">医院</view>
                 </view>
                 <view class="weui-cell__bd">{{hospital}}</view>
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
         </navigator>
         <view class="weui-cell weui-cell_input ">
                 <view class="weui-cell__hd">
                     <view class="weui-label">科室</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入科室"/>
+                    <input class="weui-input" placeholder="请输入科室" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
-         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
-</view>
+         <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
+    </view>
 </view>
 <block wx:if="{{selectArea}}">
     <view class="backdrop" bindtap="colseArea"></view>

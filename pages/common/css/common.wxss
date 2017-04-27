@@ -3,19 +3,19 @@
 }
 .doctor_button,button[type="primary"].doctor_button{
     width:80%;
-    background-color:#50BE8A;
+    background-color:#00acff;
     color:#fff;
     border:0;
     font-weight:600;
 }
 button[loading][type="primary"].doctor_button{
-    background-color:#50BE8A;
+    background-color:#00acff;
     color:#fff;
    
 }
 button[disabled][type="primary"].doctor_button {
-    background-color:#50BE8A;
-    opacity:0.6;
+    background-color:#00acff;
+    opacity:0.4;
 }
 
 .backdrop{

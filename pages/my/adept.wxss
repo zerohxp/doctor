@@ -1,0 +1,55 @@
+@import '../common/css/common.wxss';
+page{
+    height:100%;
+    background-color:#f5f5f5;
+}
+.page__hd{
+    padding:20px 10px;
+}
+.page__hd .weui-cell__hd{
+    width:66%;
+}
+.page__hd .weui-cell_input{
+    padding:0;
+}
+.page__hd .weui-cell__hd .weui-input{
+    background-color:#fff;
+    border:1px solid #D7D7D7;
+    border-radius:5px;
+    height:45px;
+    padding-left:5px;
+    font-size:16px;
+    line-height:45px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+}
+.page__hd .weui-cell__bd .doctor_button{
+    width:100%;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    height:45px;
+    line-height:45px;
+
+}
+.page__bd .no_data{
+    font-size:16px;
+    padding-left:20px;
+}
+.page__bd .weui-cell{
+    background-color:#fff;
+    font-size:16px;
+    border-bottom:1px solid #D7D7D7;
+}
+.page__bd .weui-cell:last-child{
+    border:0;
+}
+.page__bd .weui-cell .weui-cell__hd{
+    width:90%;
+}
+.page__bd .weui-cell .weui-label{
+    width:100%;
+}
+.page__bd .weui-cell .weui-cell__bd{
+    text-align:right;
+}
