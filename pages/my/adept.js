@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-     noData:false
+     
   },
   //事件处理函数
   add:function(e){

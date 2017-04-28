@@ -4,26 +4,24 @@
 <view class="page__hd">
      <view class="weui-cell weui-cell_input ">
                 <view class="weui-cell__hd">
-                     <input class="weui-input" placeholder="请输入擅长，每次一个"/>
+                     <input class="weui-input"/>
                 </view>
                 <view class="weui-cell__bd">
                     <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>
                 </view>
         </view>
+         <p>如：心脏瓣膜的置入……</p>
 </view>
 <!--主体-->
 <view class="page__bd">
-    <p class="no_data" wx:if="{{noData}}">如：心脏瓣膜的置入、冠脉介入等</p>
-    <view wx:if="{{!noData}}">
-         <view class="weui-cell " >
+        <view class="weui-cell " >
                 <view class="weui-cell__hd">
                     <view class="weui-label">经皮冠状动脉介入治疗</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <i>X</i>
+                    <i class="close"></i>
                 </view>
                 
         </view>
-    </view>
 </view>
 </view>
