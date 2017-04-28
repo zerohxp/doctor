@@ -1,0 +1,34 @@
+
+<view class="page js_show has_bottom">
+
+<!--主体-->
+<view class="page__bd">
+     <view class="weui-cells__title">论文题目<span>*</span></view>
+     <view class="weui-cell weui-cell_textarea" >
+               <textarea  placeholder="请输入论文名称" placeholder-class="weui-input-placeholder" bindinput="titleValue"></textarea>       
+      </view> 
+      
+       <view class="weui-cells__title">发表期刊<span>*</span></view>
+       <view class="weui-cell weui-cell_textarea" >
+         <textarea  placeholder="请输入期刊名称" placeholder-class="weui-input-placeholder" bindinput="descriptionValue"></textarea>       
+       </view> 
+
+       <view class="weui-cell weui-cell_input no_bottom" >
+              <view class="weui-cell__hd ">
+                    <view class="weui-label">影响因子</view>
+                </view>
+                <view class="weui-cell__bd">
+                   <input class="weui-input" bindinput="officeValue" placeholder="请输入影响因子" placeholder-class="weui-input-placeholder" bindinput="divisorValue"/>
+                </view>
+       </view>
+       <view class="weui-cell weui-cell_p" >
+            <p><i class="wrong"></i> 选填，但不填写的话，无法准确计算职业发展指数哦！</p>
+       </view>
+      
+       
+</view>
+<view class="page__footer">
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+    </view>
+</view>

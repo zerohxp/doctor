@@ -12,16 +12,17 @@
                 </view>
       </view> 
       <view class="weui-cell weui-cell_input" >
-            <input class="weui-input" placeholder="请输入标题（必填）" placeholder-class="weui-input-placeholder"/>
+            <input class="weui-input" placeholder="请输入标题（必填）" placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
        </view>
        <view class="weui-cell weui-cell_textarea" >
-         <textarea  placeholder="请简单描述经过（必填）" placeholder-class="weui-input-placeholder"></textarea>       
+         <textarea  placeholder="请简单描述经过（必填）" placeholder-class="weui-input-placeholder" bindinput="descriptionValue"></textarea>       
        </view> 
        <view class="weui-cell weui-cell_upload">
             <view class="weui-uploader">
                 <view class="weui-uploader__bd">
                      <view class="weui-uploader__files" id="uploaderFiles">
                         <view class="weui-uploader__file" wx:for="{{tempFilePaths}}">
+                              <i class="delete"></i>
                               <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
                          </view>
                          <view class="weui-uploader__input-box">

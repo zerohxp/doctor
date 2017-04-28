@@ -100,6 +100,7 @@ Page({
         content: '确认要删除教育经历吗？',
         confirmColor:'#00acff',
         cancelColor:'#cdcdcd',
+        confirmText:'删除',
         success: function(res) {
             if (res.confirm) {
                 wx.navigateBack();

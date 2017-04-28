@@ -1,10 +1,12 @@
 {
   "pages":[
-   "pages/edit/createP", 
-   "pages/my/profession",
-   "pages/my/adept",
+    "pages/edit/createPa", 
+   "pages/my/paper",
    "pages/my/my",
    "pages/create/create",
+    "pages/edit/createP", 
+   "pages/my/profession",
+   "pages/my/adept",
    "pages/my/work",
     "pages/main/index",
    "pages/main/main",

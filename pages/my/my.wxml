@@ -11,7 +11,11 @@
                 </view>
         </navigator>
         <view class="weui-cell">
-            <span>社交网络：</span><i class="sj-icon-1"></i><i class="sj-icon-2"></i><i class="sj-icon-3"></i><i class="sj-icon-4"></i><i class="sj-icon-5"></i>
+            <span>社交网络：</span><i class="sj-icon-1 no_active"></i>
+            <i class="sj-icon-2 no_active"></i>
+            <i class="sj-icon-3 no_active"></i>
+            <i class="sj-icon-4 no_active"></i>
+            <i class="sj-icon-5 no_active"></i>
        </view>
 </view>
 <!--主体-->

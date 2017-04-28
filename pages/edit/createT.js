@@ -30,6 +30,7 @@ Page({
         content: '确认要删除社会头衔吗？',
         confirmColor:'#00acff',
         cancelColor:'#cdcdcd',
+        confirmText:'删除',
         success: function(res) {
             if (res.confirm) {
                 wx.navigateBack();

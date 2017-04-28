@@ -1,0 +1,87 @@
+@import '../common/css/common.wxss';
+
+button[type="primary"].doctor_button{
+    width:60%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
+.doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:28%;
+    background-color:#77d2fd;
+    margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
+}
+.weui-cell{
+    background-color:#fff;
+    border-bottom:1px solid #e1e1e1;
+    margin-top:0px;
+    font-size:16px;
+    color:#414b50;
+}
+.weui-cells__title{
+    background-color:#fff;
+    margin-bottom:0;
+    margin-top:5px;
+    border-top:1px solid #e1e1e1;
+     font-size:16px;
+    color:#414b50;
+    font-weight:600;
+    padding-top:10px;
+
+}
+.weui-cells__title span{
+     color:#fd8925;
+    margin-left:5px;
+}
+.weui-label{
+    font-weight:600;
+}
+.weui-cell_textarea{
+    padding:10px 0px;
+}
+.weui-cell_textarea textarea{
+    width:100%;
+    padding:10px 15px;
+    background-color:#fafafa;
+}
+.weui-cell_p{
+    color:#ff7a00;
+    padding-right:0px;
+    padding-top:0px;
+    font-size:14px;
+
+}
+.weui-cell_p p{
+    position:relative;
+    padding-left:20px;
+    border-top:1px solid #e1e1e1;
+    padding-top:10px;
+    letter-spacing:-0.5px;
+
+}
+.weui-cell_p .wrong{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAAE6DSy/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiM2Y2YjUxNi00ZWQzLTRmNjMtODUwNS0xZTdhODYwZjgyZTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODc0MDE0MjYyQkY2MTFFNzk1N0ZEQTk5MkJFNDE1MTgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODc0MDE0MjUyQkY2MTFFNzk1N0ZEQTk5MkJFNDE1MTgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBRkE5QUUxRUYwMkJFNzExQkE3RERCODcyNzU5RTBEQiIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmRlNjc2YWU4LTY4YzMtMTE3YS05MjRmLWU3Njg2NDNmNTBiZiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiXdRskAAANzSURBVHjaYvz//z8DMmCBs6oZQTKMTAxoAFmAEYhVAQKIEd0Mxv9VDD+BNDuUHwVRUc0IU6CCamjr/zsAAYQwo5rxLZAURlPAgGoJxKjNQOwLs4MJKlGNpM8Hid2GbsICICkOxFuAeCrICoAAwvAHOmBB4SG8A3ckelgxYoZdNeMcJP5/bIGrjN+E1v+O+BzJhBR56FaUIhS0/ocZvQ+ID0HZ3SACIICwh0M14xQgaQTEm4D4JRBbA7EmEDcA8W5YEKCnEJDGM1DJHCBpBcQdQKwIxClQQ3ZDVV5D9wMbEOsCNZpg8edGLGJaQPVXkV1wGKj5MhaFIL+fwRGA3sgGLGYgHeQhh/IUoJNOkaA5AeRx7LFQzXgHGofrsWgEic0DZwpoLAAEEMHkTAiwYEkDYkByAxA/AuI9QMwLzWVfgNgfOStgyy+geG4CSlqh5Z1+pFj5j6sw2o8l4ScD8Vy07GQJxGeB+BdyQpIEkoVYvDgNGuLI4DgQv0Uv7EC2X8BigBoQL8Aizgu01ArZgPM4ArkYiHlwyPUhG7Ach6JIIHbBIfcR2QB+HIpAgfYHjxzcgDhyExLMAEES9WkAcQByZjIBhuoWLApFkSobZHAVqOcHeolUBzQkAUt5sBaL35kxK73W/+eA5FagIWdxOFsfmoAYUetE7IVqGLTAAEUVGxD/hgb0G/TMBBBgpGfnakYnIOkFxArQWuUftOR+BC10QfgTTv2t/wkUB5gWNgLJJGjZ2gOtW/bh0aEGzf2gYiQGlmlxAdwhUM14BUh+B7rYFG8VTRzgAuJvxIVANWMLkKwAKiQUOozQ4AcBZwKh8hNaI4McYoKr6QWyfCWQ1CHCclhyfg1lPyWg9i8Q24ELoGrG29gdUM0IKvalgZYHkBC0YtCQuEmk+mXgwryacT62EABlmxUkWA6rXkDYjwR9TWCPYnEAqPX4kMTEBYuCfyTo+YpcmCA74BY0MdEayAMxJ64ocAI31GgLOqGNG4yy+Dk4+zEwPKegWiIEjgDxBaBd87BrbP2/DdyeBTW5qxkziMiGF6BF8HECapWh6huBdmTid3nr/0/QJv01oCP+APEMPAa7QeP0NQ75ZKjFEdCEt5v4ohi1gKqAGvIOiK8DMSikQEX1B6gFPNCeAKiS0gX1JcFNLQaGXGghhLMyorhxSykAALK2BHTF67Y0AAAAAElFTkSuQmCC);
+    width:18px;
+    height:16px;
+    background-size:100%;
+    position:absolute;
+    left:0px;
+    top:12px;
+
+}
+.no_bottom{
+    border:0;
+}
+@media only screen and (min-width:320px) and (max-width:350px){
+    .weui-cell_textarea textarea{
+        height:100px;
+    }
+    .weui-cell_p{
+        font-size:12px;
+    }
+}

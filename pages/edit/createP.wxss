@@ -22,6 +22,10 @@ button[type="primary"].doctor_button{
     border-top:1px solid #e1e1e1;
     margin-top:5px;
     font-size:16px;
+    color:#414b50;
+}
+.weui-label{
+    font-weight:600;
 }
 .weui-select:before{
     right:0;
@@ -46,4 +50,17 @@ button[type="primary"].doctor_button{
 }
 .weui-uploader__files{
     float:left;
+}
+.weui-uploader__file{
+    position:relative;
+}
+.weui-uploader__file .delete{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IArs4c6QAAAD9QTFRFAAAADg4OAAAAe3t7AAAAwcHBVVVVAAAAz8/PxcXFtLS0AAAAaGholJSUHBwcGhoaPDw8v7+/AAAAQEBAo6OjELPsWgAAABV0Uk5TZmo+kVm7gADHv7Eih5xsbHa5Aningu5UmAAAAHhJREFUKM/NkMkWwBAMRRFDTEen///WVrGgyb4WXrwbkRDix8ucIypmAgVtCyRu8xXp06vefqrtULdEvBOyCEB2cGGmW8sYSB+CgJ3wUzWTl+Osu1rfBEs3VJMNe+o5Jo99irKWPjTzfS5ywCkOMOQBLmoGuCOqld2QDgLHuq9Z0AAAAABJRU5ErkJggg==);
+    width:20px;
+    height:20px;
+    background-size:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:999;
 }

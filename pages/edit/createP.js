@@ -3,7 +3,9 @@
 var app = getApp()
 Page({
   data: {
-    tempFilePaths:[]
+    tempFilePaths:[],
+    title:'',
+    description:''
   },
   //事件处理函数
   chooseImage:function(){
@@ -28,6 +30,68 @@ Page({
             })
         }
       })
+  },
+  titleValue:function(e){
+     this.setData({
+            title: e.detail.value
+      })
+  },
+  descriptionValue:function(e){
+     this.setData({
+            description: e.detail.value
+      })
+  },
+  delete:function(){
+      wx.showModal({
+        title: '删除业务能力案例',
+        content: '确认要删除XXXXX（案例标题）吗？',
+        confirmColor:'#00acff',
+        cancelColor:'#cdcdcd',
+        confirmText:'删除',
+        success: function(res) {
+            if (res.confirm) {
+                wx.navigateBack();
+            } else if (res.cancel) {
+            
+            }
+        }
+    })
+  },
+  save:function(){
+      var that = this;
+      if(!that.data.title){
+           wx.showToast({
+            title: '请输入标题',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.title.length > 50){
+           wx.showToast({
+            title: '限50个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.description){
+           wx.showToast({
+            title: '请描述经过',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.description.length > 500){
+           wx.showToast({
+            title: '限限500个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       wx.navigateBack();
   },
   onLoad: function (option) {
     var that = this
