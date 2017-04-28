@@ -21,6 +21,6 @@
        </view>
        <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>
        <button type="primary" class="doctor_back" bindtap="back"> 返回【我的简历Plus】 </button>
-       <a class="next_a" bindtap="next">跳过,编辑下一项<span>(工作经历)</span>>></a>
+       <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(工作经历)</a>
 </view>
 </view>

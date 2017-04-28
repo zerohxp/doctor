@@ -45,7 +45,7 @@ Page({
   next:function(){
       wx.showModal({
         title: '跳过',
-        content: '确认要跳过吗，编辑过的数据将不会被保存。',
+        content: '确认要跳过吗？本页编辑过的数据将不会被保存。',
         success: function(res) {
             if (res.confirm) {
                  wx.navigateTo({

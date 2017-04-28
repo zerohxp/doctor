@@ -1,5 +1,6 @@
 {
   "pages":[
+   "pages/my/work",
    "pages/my/my",
     "pages/create/create",
    "pages/main/index",
@@ -9,7 +10,6 @@
    "pages/my/base",
    "pages/my/technical",
    "pages/my/education",
-   "pages/my/work",
    "pages/my/business",
    "pages/my/adept",
    "pages/create/hospital", 
