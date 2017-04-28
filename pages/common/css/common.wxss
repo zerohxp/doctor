@@ -4,6 +4,8 @@ page {
 }
 .page.has_bottom{
     padding-bottom:65px;
+    margin-bottom:10px;
+
 }
 .page .weui-cell:before{
     border:0;
@@ -46,6 +48,7 @@ button[disabled][type="primary"].doctor_button {
     height:65px;
     background-color:#ffffff;
     border-top:1px solid #e1e1e1;
+    z-index:999;
 
 }
 .page__footer .doctor_button{

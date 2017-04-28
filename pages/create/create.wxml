@@ -44,7 +44,7 @@
         </view>
         <view class="weui-cell weui-cell_select">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <view class="weui-label">现居地</view>
+                    <view class="weui-label">现居住地</view>
                 </view>
                 <view class="weui-cell__bd" bindtap="chooseArea">
                      <view class="weui-select weui-select_in-select-after weui-select-down">{{province}} {{city}} {{area}}</view>
