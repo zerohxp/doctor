@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-     disabled: false,
+    disabled: false,
     loading: false,
     userImg:'',
     sixs:['男','女'],
@@ -19,7 +19,11 @@ Page({
     citys:[4,5],
     city:'4',
     areas:[6,7],
-    area:'6'
+    area:'6',
+    name:'',
+    email:'',
+    phone:'',
+    office:''
   },
   //事件处理函数
   bindSixChange:function(e){
@@ -75,7 +79,85 @@ Page({
             selectArea:false
       })
   },
+  nameValue:function(e){
+       this.setData({
+            name: e.detail.value
+      })
+  },
+  emailValue:function(e){
+       this.setData({
+            email: e.detail.value
+      })
+  },
+  phoneValue:function(e){
+       this.setData({
+            phone: e.detail.value
+      })
+  },
+  officeValue:function(e){
+     this.setData({
+            office: e.detail.value
+      })
+  },
   save:function(){
+     var that = this;
+      if(!that.data.name){
+           wx.showToast({
+            title: '请填写姓名',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(that.data.name.length < 2 || that.data.name.length > 5){
+           wx.showToast({
+            title: '请填写2~5个汉字',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.email && !that.data.phone){
+           wx.showToast({
+            title: '邮箱与手机至少需输入一项',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(that.data.email && !/\w@\w*\.\w/.test(that.data.email)){
+           wx.showToast({
+            title: '请填写正确邮箱',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(that.data.phone && !/^(13[0-9]{9})|(15[89][0-9]{8})$/.test(that.data.phone)){
+           wx.showToast({
+            title: '请填写正确手机号',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.hospital){
+           wx.showToast({
+            title: '请选择医院',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.office){
+           wx.showToast({
+            title: '请选择科室',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       
       wx.reLaunch({
         url: '../main/index'
       })

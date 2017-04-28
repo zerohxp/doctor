@@ -19,7 +19,7 @@
                     <view class="weui-label">姓名<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入真实姓名" placeholder-class="weui-input-placeholder"/>
+                    <input class="weui-input" placeholder="请输入真实姓名" placeholder-class="weui-input-placeholder" bindinput="nameValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -55,7 +55,7 @@
                     <view class="weui-label">邮箱</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder"/>
+                    <input class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder" bindinput="emailValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input ">
@@ -63,7 +63,7 @@
                     <view class="weui-label">手机</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input type="number" class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder"/>
+                    <input type="number" class="weui-input" placeholder="邮箱和手机号请至少输入一项" placeholder-class="weui-input-placeholder" bindinput="phoneValue"/>
                 </view>
         </view>
          <view class="weui-cell weui-cell_select">
@@ -95,7 +95,7 @@
                     <view class="weui-label">科室</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入科室" placeholder-class="weui-input-placeholder"/>
+                    <input class="weui-input" placeholder="请输入科室" placeholder-class="weui-input-placeholder"  bindinput="officeValue"/>
                 </view>
         </view>
         
