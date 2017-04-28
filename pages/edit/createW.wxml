@@ -1,5 +1,5 @@
 
-<view class="page js_show">
+<view class="page js_show has_bottom">
 
 <!--主体-->
 <view class="page__bd">
@@ -8,7 +8,7 @@
                     <view class="weui-label">单位名称<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <view class="weui-select weui-select_in-select-after"></view>
+                    <view class="weui-select weui-select_in-select-after"><span wx:if="{{!hospital}}">请选择</span>{{hospital}}</view>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -16,7 +16,7 @@
                     <view class="weui-label">科室<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                   <input class="weui-input" />
+                   <input class="weui-input" bindinput="officeValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input ">
@@ -24,7 +24,7 @@
                     <view class="weui-label">职位<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input"/>
+                    <input class="weui-input" bindinput="postValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input ">
@@ -34,10 +34,10 @@
                 <view class="weui-cell__bd">
                    <radio-group class="radio-group" bindchange="radioChange1">
                         <label class="radio">
-                            <radio value="0" checked="{{radio1 == 0}}"/>是
+                            <radio value="0" checked="{{radio1 == 0}}" color="#00acff"/>是
                         </label>
                         <label class="radio">
-                            <radio value="1" checked="{{radio1 == 1}}"/>否
+                            <radio value="1" checked="{{radio1 == 1}}" color="#00acff"/>否
                         </label>
                     </radio-group>
                 </view>
@@ -49,10 +49,10 @@
                 <view class="weui-cell__bd">
                    <radio-group class="radio-group" bindchange="radioChange2">
                         <label class="radio">
-                            <radio value="0" checked="{{radio2 == 0}}"/>是
+                            <radio value="0" checked="{{radio2 == 0}}" color="#00acff"/>是
                         </label>
                         <label class="radio">
-                            <radio value="1" checked="{{radio2 == 1}}"/>否
+                            <radio value="1" checked="{{radio2 == 1}}" color="#00acff"/>否
                         </label>
                     </radio-group>
                 </view>
@@ -63,7 +63,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker mode="date" value="{{in}}" fields="month" bindchange="bindInChange">
-                        <view class="weui-select weui-select_in-select-after">{{in}}<span wx:if="{{!in}}">请选择入职时间</span></view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{in}}<span wx:if="{{!in}}">请选择入职时间</span></view>
                     </picker>
                 </view>
         </view>
@@ -71,9 +71,10 @@
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
                     <view class="weui-label">离职时间</view>
                 </view>
-                <view class="weui-cell__bd">
+                <view class="weui-cell__bd weui-cell__date">
+                    <span class="tit">不选择则默认为至今</span>
                     <picker mode="date" value="{{out}}" fields="month" bindchange="bindOutChange">
-                        <view class="weui-select weui-select_in-select-after">{{out}}<span wx:if="{{!out}}">至今</span></view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{out}}<span wx:if="{{!out}}">至今</span></view>
                     </picker>
                 </view>
         </view>
@@ -83,9 +84,11 @@
                     <textarea  ></textarea>
                 </view>
         </view>
-         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
-         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
-
+        
          
 </view>
+    <view class="page__footer">
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+    </view>
 </view>

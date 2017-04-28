@@ -28,6 +28,8 @@ Page({
       wx.showModal({
         title: '删除社会活动',
         content: '确认要删除社会活动吗？',
+        confirmColor:'#00acff',
+        cancelColor:'#cdcdcd',
         success: function(res) {
             if (res.confirm) {
                 wx.navigateBack();
@@ -46,6 +48,8 @@ Page({
       wx.showModal({
         title: '跳过',
         content: '确认要跳过吗？本页编辑过的数据将不会被保存。',
+        confirmColor:'#00acff',
+        cancelColor:'#cdcdcd',
         success: function(res) {
             if (res.confirm) {
                  wx.navigateTo({

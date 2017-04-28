@@ -1,5 +1,5 @@
 
-<view class="page js_show">
+<view class="page js_show has_bottom">
 
 <view class="page__bd">
        <p class="no_data" wx-if="{{noData}}"><span>还没有添加教育经历</span></p>
@@ -20,8 +20,11 @@
             </navigator>
             
        </view>
-       <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>
-       <button type="primary" class="doctor_back" bindtap="back"> 返回【我的简历Plus】 </button>
+      
        <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(业务量)</a>
 </view>
+<view class="page__footer">
+        <button type="primary" class="doctor_button" bindtap="add"><i class="add"></i><span>添加</span> </button>
+       <button type="primary" class="doctor_back" bindtap="back"> 返回 </button>
+    </view>
 </view>
