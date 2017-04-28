@@ -1,0 +1,49 @@
+@import '../common/css/common.wxss';
+
+button[type="primary"].doctor_button{
+    width:60%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
+.doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:28%;
+    background-color:#77d2fd;
+    margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
+}
+.weui-cell{
+    background-color:#fff;
+    border-bottom:1px solid #e1e1e1;
+    border-top:1px solid #e1e1e1;
+    margin-top:5px;
+    font-size:16px;
+}
+.weui-select:before{
+    right:0;
+}
+.weui-select_in-select-after {
+    padding-left:0;
+    border:0;
+    padding-right:0;
+
+}
+.weui-cell_textarea{
+     border-bottom:0;
+}
+.weui-cell_textarea textarea{
+    width:100%;
+   
+}
+.weui-cell_upload{
+    margin-top:0;
+    border-top:0;
+
+}
+.weui-uploader__files{
+    float:left;
+}

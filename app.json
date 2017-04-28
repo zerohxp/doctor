@@ -1,5 +1,8 @@
 {
   "pages":[
+   "pages/edit/createP", 
+   "pages/my/profession",
+   "pages/my/adept",
    "pages/my/my",
    "pages/create/create",
    "pages/my/work",
@@ -11,7 +14,6 @@
    "pages/my/technical",
    "pages/my/education",
    "pages/my/business",
-   "pages/my/adept",
    "pages/create/hospital", 
    "pages/edit/createE", 
    "pages/edit/createT", 

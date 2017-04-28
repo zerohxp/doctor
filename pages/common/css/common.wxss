@@ -75,3 +75,28 @@ button[disabled][type="primary"].doctor_button {
 .weui-label{
     width:100px;
 }
+.load_more{
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    font-size:16px;
+    color:#00acff;
+    position:relative;
+
+}
+.load_more .down{
+    width:0;
+    height:0;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-top:10px solid #00acff;
+    position:absolute;
+    top:50%;
+    margin-top:-5px;
+    margin-left:5px;
+
+}
+.weui-input-placeholder{
+    color:#bfbfbf;
+    font-size:16px;
+}
