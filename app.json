@@ -1,7 +1,10 @@
 {
   "pages":[
-    "pages/edit/createPa", 
+  "pages/my/scientific",
+  "pages/edit/createS", 
+  "pages/my/scientific",
    "pages/my/paper",
+  "pages/edit/createPa", 
    "pages/my/my",
    "pages/create/create",
     "pages/edit/createP", 

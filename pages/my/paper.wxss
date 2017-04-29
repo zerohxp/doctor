@@ -14,6 +14,9 @@
      border-top:1px solid #e1e1e1;
     border-bottom:1px solid #e1e1e1;
 }
+.weui-cell:first-child{
+    margin-top:5px;
+}
 .weui-cell__bd{
     width:90%;
 }

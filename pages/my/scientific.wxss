@@ -1,0 +1,102 @@
+@import '../common/css/common.wxss';
+
+.page {
+    height:100%;
+}
+.page .page__bd{
+    height:100%;
+}
+.weui-cell{
+    background-color:#fff;
+    font-size:15px;
+    margin-bottom:10px;
+    padding:10px 15px 10px 15px;
+     border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+}
+.weui-cell:first-child{
+    margin-top:5px;
+}
+.weui-cell__bd{
+    width:90%;
+}
+button[type="primary"].doctor_button{
+    width:58%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
+.doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:30%;
+    background-color:#77d2fd;
+    margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
+    padding:0px;
+    line-height:20px;
+    font-size:16px;
+
+}
+.doctor_back[type="primary"] span{
+    font-size:14px;
+    display:inline-block;
+    width:100%;
+    white-space:nowrap;
+    padding:0;
+
+}
+.no_data{
+    display:block;
+    width:100%;
+    text-align:center;
+}
+.data{
+
+}
+.no_data span{
+    padding-top:50%;
+    display:inline-block;
+}
+
+.weui-cell p{
+    width:100%;
+    display:inline-block;
+    color:#414b50;
+}
+.weui-cell p:first-child{   
+    font-size:15px;
+    color:#414b50;
+}
+.weui-cell p:last-child{
+    color:#919191;
+   font-size:14px;
+    line-height:18px;
+    max-height:35px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    word-break:break-all;
+
+}
+.weui-cell p.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:98%;
+    font-weight:600;
+}
+.weui-cell p:first-child span{
+    border-left:3px solid #00a9ff;
+    padding-left:10px;
+}
+.load_more{
+    font-size:16px;
+    text-align:center;
+    display:block;
+}
+

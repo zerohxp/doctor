@@ -1,0 +1,23 @@
+
+<view class="page js_show has_bottom">
+
+<!--主体-->
+<view class="page__bd">
+     <view class="weui-cells__title">项目名称<span>*</span></view>
+     <view class="weui-cell weui-cell_input" >
+               <input  placeholder="请输入项目名称" placeholder-class="weui-input-placeholder" bindinput="titleValue"></input>       
+      </view> 
+      
+       <view class="weui-cells__title">项目描述（300字内）</view>
+       <view class="weui-cell weui-cell_textarea" >
+         <textarea  placeholder="请输入项目描述，如项目的目的、成果，我的角 色和任务等" placeholder-class="weui-input-placeholder" bindinput="descriptionValue"></textarea>       
+       </view> 
+
+      
+       
+</view>
+<view class="page__footer">
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+    </view>
+</view>
