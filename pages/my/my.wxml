@@ -11,11 +11,12 @@
                 </view>
         </navigator>
         <view class="weui-cell">
-            <span>社交网络：</span><i class="sj-icon-1 no_active"></i>
-            <i class="sj-icon-2 no_active"></i>
-            <i class="sj-icon-3 no_active"></i>
-            <i class="sj-icon-4 no_active"></i>
-            <i class="sj-icon-5 no_active"></i>
+            <span>社交网络：</span>
+            <i class="sj-icon-1 no_active" bindtap="link" data-sType="1"></i>
+            <i class="sj-icon-2 no_active" bindtap="link" data-sType="2"></i>
+            <i class="sj-icon-3 no_active" bindtap="link" data-sType="3"></i>
+            <i class="sj-icon-4 no_active" bindtap="link" data-sType="4"></i>
+            <i class="sj-icon-5 no_active" bindtap="link" data-sType="5"></i>
        </view>
 </view>
 <!--主体-->
@@ -84,7 +85,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/profession" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">案例</view>
                 </view>
@@ -93,7 +94,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <view class="weui-cells__title"><i class="title_icon"></i>科研能力</view>
-        <navigator url="" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/paper" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">发表论文</view>
                 </view>
@@ -101,7 +102,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/scientific" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研项目</view>
                 </view>
@@ -109,7 +110,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/fund" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研基金</view>
                 </view>

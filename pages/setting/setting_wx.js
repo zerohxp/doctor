@@ -1,4 +1,4 @@
-//createS.js
+//setting_wb.js
 //获取应用实例
 var app = getApp()
 Page({
@@ -9,8 +9,8 @@ Page({
   //事件处理函数
   delete:function(){
       wx.showModal({
-        title: '删除科研项目',
-        content: '确认要删除XXXXX（项目名称）项目吗？',
+        title: '删除社交网络账户',
+        content: '确认要删除微博吗？',
         confirmColor:'#00acff',
         cancelColor:'#cdcdcd',
         confirmText:'删除',
@@ -37,28 +37,13 @@ Page({
       var that = this;
       if(!that.data.title){
            wx.showToast({
-            title: '请输入项目名称',
+            title: '请输入用户名',
             image:'../common/img/error.png',
             duration: 2000
            })
            return;
        }
-      if(that.data.title.length > 100){
-           wx.showToast({
-            title: '限100个汉字以内',
-            image:'../common/img/error.png',
-            duration: 2000
-           })
-           return;
-       }
-       if(that.data.description && that.data.description.length > 300){
-           wx.showToast({
-            title: '限300个汉字以内',
-            image:'../common/img/error.png',
-            duration: 2000
-           })
-           return;
-       }
+      
        wx.navigateBack();
   },
   onLoad: function (option) {

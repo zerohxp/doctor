@@ -1,0 +1,27 @@
+
+<view class="page js_show has_bottom">
+
+<view class="page__bd">
+             <navigator class="weui-cell" url="../edit/createF?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis"><span>基金名称1</span></p>
+                    <p>100万</p>
+                   
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+           <navigator class="weui-cell" url="../edit/createF?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis"><span>基金名称1基金名称1基金名基金名称1基金名基金名称1基金名称1基金名基金名称1基金名</span></p>
+                    <p>100万</p>
+                   
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+           <p class="load_more">查看更多<i class="down"></i></p>  
+</view>
+    <view class="page__footer">
+        <button type="primary" class="doctor_button" bindtap="add"><i class="add"></i><span>添加</span> </button>
+       <button type="primary" class="doctor_back" bindtap="back"> 返回 <span>【我的简历Plus】</span></button>
+    </view>
+</view>

@@ -1,0 +1,27 @@
+
+<view class="page js_show has_bottom">
+ <view class="page__hd">
+      <view class="weui-cell weui-cell_p" >
+            <p><i class="sj-icon-5"></i>豆瓣</p>
+       </view>
+ </view>
+<!--主体-->
+<view class="page__bd">
+     <view class="weui-cells__title">用户名<span>*</span></view>
+     <view class="weui-cell weui-cell_input" >
+               <input bindinput="titleValue"></input>       
+      </view> 
+      
+       <view class="weui-cells__title">个人主页链接<b>（非必填）</b></view>
+       <view class="weui-cell weui-cell_textarea" >
+         <textarea bindinput="descriptionValue"></textarea>       
+       </view> 
+       <p>如需定制微信公众号，请直接在公众号留言</p>
+      
+       
+</view>
+<view class="page__footer">
+         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
+    </view>
+</view>

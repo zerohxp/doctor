@@ -22,6 +22,7 @@ button[type="primary"].doctor_button{
     margin-top:0px;
     font-size:16px;
     color:#414b50;
+    padding:0;
 }
 .weui-cells__title{
     background-color:#fff;
@@ -41,38 +42,22 @@ button[type="primary"].doctor_button{
 .weui-label{
     font-weight:600;
 }
-.weui-cell_textarea{
-    padding:10px 0px;
-}
-.weui-cell_textarea textarea{
+
+.weui-cell_select picker,.weui-cell_input input{
     width:100%;
     padding:10px 15px;
     background-color:#fafafa;
 }
-.weui-cell_p{
-    color:#ff7a00;
-    padding-right:0px;
-    padding-top:0px;
-    font-size:14px;
 
-}
-.weui-cell_p p{
-    position:relative;
-    padding-left:20px;
-    border-top:1px solid #e1e1e1;
-    padding-top:10px;
-    letter-spacing:-0.5px;
-
-}
-
-.no_bottom{
+.weui-select_in-select-after{
     border:0;
 }
-@media only screen and (min-width:320px) and (max-width:350px){
-    .weui-cell_textarea textarea{
-        height:100px;
-    }
-    .weui-cell_p{
-        font-size:12px;
-    }
+.weui-cell_select .weui-cell__bd{
+    padding-right:20px;
+}
+.weui-cell_input:last-child{
+     padding-right:20px;
+}
+.weui-cell_input:last-child span{
+    font-weight:600;
 }
