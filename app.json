@@ -1,5 +1,6 @@
 {
   "pages":[
+  "pages/export/preference",
   "pages/my/my",
    "pages/setting/setting_db",
   "pages/setting/setting_z",

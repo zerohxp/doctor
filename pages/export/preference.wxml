@@ -1,0 +1,134 @@
+
+<view class="page js_show">
+<!--页头-->
+<view class="page__hd">
+     <view  class="weui-cell">
+         <p>告诉医途无忧你感兴趣的职位类型，匹配到合适的 职位时，我们将第一时间通知你。</p>
+     </view>
+</view>
+<!--主体-->
+<view class="page__bd">
+    <view class="weui-cells__title">请选择接受推荐的职位类型(可多选)</view>
+    <checkbox-group bindchange="checkboxChange">
+         <view class="weui-cell">
+            <view class="weui-cell__bd">全职</view>
+            <view class="weui-cell__ft">
+                <label class="checkbox">
+                    <checkbox  color="#00acff" value="0"/>
+                </label>
+                            
+            </view>  
+        </view>  
+        <view wx:if="{{check1}}">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">地区</view>
+                </view>
+                <view class="weui-cell__bd" bindtap="chooseArea">
+                     <view class="weui-select weui-select_in-select-after weui-select-down">{{province}} {{city}} {{area}}</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">医院等级</view>
+                </view>
+                <view class="weui-cell__bd" >
+                      <picker bindchange="bindGradeChange" value="{{gradeIndex}}" range="{{grades}}">
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{grades[gradeIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell {{check2 == false ? 'no_bottom':''}}">
+            <view class="weui-cell__bd">兼职（多点执业）</view>
+            <view class="weui-cell__ft">
+                <label class="checkbox">
+                    <checkbox  color="#00acff"  value="1"/>
+                </label>
+                            
+            </view>  
+        </view> 
+        <view wx:if="{{check2}}">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">地区</view>
+                </view>
+                <view class="weui-cell__bd" bindtap="chooseArea2">
+                     <view class="weui-select weui-select_in-select-after weui-select-down">{{province2}} {{city2}} {{area2}}</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_select no_bottom">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">医院等级</view>
+                </view>
+                <view class="weui-cell__bd" >
+                      <picker bindchange="bindGradeChange2" value="{{gradeIndex2}}" range="{{grades2}}">
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{grades2[gradeIndex2]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+    </checkbox-group>
+    
+    <view class="weui-cells__title tit">隐私选项</view> 
+        <radio-group class="radio-group" bindchange="radioChange">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    自动投递简历
+                    <p>（会隐藏姓名、工作单位、联系方式等信息）</p>
+                </view>
+                <view class="weui-cell__ft">         
+                     <radio class="weui-cell__ft" value="0" checked="{{radio == 0}}" color="#00acff"/> 
+                </view>  
+            </view>  
+            <view class="weui-cell">
+                <view class="weui-cell__bd">不自动投递简历，只发职位到我邮箱</view>
+                <view class="weui-cell__ft">         
+                     <radio class="weui-cell__ft" value="0" checked="{{radio == 1}}" color="#00acff"/> 
+                </view>  
+            </view>  
+            <view class="weui-cell">
+                <view class="weui-cell__bd">不自动投递简历，也不要给我发送职位信息</view>
+                <view class="weui-cell__ft">         
+                     <radio class="weui-cell__ft" value="0" checked="{{radios == 2}}" color="#00acff"/> 
+                </view>  
+            </view>  
+           
+       </radio-group>
+</view>
+
+</view>
+<block wx:if="{{selectArea}}">
+    <view class="backdrop" bindtap="colseArea"></view>
+    <view class="select_area">
+    <div class="area_button"><span bindtap="colseArea">取消</span><span bindtap="sureArea">确定</span></div>
+    <picker-view indicator-style="height: 50px;" style="width: 100%;height:230px;" value="{{place}}"  bindchange="bindAreaChange">
+        <picker-view-column >
+            <view wx:for="{{provinces}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column >
+            <view wx:for="{{citys}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{areas}}" style="line-height: 50px">{{item}}</view> 
+        </picker-view-column>
+    </picker-view>
+    </view>
+</block>
+<block wx:if="{{selectArea2}}">
+    <view class="backdrop" bindtap="colseArea"></view>
+    <view class="select_area">
+    <div class="area_button"><span bindtap="colseArea2">取消</span><span bindtap="sureArea2">确定</span></div>
+    <picker-view indicator-style="height: 50px;" style="width: 100%;height:230px;" value="{{place2}}"  bindchange="bindAreaChange2">
+        <picker-view-column >
+            <view wx:for="{{provinces2}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column >
+            <view wx:for="{{citys2}}" style="line-height: 50px">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+            <view wx:for="{{areas2}}" style="line-height: 50px">{{item}}</view> 
+        </picker-view-column>
+    </picker-view>
+    </view>
+</block>
