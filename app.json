@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/plus/capacity",
     "pages/plus/doctor",
    "pages/main/main",
    "pages/main/index",
@@ -34,7 +35,6 @@
    "pages/edit/createW", 
    "pages/my/title",
    "pages/my/activity", 
-    "pages/plus/capacity",
    "pages/export/export",
    "pages/export/resume"
   ],

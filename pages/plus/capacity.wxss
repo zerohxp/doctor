@@ -1,12 +1,35 @@
 @import '../common/css/common.wxss';
 @import 'doctor.wxss';
 
-.page__hd{
-    margin-top:40px;
+.page__bd .doctor_p span{
+    margin-left:0px;
 }
-.page__bd{
-    margin-top:-20px;
+.page__bd .doctor_p{
+    margin-bottom:5px;
 }
-.doctor_p span{
-    color:#999999;
+.doctor_choose_block b{
+    font-size:12px;
+    font-weight:600;
+}
+.weui-cell_p{
+    color:#ff7a00;
+    padding:0px;
+    font-size:12px;
+    margin-bottom:30px;
+    font-weight:600;
+}
+.weui-cell_p p{
+    position:relative;
+    padding-left:20px;
+    padding-top:0px;
+    letter-spacing:-0.5px;
+
+}
+.weui-cell_p .wrong{
+    width:15px;
+height:14px;
+    top:2px;
+}
+.doctor_choose_block{
+    padding:10px 10px 10px 30px;
 }
