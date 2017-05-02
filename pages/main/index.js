@@ -33,23 +33,29 @@ Page({
        legend:false
     };
     let windowWidth = 320;
-    try {
-        let res = wx.getSystemInfoSync();
-        windowWidth = res.windowWidth;
-    } catch (e) {
+    // try {
+    //     let res = wx.getSystemInfoSync();
+    //     windowWidth = res.windowWidth;
+    // } catch (e) {
         
-    }
-    option.width = windowWidth * 0.9
-    option.height = 250
-    option.categories = ['技术水平','工作经验','科研能力','学历/职称','沟通能力']
+    // }
+    //  console.log(windowWidth)
+    option.width = windowWidth ;
+    option.height = 220;
+    option.categories = ['','','','',''];
+    option.dataLabel = false;
+    option.dataPointShape = false;
     option.series = [{
       name:' ',
-      data: [90, 110, 125, 95, 87]
+      data: [90, 110, 125, 95, 87],
+      color:'#82d6fe'
     }]
     option.extra ={
-      legendTextColor:'#fff',
+      legendTextColor:'#ffffff',
        radar: {
-                max: 150
+                max: 150,
+                labelColor:'#ffffff',
+                gridColor:'#ffffff'
             }
     }
     new wxCharts(option)

@@ -1,35 +1,52 @@
-@import '../common/css/common.wxss'
+@import '../common/css/common.wxss';
 page{
-    height:100%;
+    background-color:#fff;
 }
 .before_login_p{
     width:100%;
     padding:0px 10px;
     display:inline-block;
     font-size:16px;
+    color:#414b50;
 }
 .before_login_p:first-child{
-    margin-top:40px;
+    margin-top:20px;
+}
+.before_login_p .point{
+    margin-right:10px;
 }
 .my_develop{
     width:100%;
     text-align:center;
     display:inline-block;
-    margin-top:50px;
-    font-weight:900;
-    font-size:22px;
+    background: -webkit-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -ms-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -moz-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    margin-top:15px;
 }
-.my_develop span{
-    font-size:32px;
-    padding-left:20px;
+.my_develop image{
+    width:300px;
+    height:320px;
 
 }
 .login_page{
-    background-color:#EBEBEB;
     height:100%;
 }
-.doctor_button,button[type="primary"].doctor_button{
-   bottom:10%;
-    position:absolute;
-    left:15%;
+.weui-cell_p{
+    color:#ff7a00;
+    padding-right:0px;
+    padding-top:0px;
+    font-size:15px;
+    padding-left:6px;
+}
+.weui-cell_p p{
+    position:relative;
+    padding-left:23px;
+    padding-top:0px;
+    letter-spacing:-0.5px;
+
+}
+.weui-cell_p .wrong{
+    top:3px;
 }

@@ -1,6 +1,6 @@
-<view class="page after_login"  >
-    <view class="login_top" >
-     <navigator url="../my/my"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+<view class="page js_show has_bottom">
+     <view class="page__hd">
+            <navigator url="../my/my"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd weui-cell_image">
                     <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
                     <span>{{userInfo.nickName}}</span>
@@ -13,29 +13,33 @@
                 </view>
         </navigator>
         
-      
-    </view>
-    <view class="login_center">
+     </view>
+     <view class="page__bd">
         <div class="login_center_block">
           <span>导出简历</span>
           <span>职位偏好</span>
           <span>设置</span>
         </div>
         <div class="login_center_flag">
+            <i></i>
             <span class="flag_tit">科研型人才</span>
             <span class="flag_span">管理经验</span>
             <span class="flag_span">海外经历</span>
             <span class="flag_span">精通英文</span>
-        </div>       
-      
-    </view>
-    <view class="login_bottom">
-        <text class="before_login_p profession_develop">职业发展指数：<text class="profession_develop_scroe">746分</text></text>
-        <text class="before_login_p profession_develop_tit">你的指数超过了XX地区X%的XX，赶紧完善资料提升分数吧！</text>
-        <canvas canvas-id="radarCanvas"></canvas> 
+        </div>    
+        <view class="page_profession">
+        <p class="before_login_p profession_develop">━━━ 我的职业发展指数 ━━━ </p>
+        <p class="before_login_p profession_develop_tit">超过了上海地区80%的主治医师。棒棒哒！</p>
+         <canvas canvas-id="radarCanvas"></canvas> 
+         <image src="../common/img/index.png"></image>
+         <p class="score">746</p>
+       </view>
+     </view>
 
-        <button type="primary" class="weui-btn doctor_back"  bindtap="next"> 写案例 </button>
-         <button type="primary" class="weui-btn doctor_button" loading="{{loading}}"
-        disabled="{{disabled}}" bindtap="next">提升指数 </button>
+
+   <view class="page__footer">
+       <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
+        disabled="{{disabled}}"> 提升指数 </button>
+       <button type="primary" class="doctor_back" bindtap="next"> 写案例 </button>
     </view>
 </view>
