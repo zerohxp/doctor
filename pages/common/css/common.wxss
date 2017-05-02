@@ -174,3 +174,30 @@ button[disabled][type="primary"].doctor_button {
 .sj-icon-5.no_active{
     background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAfCAYAAAB6Q+RGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDgwNTZBMEIyQkYyMTFFNzhGQUNERjI4REI2QjlCMTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDgwNTZBMEMyQkYyMTFFNzhGQUNERjI4REI2QjlCMTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0ODA1NkEwOTJCRjIxMUU3OEZBQ0RGMjhEQjZCOUIxNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0ODA1NkEwQTJCRjIxMUU3OEZBQ0RGMjhEQjZCOUIxNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiDtf1UAAAHQSURBVHjaYvz//z/DYAdMDEMAsBBS8ODBA1UgNZkObpmuoKCwkSxHAoEYELvTwZEngHgjudFNr0T7j+zoBoIbQBxDB0eewSXBSGnuBqZZivQD0+HwyN1EhyQwxDiB1GIg5qJiOmUE4ipgaF6gqAhCAmxAHEyLogeIL1ArukG57zMNHPmN4sIcD0gC4tvQKCMVLAViWarVOHjAJmBaektm7v5Er7pbhgK9rMOugUGJI+9RoPcXVVtBeEA2MD3eB9LMJOiBla/C9HJk+2CMbpBaXhq4gYeaIfkTiCdBq8U3QPwCiJWA+A8xFkErgz/QtMwNxJJAzA7EN6lWd2Opyx2AVAEQ9wHxIWLLViBeB8QrgPgHsa0gshwJdOAMIJWOFMJ8ROTYGiBuRuKrAPFdWjbV6pEcBYqyciL0lCCxQaF5l6blJND3L6FRDQMgR3Lg0RIGxPxI/Hy6FOZAh4KaWPugXG40R2MLeRjoAuInVG30AtOfLA7PgKLbA4jnQfmPgNgBS4cK1D9qgbJfA7E1NB2jt57+AT3+mNwiCFREcOKQ+4LEliOiqgQVVRdxmPcdWryR5UhOSgpiEszipKQwPwtNc7QGX2nWpR3sTTW6AYAAAwDdMHMbZpkZdwAAAABJRU5ErkJggg==);
 }
+
+.select_area{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:246px;
+    width:100%;
+    z-index:9999;
+    background-color:#FFFFFF;
+}
+.select_area picker-view-column{
+    text-align:center;
+}
+.select_area .area_button{
+    font-size:14px;
+    color:#586C94;
+    margin-top:6px;
+    position:relative;
+    padding:10px;
+    display:inline-block;
+    width:100%;
+    font-weight:600;
+}
+.select_area .area_button span:last-child{
+    float:right;
+    margin-right:20px;
+}
