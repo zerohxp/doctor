@@ -1,6 +1,7 @@
 {
   "pages":[
-  "pages/export/preference",
+   "pages/main/index",
+   "pages/export/preference",
   "pages/my/my",
    "pages/setting/setting_db",
   "pages/setting/setting_z",
@@ -19,7 +20,6 @@
    "pages/my/profession",
    "pages/my/adept",
    "pages/my/work",
-    "pages/main/index",
    "pages/main/main",
     "pages/upload/upload",
     "pages/plus/doctor",
@@ -39,7 +39,7 @@
    "pages/export/resume"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#00acff",
     "navigationBarTitleText": "医途无忧",
     "navigationBarTextStyle":"#fff"

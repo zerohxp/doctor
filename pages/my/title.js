@@ -28,5 +28,9 @@ Page({
     var that = this
     //调用应用实例的方法获取全局数据
    
+  },
+  onPullDownRefresh:function(){
+    wx.stopPullDownRefresh();//处理完数据后执行
+
   }
 })

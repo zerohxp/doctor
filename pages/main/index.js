@@ -54,5 +54,9 @@ Page({
     }
     new wxCharts(option)
      
+  },
+  onPullDownRefresh:function(){
+    wx.stopPullDownRefresh();//处理完数据后执行
+
   }
 })

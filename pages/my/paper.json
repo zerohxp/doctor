@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "发表论文"
+    "navigationBarTitleText": "发表论文",
+    "enablePullDownRefresh":true
 }

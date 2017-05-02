@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "社会头衔"
+    "navigationBarTitleText": "社会头衔",
+    "enablePullDownRefresh":true
 }

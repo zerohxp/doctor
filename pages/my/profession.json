@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "业务能力案例"
+    "navigationBarTitleText": "业务能力案例",
+    "enablePullDownRefresh":true
 }
