@@ -1,0 +1,37 @@
+"pages/export/preference",//导出PDF简历
+  "pages/my/my",//我的简历Plus
+   "pages/setting/setting_db",//编辑社交网络账户
+  "pages/setting/setting_z",//编辑社交网络账户
+  "pages/setting/setting_dxk",//编辑社交网络账户
+  "pages/setting/setting_wx",//编辑社交网络账户
+  "pages/setting/setting_wb",//编辑社交网络账户
+  "pages/setting/setting", //设置
+  "pages/edit/createF", //编辑科研基金
+  "pages/my/fund",//科研基金
+  "pages/my/scientific",//科研项目
+  "pages/edit/createS", //编辑科研项目
+   "pages/my/paper",//发表论文
+  "pages/edit/createPa", //编辑发表论文
+   "pages/create/create",//创建简历Plus
+    "pages/edit/createP", //编辑业务能力案例
+   "pages/my/profession",//业务能力案例
+   "pages/my/adept",//编辑擅长
+   "pages/my/work",//工作经历
+    "pages/main/index",//医途无忧
+   "pages/main/main",//医途无忧
+    "pages/upload/upload",//上传简历
+    "pages/plus/doctor",//选择医生类型
+   "pages/my/base",//编辑基本信息
+   "pages/my/technical",//编辑职称
+   "pages/my/education",//教育经历
+   "pages/my/business",//业务量
+   "pages/create/hospital", //选择医院
+   "pages/edit/createE", //编辑社会头衔
+   "pages/edit/createT", //编辑社会头衔
+   "pages/edit/createA", //编辑社会活动
+   "pages/edit/createW", //编辑工作经历
+   "pages/my/title", //社会头衔
+   "pages/my/activity", //社会活动
+    "pages/plus/capacity",//选择能力类型
+   "pages/export/export",//导出简历
+   "pages/export/resume"//简历预览
