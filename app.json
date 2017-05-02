@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/plus/doctor",
    "pages/main/main",
    "pages/main/index",
    "pages/export/preference",
@@ -22,7 +23,6 @@
    "pages/my/adept",
    "pages/my/work",
     "pages/upload/upload",
-    "pages/plus/doctor",
    "pages/my/base",
    "pages/my/technical",
    "pages/my/education",

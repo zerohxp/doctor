@@ -1,25 +1,28 @@
-<view class="page js_show">
+<view class="page js_show has-bottom">
 <!--页头-->
 <view class="page__hd">
  <p class="doctor_p">医途无忧已经帮助367位医生创建了简历Plus</p> 
+ <image src="../common/img/doctor-img.png"></image>
 </view>
 <!--主体-->
 <view class="page__bd">
-    <p class="doctor_p">我是...<span>{{type[currentSelect]}}</span></p>
-    <a class="doctor_choose_block weui-cell {{currentSelect == 0 ? 'active':''}}"  bindtap="selectBlock" data-select="0">
-        医疗技术人员
+    <p class="doctor_p">我是......<span>{{type[currentSelect]}}</span></p>
+    <a class="doctor_choose_block weui-cell {{currentSelect == 0 ? 'active':''}} doctor_type_1"  bindtap="selectBlock" data-select="0">
+        <i></i><span>医疗技术人员</span>
     </a>
-     <a class="doctor_choose_block weui-cell {{currentSelect == 1 ? 'active':''}}"  bindtap="selectBlock" data-select="1">
-        药剂（含中药、西药）人员
+     <a class="doctor_choose_block weui-cell {{currentSelect == 1 ? 'active':''}} doctor_type_2"  bindtap="selectBlock" data-select="1">
+        <i></i><span>药剂（含中药、西药）人员</span>
     </a>
-     <a class="doctor_choose_block weui-cell {{currentSelect == 2 ? 'active':''}}"  bindtap="selectBlock" data-select="2">
-        其他卫生技术人员
+     <a class="doctor_choose_block weui-cell {{currentSelect == 2 ? 'active':''}} doctor_type_3"  bindtap="selectBlock" data-select="2">
+        <i></i><span>其他卫生技术人员</span>
      </a>
-    <div class="doctor_choose_block weui-cell disabled">
-        <span>护理人员 </span><span class="right">即将上线 敬请期待</span>
+    <div class="doctor_choose_block weui-cell disabled doctor_type_4">
+        <i></i><span>护理人员 </span><span class="right">即将上线 敬请期待</span>
     </div>
-    <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
-        disabled="{{disabled}}"> 下一步 </button>
-    <a class="doctor_a" bindtap="uploadPlus">我已经有简历了，上传文件自动生成简历Plus</a>  
+   <a class="next_a weui-select" bindtap="uploadPlus">我已经有简历了，上传文件自动生成简历Plus</a>
 </view>
+  <view class="page__footer">
+       <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
+        disabled="{{disabled}}"> 下一步 </button>
+    </view>
 </view>
