@@ -6,7 +6,9 @@ Page({
     technicals:['医学生','规培生','住院医师','主治医师','副主任医师','主任医师'],
     technicalIndex:0,
     positions:['无','助教','讲师','副教授','教授','博士生导师'],
-    positionIndex:0
+    positionIndex:0,
+    loading: false,
+    pageLoaded:false
   },
   //事件处理函数
   next:function(){
@@ -35,7 +37,10 @@ Page({
       })
   },
   save:function(){
-
+     that.setData({
+           disabled:true,
+           loading:true
+       });
   },
   onLoad: function (option) {
     var that = this

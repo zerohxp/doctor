@@ -4,7 +4,9 @@ var app = getApp()
 Page({
   data: {
     title:'',
-    description:''
+    description:'',
+    loading: false,
+    pageLoaded:false
   },
   //事件处理函数
   delete:function(){

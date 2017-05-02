@@ -19,7 +19,8 @@
         <view class="weui-cell weui-cell_image "  wx:for="{{tempFilePaths}}">
              <image src="{{item}}" class="upload"></image>
          </view>
-         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
          <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
 
          

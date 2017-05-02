@@ -18,7 +18,8 @@
     <div class="doctor_choose_block weui-cell disabled">
         <span>护理人员 </span><span class="right">即将上线 敬请期待</span>
     </div>
-    <button type="primary" class="doctor_button" bindtap="next"> 下一步 </button>
+    <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
+        disabled="{{disabled}}"> 下一步 </button>
     <a class="doctor_a" bindtap="uploadPlus">我已经有简历了，上传文件自动生成简历Plus</a>  
 </view>
 </view>

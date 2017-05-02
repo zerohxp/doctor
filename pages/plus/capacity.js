@@ -5,10 +5,16 @@ Page({
   data: {
      dtype:'',
      currentSelect:0,
-     type:['业务型','科研型','管理型']
+     type:['业务型','科研型','管理型'],
+    loading: false,
+    pageLoaded:false
   },
   //事件处理函数
   create:function(){
+     that.setData({
+           disabled:true,
+           loading:true
+       });
     wx.navigateTo({
           url: '../create/create?dtype='+this.data.dtype
       })

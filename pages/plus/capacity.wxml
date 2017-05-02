@@ -16,6 +16,7 @@
         我是管理型，带团队我经验丰富
     </div>
 
-    <button type="primary" class="doctor_button" bindtap="create"> 开始创建 </button>
+    <button type="primary" class="doctor_button" bindtap="create" loading="{{loading}}"
+        disabled="{{disabled}}"> 开始创建 </button>
 </view>
 </view>

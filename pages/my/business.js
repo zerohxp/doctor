@@ -16,7 +16,9 @@ Page({
     inspections:['无'],
     inspectionIndex:0,
     films:['无'],
-    filmIndex:0
+    filmIndex:0,
+    loading: false,
+    pageLoaded:false
   },
   //事件处理函数
   next:function(){
@@ -70,7 +72,10 @@ Page({
       })
   },
   save:function(){
-
+       that.setData({
+           disabled:true,
+           loading:true
+       });
   },
   onLoad: function (option) {
     var that = this

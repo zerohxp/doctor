@@ -75,7 +75,8 @@
                     </picker>
                 </view>
          </view>
-         <button type="primary" class="doctor_button" bindtap="save"  wx:if="{{officeIndex != 0}}"> 保存 </button>
+         <button type="primary" class="doctor_button" bindtap="save"  wx:if="{{officeIndex != 0}}" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
          <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(发表论文)</a>
 </view>
 </view>

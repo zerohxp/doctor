@@ -4,7 +4,9 @@ var app = getApp()
 Page({
   data: {
     title:'',
-    description:''
+    description:'',
+    disabled:false,
+    loading:false
   },
   //事件处理函数
   delete:function(){
@@ -59,7 +61,11 @@ Page({
            })
            return;
        }
-       wx.navigateBack();
+        that.setData({
+           disabled:true,
+           loading:true
+       });
+        wx.navigateBack();
   },
   onLoad: function (option) {
     var that = this

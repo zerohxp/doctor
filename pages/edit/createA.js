@@ -3,7 +3,9 @@
 var app = getApp()
 Page({
   data: {
-    tempFilePaths:[]
+    tempFilePaths:[],
+    disabled:false,
+    loading:false
   },
   //事件处理函数
   uploadImg:function(){
@@ -22,6 +24,10 @@ Page({
       })
   },
    save:function(){
+         that.setData({
+           disabled:true,
+           loading:true
+       });
         wx.navigateBack();
   },
   delete:function(){

@@ -4,10 +4,16 @@ var app = getApp()
 Page({
   data: {
      currentSelect:0,
-     type:['医疗技术人员','药剂（含中药、西药）人员','其他卫生技术人员']
+     type:['医疗技术人员','药剂（含中药、西药）人员','其他卫生技术人员'],
+    loading: false,
+    pageLoaded:false
   },
   //事件处理函数
   next:function(){
+     that.setData({
+           disabled:true,
+           loading:true
+       });
        wx.navigateTo({
           url: '../plus/capacity?dtype='+this.data.currentSelect
       })

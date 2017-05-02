@@ -22,7 +22,8 @@
                     </picker>
                 </view>
         </view>
-         <button type="primary" class="doctor_button" bindtap="save"> 保存 </button>
+         <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
          <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(教育经历)</a>
 </view>
 </view>

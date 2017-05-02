@@ -7,7 +7,9 @@ Page({
     educationIndex:3,
     entrance:'2017-09',
     graduation:'',
-    radio:0
+    radio:0,
+    disabled:false,
+    loading:false
   },
   //事件处理函数
   bindEducationChange:function(e){
@@ -30,7 +32,11 @@ Page({
 
   },
    save:function(){
-        wx.navigateBack();
+        that.setData({
+           disabled:true,
+           loading:true
+       });
+         wx.navigateBack();
   },
   delete:function(){
       wx.showModal({

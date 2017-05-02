@@ -6,7 +6,9 @@ Page({
     name:'',
     amount:'',
     levels:['国家级','省/部级','市厅级','院级','其他'],
-    levelIndex:0
+    levelIndex:0,
+    disabled:false,
+    loading:false
   },
   //事件处理函数
   delete:function(){
@@ -75,7 +77,11 @@ Page({
            })
            return;
        }
-       wx.navigateBack();
+        that.setData({
+           disabled:true,
+           loading:true
+       });
+        wx.navigateBack();
   },
   onLoad: function (option) {
     var that = this

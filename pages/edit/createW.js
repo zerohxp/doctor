@@ -9,7 +9,9 @@ Page({
     radio2:0,
     office:'',
     hospital:'',
-    post:''
+    post:'',
+    disabled:false,
+    loading:false
   },
   //事件处理函数
  bindInChange:function(e){
@@ -92,7 +94,11 @@ Page({
            })
            return;
        }
-        wx.navigateBack();
+        that.setData({
+           disabled:true,
+           loading:true
+       });
+         wx.navigateBack();
   },
   delete:function(){
       wx.showModal({
