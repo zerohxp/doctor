@@ -1,6 +1,6 @@
 <view class="page js_show has_bottom">
      <view class="page__hd">
-            <navigator url="../my/my"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="../my/my"  class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__bd weui-cell_image">
                     <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
                     <span>{{userInfo.nickName}}</span>
@@ -16,7 +16,7 @@
      </view>
      <view class="page__bd">
         <div class="login_center_block">
-          <span bindtap="link" data-href="">导出简历</span>
+          <span bindtap="link" data-href="export/export">导出简历</span>
           <span bindtap="link" data-href="export/preference">职位偏好</span>
           <span bindtap="link" data-href="setting/setting">设置</span>
         </div>

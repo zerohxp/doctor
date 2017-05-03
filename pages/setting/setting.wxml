@@ -1,7 +1,7 @@
 
 <view class="page js_show">
   <view class="page__hd">
-      <navigator  url="../plus/capacity"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <navigator  url="../plus/capacity"  class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     重置能力类型<b>（业务型、科研型、管理型）</b>
                 </view>
@@ -14,31 +14,31 @@
 <!--主体-->
 <view class="page__bd">
         <view class="weui-cells__title">社交网络账户</view>
-        <navigator url="../setting/setting_wx" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../setting/setting_wx" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <i class="sj-icon-1"></i>张三
                 </view>
                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../setting/setting_dxk" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../setting/setting_dxk" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <i class="sj-icon-2"></i>张三
                 </view>
                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../setting/setting_wb" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../setting/setting_wb" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <i class="sj-icon-3"></i>张三
                 </view>
                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../setting/setting_z" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../setting/setting_z" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <i class="sj-icon-4"></i>张三
                 </view>
                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../setting/setting_db" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../setting/setting_db" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <i class="sj-icon-5"></i>张三
                 </view>

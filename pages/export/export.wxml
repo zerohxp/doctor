@@ -1,72 +1,91 @@
-<view class="page" >
+<view class="page js_show has_bottom" >
     <view class="page__hd">
         <view class="page__title">请选择简历的内容</view>
     </view>
     <view class="page__bd">
         <view class="weui-cell weui-cell_switch">
-                <view class="weui-cell__bd">隐藏联系方式</view>
+                <view class="weui-cell__bd">隐藏联系方式<span>（手机或邮箱）</span></view>
                 <view class="weui-cell__ft">
-                    <switch checked />
+                    <switch checked="{{switch1}}" bindchange="switchChange1"/>
                 </view>
         </view>
-        <view class="weui-cells__title">学历职称</view>
-        <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">教育经历</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">已选择两项</view>
-        </view>
-        <view class="weui-cell">
-             <view class="weui-cell__bd">技术职称</view>
-                <view class="weui-cell__ft">
-                     <label class="checkbox">
-                        <checkbox />
-                    </label>
-                </view>
-        </view>
-        <view class="weui-cell">
-             <view class="weui-cell__bd">学术职称</view>
-                <view class="weui-cell__ft">
-                     <label class="checkbox">
-                        <checkbox />
-                    </label>
-                </view>
-        </view>
-        <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cells__title">学历／职称</view>
+        <view  class="weui-cell weui-cell_access weui-cell-block" >
                 <view class="weui-cell__bd">社会头衔</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">已选择两项</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
         </view>
-        <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view  class="weui-cell weui-cell_access weui-cell-block no_bottom" >
                 <view class="weui-cell__bd">社会活动</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">已选择两项</view>
-        </view>
-         <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">工作经验</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">已选择两项</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
         </view>
         <view class="weui-cells__title">科研能力</view>
-        <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="">选好了，下一步</button>
+        <view  class="weui-cell weui-cell_access weui-cell-block"  >
+                <view class="weui-cell__bd">发表论文</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
         </view>
+        <view  class="weui-cell weui-cell_access weui-cell-block"  >
+                <view class="weui-cell__bd">科研项目</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
+        </view>
+        <view  class="weui-cell weui-cell_access weui-cell-block no_bottom"  >
+                <view class="weui-cell__bd">科研基金</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
+        </view>
+        <view class="weui-cells__title">业务能力</view>
+         <view  class="weui-cell weui-cell_access weui-cell-block"  >
+                <view class="weui-cell__bd">擅长</view>
+               <view class="weui-cell__ft">
+                    <switch checked="{{switch2}}" bindchange="switchChange2"/>
+                </view>
+        </view>
+        <view  class="weui-cell weui-cell_access weui-cell-block no_bottom"  >
+                <view class="weui-cell__bd">业务能力案例</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access" bindtap="openModal1">已选择2项</view>
+        </view>
+        <view class="weui-cell-view">
+             <view  class="weui-cell weui-cell_access"  >
+                <view class="weui-cell__bd">沟通能力</view>
+               <view class="weui-cell__ft">
+                    <switch checked="{{switch3}}" bindchange="switchChange3"/>
+                </view>
+            </view>
+            <view  class="weui-cell weui-cell_access"  >
+                <view class="weui-cell__bd">社交网络主页<span>（仅展示用户名）</span></view>
+               <view class="weui-cell__ft">
+                    <switch checked="{{switch4}}" bindchange="switchChange4"/>
+                </view>
+            </view>
+            <view  class="weui-cell weui-cell_access"  >
+                <view class="weui-cell__bd">导出附录</view>
+               <view class="weui-cell__ft">
+                    <switch checked="{{switch5}}" bindchange="switchChange5"/>
+                </view>
+            </view>
+        </view>
+    </view>
+     <view class="page__footer" >
+          <button class="doctor_button" type="primary" bindtap="submit">预览</button>
     </view>
 </view>
 
-<div class="backdrop" wx:if="{{modal}}"></div>
-<view class="doctor_modal" style="margin-top:-200px;" wx:if="{{modal1}}">
+<div class="backdrop" wx:if="{{modal}}" bindtap="closeModal" ></div>
+<view class="doctor_modal" style="" wx:if="{{modal1}}">
     <div class="doctor_modal_head">
         <span>选择发表论文</span>
-        <icon type="cancel" size="20" class="close"/>
     </div>
     <div class="doctor_modal_content" >
-        <checkbox-group >
+        <checkbox-group bindchange="checkboxChange">
             <label class="checkbox">
-                <span>1</span> <checkbox />
+               <checkbox checked="{{checkbox1}}"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
              <label class="checkbox">
-                <span>2</span> <checkbox />
+                 <checkbox  checked="{{checkbox2}}"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
         </checkbox-group>
-        <checkbox />全选
+        
     </div>
     <div class="doctor_modal_footer">
-        <button type="primary" class="doctor_button" bindtap="sure1"> 确定 </button>
+        <checkbox-group bindchange="checkAll"><checkbox value="1"/></checkbox-group>
+         <span>全选</span><a bindtap="sure1">确定</a>
     </div>
 </view>

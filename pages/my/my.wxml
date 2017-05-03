@@ -1,6 +1,6 @@
 <view class="page js_show">
   <view class="page__hd">
-      <navigator  url="../my/base"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <navigator  url="../my/base"  class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__bd weui-cell_image">
                     <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
                     <span>{{userInfo.nickName}}</span>
@@ -26,7 +26,7 @@
                 </view>
         </view>
         <view class="weui-cells__title"><i class="title_icon"></i>学历/职称</view>
-        <navigator url="../my/technical" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/technical" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">职称</view>
                 </view>
@@ -34,7 +34,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/education" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/education" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">教育经历</view>
                 </view>
@@ -42,7 +42,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/title" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/title" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">社会头衔</view>
                 </view>
@@ -50,7 +50,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/activity" class="weui-cell weui-cell_access weui-cell-block no_bottom" hover-class="weui-cell_active">
+        <navigator url="../my/activity" class="weui-cell weui-cell_access weui-cell-block no_bottom"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">社会活动</view>
                 </view>
@@ -59,7 +59,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <view class="weui-cells__title"><i class="title_icon"></i>工作经验</view>
-        <navigator url="../my/work" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/work" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">工作经历</view>
                 </view>
@@ -68,7 +68,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
          <view class="weui-cells__title"><i class="title_icon"></i>业务能力</view>
-        <navigator url="../my/business" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/business" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">业务量</view>
                 </view>
@@ -76,7 +76,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/adept" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/adept" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">擅长</view>
                 </view>
@@ -84,7 +84,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/profession" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/profession" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">案例</view>
                 </view>
@@ -93,7 +93,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
         <view class="weui-cells__title"><i class="title_icon"></i>科研能力</view>
-        <navigator url="../my/paper" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/paper" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">发表论文</view>
                 </view>
@@ -101,7 +101,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/scientific" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="../my/scientific" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研项目</view>
                 </view>
@@ -109,7 +109,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="../my/fund" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="../my/fund" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">科研基金</view>
                 </view>
@@ -118,7 +118,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
          <view class="weui-cells__title"><i class="title_icon"></i>沟通能力</view>
-        <navigator url="" class="weui-cell weui-cell_access weui-cell-block" hover-class="weui-cell_active">
+        <navigator url="" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">沟通技巧</view>
                 </view>
@@ -126,7 +126,7 @@
                 
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
-        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <navigator url="" class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">英文水平</view>
                 </view>

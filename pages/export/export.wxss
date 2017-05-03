@@ -1,1 +1,62 @@
-@import '../common/css/common.wxss'
+@import '../common/css/common.wxss';
+.page{
+    font-size:16px;
+}
+
+.page__hd{
+    padding:10px 15px;
+    color:#0091db;
+    font-weight:600;
+    border-bottom:1px solid #e1e1e1;
+}
+.weui-cell{
+    padding:5px 15px;
+}
+.weui-cells__title{
+    border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    margin-top:0;
+    margin-bottom:0;
+    padding:5px 15px;
+    font-size:14px;
+    font-weight:600;
+    background-color:#f5f5f5;
+}
+.page__bd{
+    background-color:#fff;
+}
+.page__bd .weui-cell__bd{
+    color:#414b50;
+    font-weight:600;
+}
+.page__bd .weui-cell__bd span{
+    color:#919191;
+    font-size:14px;
+}
+.weui-cell-block{
+    margin:0 15px;
+    padding:10px 0;
+    border-bottom:1px solid #e1e1e1;
+}
+.no_bottom{
+    border-bottom:0;
+}
+.weui-cell-view{
+    background-color:#f5f5f5;
+    padding-top:6px;
+    border-top:1px solid #e1e1e1;
+}
+.weui-cell-view .weui-cell{
+    background-color:#fff;
+    border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    margin-bottom:6px;
+}
+.weui-cell-view .weui-cell .weui-cell__bd span{
+    font-size:14px;
+    color:#919191;
+    font-weight:normal;
+}
+weui-cell__ft_in-access {
+    color:#919191;
+}

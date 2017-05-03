@@ -2,7 +2,7 @@
 <view class="page js_show has_bottom">
 <!--页头-->
 <view class="page__hd">
-     <view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="chooseImg">
+     <view  class="weui-cell weui-cell_access"   bindtap="chooseImg">
                 <view class="weui-cell__bd">
                     <view class="weui-label">头像</view>
                                     
@@ -80,7 +80,7 @@
 </view>
 <view class="page__ft">
     <view class="weui-cells__title">最近一次工作经历<span>*</span></view>
-         <navigator url="../create/hospital" class="weui-cell weui-cell_access no-bottom" hover-class="weui-cell_active">
+         <navigator url="../create/hospital" class="weui-cell weui-cell_access no-bottom"  >
                 <view class="block">
                 <view class="weui-cell__hd">
                     <view class="weui-label">医院</view>

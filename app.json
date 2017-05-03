@@ -1,6 +1,8 @@
 {
   "pages":[
-     "pages/my/business",
+    "pages/export/export",
+   "pages/my/technical",
+    "pages/my/business",
    "pages/main/index",
   "pages/plus/capacity",
     "pages/plus/doctor",
@@ -26,7 +28,6 @@
    "pages/my/work",
     "pages/upload/upload",
    "pages/my/base",
-   "pages/my/technical",
    "pages/my/education",
    "pages/create/hospital", 
    "pages/edit/createE",
@@ -35,7 +36,6 @@
    "pages/edit/createW", 
    "pages/my/title",
    "pages/my/activity", 
-   "pages/export/export",
    "pages/export/resume"
   ],
   "window":{
