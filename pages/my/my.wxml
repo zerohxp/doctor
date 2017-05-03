@@ -118,7 +118,7 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
         </navigator>
          <view class="weui-cells__title"><i class="title_icon"></i>沟通能力</view>
-        <navigator url="" class="weui-cell weui-cell_access weui-cell-block"  >
+        <navigator url="../my/communication" class="weui-cell weui-cell_access weui-cell-block"  >
                 <view class="weui-cell__hd">
                     <view class="weui-label">沟通技巧</view>
                 </view>

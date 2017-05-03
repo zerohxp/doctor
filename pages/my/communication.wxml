@@ -1,0 +1,52 @@
+
+<view class="page js_show has_bottom">
+<!--页头-->
+<view class="page__hd">
+    <view  class="weui-cell">
+         <p>请勾选符合自己的沟通技巧描述（多选）</p>
+     </view>
+</view>
+<!--主体-->
+<view class="page__bd">
+     <view class="weui-cells__title">在问诊时，我会：</view>
+      <checkbox-group bindchange="checkboxChange">
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>说明问诊理由（了解情况/进一步诊断治疗/汇 报上级医师）</p> 
+            </view>
+           <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>保护患者的隐私（如关门等）/尊重患者的选 择权/隐私权</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>引导/帮助患者完成主诉</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>避免诱导性提问/命令式提问</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>给患者说话的时间和机会，并且用心倾听，不 轻易打断患者的讲话</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>核实所获得的信息（如复述、询问具体数量）</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>解释诊断性操作的理论依据（如体格检查、实 验室检查等）</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>鼓励患者提问/核实自己的理解/安慰、鼓励患 者</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>根据患者的理解能力进行适当（语速、音量） 调整，避免使用专业术语</p> 
+            </view>
+             <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>观察细微，能够从患者不经意的言语中发掘出 有助于诊断的信息</p> 
+            </view>
+             <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>结束问诊时进一步说明下一步的诊治方案，并 询问患者是否还有其他问题需要探讨</p> 
+            </view>
+     </checkbox-group>
+</view>
+ <view class="page__footer">
+       <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
+    </view>
+</view>

@@ -75,17 +75,17 @@
     </div>
     <div class="doctor_modal_content" >
         <checkbox-group bindchange="checkboxChange">
-            <label class="checkbox">
+            <label class="checkbox" color="#00acff">
                <checkbox checked="{{checkbox1}}"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
              <label class="checkbox">
-                 <checkbox  checked="{{checkbox2}}"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
+                 <checkbox  checked="{{checkbox2}}" color="#00acff"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
         </checkbox-group>
         
     </div>
     <div class="doctor_modal_footer">
-        <checkbox-group bindchange="checkAll"><checkbox value="1"/></checkbox-group>
+        <checkbox-group bindchange="checkAll"><checkbox value="1" color="#00acff"/></checkbox-group>
          <span>全选</span><a bindtap="sure1">确定</a>
     </div>
 </view>

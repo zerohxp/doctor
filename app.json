@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/my/communication",
     "pages/plus/capacity",
     "pages/plus/doctor",
    "pages/export/export",

@@ -1,10 +1,158 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="page js_show">
+  <view class="page__bd">
+   <navigator url="../main/main" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">主页1（未创建简历）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../plus/doctor" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">选择医生类型</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../create/create" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">创建简历Plus</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../create/hospital" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">选择医院</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../upload/upload" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">上传简历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../main/index" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">主页2（已创建简历）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/my" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">我的简历Plus</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/base" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑基本信息</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/technical" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑职称</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/education" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">教育经历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createE" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑教育经历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+
+   <navigator url="../my/title" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">社会头衔</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createT" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社会头衔</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/activity" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">社会活动</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createA" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社会活动</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/work" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">工作经历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createW" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑工作经历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/business" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">业务量</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/adept" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑擅长</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/profession" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">业务能力案例</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createP" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑业务能力案例</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/paper" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">发表论文</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createPa" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑发表论文</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/scientific" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">科研项目</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createS" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑科研项目</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/fund" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">科研基金</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../edit/createF" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑科研基金</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../my/communication" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">沟通技巧</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">英文水平</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../export/export" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">导出PDF简历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../export/preference" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">职位偏好</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">设置</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../plus/capacity" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">选择能力类型</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting_wb" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社交网络帐户（微博）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting_wx" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社交网络帐户（微信）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting_dxk" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社交网络帐户（丁香客）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting_z" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社交网络帐户（知）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+   <navigator url="../setting/setting_db" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">编辑社交网络帐户（豆瓣）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
 </view>
