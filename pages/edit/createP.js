@@ -7,7 +7,12 @@ Page({
     title:'',
     description:'',
     disabled:false,
-    loading:false
+    loading:false,
+    work_str:[0,0],
+    work:[0,0],
+    hospitals:['','长征医院'],
+    posts:['','主治医生'],
+    selectWork:false
   },
   //事件处理函数
   chooseImage:function(){
@@ -33,6 +38,19 @@ Page({
         }
       })
   },
+  delImg:function(e){
+      var that = this;
+      var dataset = e.target.dataset;
+        var item = 0;
+        if(dataset){
+            item = dataset.item;
+            var  tempFilePaths = that.data.tempFilePaths;
+            tempFilePaths.splice(item,1);
+             that.setData({
+                tempFilePaths:tempFilePaths
+            })
+        }
+  },
   titleValue:function(e){
      this.setData({
             title: e.detail.value
@@ -57,6 +75,31 @@ Page({
             
             }
         }
+    })
+  },
+  chooseWork:function(){
+     var that = this;
+      that.setData({
+             selectWork:true
+      })
+  },
+  colseWork:function(){
+    this.setData({
+            selectWork:false
+      })
+  },
+  bindChange:function(e){
+     var that = this;
+     this.setData({
+            work_str: e.detail.value
+    })
+  },
+  sureWork:function(e){
+    var that = this;
+    var work_str = that.data.work_str;
+    this.setData({
+            work: work_str,
+             selectWork:false
     })
   },
   save:function(){

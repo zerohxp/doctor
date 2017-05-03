@@ -178,7 +178,7 @@ button[disabled][type="primary"].doctor_button {
 }
 
 .select_area{
-    position:absolute;
+    position:fixed;
     bottom:0;
     left:0;
     height:246px;
@@ -200,6 +200,32 @@ button[disabled][type="primary"].doctor_button {
     font-weight:600;
 }
 .select_area .area_button span:last-child{
+    float:right;
+    margin-right:20px;
+}
+.select_work{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:246px;
+    width:100%;
+    z-index:9999;
+    background-color:#FFFFFF;
+}
+.select_work picker-view-column{
+    text-align:center;
+}
+.select_work .work_button{
+    font-size:14px;
+    color:#586C94;
+    margin-top:6px;
+    position:relative;
+    padding:10px;
+    display:inline-block;
+    width:100%;
+    font-weight:600;
+}
+.select_work .work_button span:last-child{
     float:right;
     margin-right:20px;
 }

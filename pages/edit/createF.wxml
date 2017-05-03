@@ -12,8 +12,8 @@
                 </view>
       </view> 
       
-      <view class="weui-cells__title">基金名称<span>*</span></view>
-     <view class="weui-cell weui-cell_input" >
+      <view class="weui-cells__title" wx:if="{{levelIndex == 5}}">基金名称<span>*</span></view>
+     <view class="weui-cell weui-cell_input" wx:if="{{levelIndex == 5}}">
                <input  placeholder="请输入基金名称" placeholder-class="weui-input-placeholder" bindinput="nameValue"></input>       
       </view> 
 

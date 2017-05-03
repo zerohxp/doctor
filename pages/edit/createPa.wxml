@@ -18,7 +18,7 @@
                     <view class="weui-label">影响因子</view>
                 </view>
                 <view class="weui-cell__bd">
-                   <input class="weui-input" bindinput="officeValue" placeholder="请输入影响因子" placeholder-class="weui-input-placeholder" bindinput="divisorValue"/>
+                   <input class="weui-input" type="digit" bindinput="officeValue" placeholder="请输入影响因子" placeholder-class="weui-input-placeholder" bindinput="divisorValue"/>
                 </view>
        </view>
        <view class="weui-cell weui-cell_p" >

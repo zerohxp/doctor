@@ -84,13 +84,13 @@
             <view class="weui-cell">
                 <view class="weui-cell__bd">不自动投递简历，只发职位到我邮箱</view>
                 <view class="weui-cell__ft">         
-                     <radio class="weui-cell__ft" value="0" checked="{{radio == 1}}" color="#00acff"/> 
+                     <radio class="weui-cell__ft" value="1" checked="{{radio == 1}}" color="#00acff"/> 
                 </view>  
             </view>  
             <view class="weui-cell">
                 <view class="weui-cell__bd">不自动投递简历，也不要给我发送职位信息</view>
                 <view class="weui-cell__ft">         
-                     <radio class="weui-cell__ft" value="0" checked="{{radios == 2}}" color="#00acff"/> 
+                     <radio class="weui-cell__ft" value="2" checked="{{radios == 2}}" color="#00acff"/> 
                 </view>  
             </view>  
            

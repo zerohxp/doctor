@@ -5,7 +5,7 @@ Page({
   data: {
     name:'',
     amount:'',
-    levels:['国家级','省/部级','市厅级','院级','其他'],
+    levels:['国家级','省/部级','市厅级','校级','院级','其他'],
     levelIndex:0,
     disabled:false,
     loading:false
@@ -45,7 +45,7 @@ Page({
   },
    save:function(){
       var that = this;
-      if(that.data.levelIndex == 4 && !that.data.name){
+      if(that.data.levelIndex == 5 && !that.data.name){
            wx.showToast({
             title: '请输入基金名称',
             image:'../common/img/error.png',
@@ -55,7 +55,7 @@ Page({
        }
       if(that.data.name && that.data.name.length > 30){
            wx.showToast({
-            title: '限30个汉字以内',
+            title: '基金名称过长，30个汉字以内',
             image:'../common/img/error.png',
             duration: 2000
            })
@@ -71,7 +71,7 @@ Page({
        }
        if(that.data.amount < 1 ||  that.data.amount >10000){
            wx.showToast({
-            title: '请输入基金数额/基金数额需是0~10000内的整数',
+            title: '基金数额需是0~10000内的整数',
             image:'../common/img/error.png',
             duration: 2000
            })

@@ -64,3 +64,12 @@ button[type="primary"].doctor_button{
     right:0;
     z-index:999;
 }
+.weui-select_in-select-after{
+    text-align:right;
+    padding-right:15px;
+    font-size:15px;
+
+}
+.weui-input{
+    width:100%;
+}

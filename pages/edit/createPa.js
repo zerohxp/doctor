@@ -53,7 +53,7 @@ Page({
        }
       if(that.data.title.length > 100){
            wx.showToast({
-            title: '限100个汉字以内',
+            title: '论文题目过长，100个汉字以内',
             image:'../common/img/error.png',
             duration: 2000
            })
@@ -69,7 +69,7 @@ Page({
        }
       if(that.data.description.length > 100){
            wx.showToast({
-            title: '限100个汉字以内',
+            title: '发表期刊过长，100个汉字以内',
             image:'../common/img/error.png',
             duration: 2000
            })

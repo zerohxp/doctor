@@ -4,7 +4,7 @@
 <view class="page__hd">
      <view class="weui-cell weui-cell_input ">
                 <view class="weui-cell__hd">
-                     <input class="weui-input"/>
+                     <input class="weui-input" bindinput="titleValue"/>
                 </view>
                 <view class="weui-cell__bd">
                     <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>
@@ -14,12 +14,12 @@
 </view>
 <!--主体-->
 <view class="page__bd">
-        <view class="weui-cell " >
+        <view class="weui-cell" wx:for="{{titleArray}}">
                 <view class="weui-cell__hd">
-                    <view class="weui-label">经皮冠状动脉介入治疗</view>
+                    <view class="weui-label">{{item}}</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <i class="close"></i>
+                    <i class="close" data-item="{{index}}" bindtap="delItem"></i>
                 </view>
                 
         </view>
