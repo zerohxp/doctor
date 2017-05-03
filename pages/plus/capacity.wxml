@@ -11,13 +11,13 @@
             <p><i class="wrong"></i> 将展示在简历和主页上</p>
     </view>
    <div class="doctor_choose_block weui-cell {{currentSelect == 0 ? 'active':''}}"  bindtap="selectBlock" data-select="0">
-        我是业务型：<b>门诊、手术量多质高</b>
+        我是业务型：<b  bindtap="selectBlock" data-select="0">门诊、手术量多质高</b>
     </div>
      <div class="doctor_choose_block weui-cell {{currentSelect == 1 ? 'active':''}}"  bindtap="selectBlock" data-select="1">
-        我是科研型：<b>写论文、做项目，手到擒来</b>
+        我是科研型：<b bindtap="selectBlock" data-select="1">写论文、做项目，手到擒来</b>
     </div>
      <div class="doctor_choose_block weui-cell {{currentSelect == 2 ? 'active':''}}"  bindtap="selectBlock" data-select="2">
-        我是管理型：<b>带团队我经验丰富</b>
+        我是管理型：<b bindtap="selectBlock" data-select="2">带团队我经验丰富</b>
     </div>
 
     

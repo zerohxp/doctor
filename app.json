@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/export/export",
+    "pages/plus/capacity",
+    "pages/plus/doctor",
+   "pages/export/export",
    "pages/my/technical",
     "pages/my/business",
    "pages/main/index",
-  "pages/plus/capacity",
-    "pages/plus/doctor",
-   "pages/main/main",
+  "pages/main/main",
    "pages/export/preference",
   "pages/my/my",
    "pages/setting/setting_db",
