@@ -1,5 +1,5 @@
 
-<view class="page js_show">
+<view class="page js_show has_bottom">
 
 <view class="page__bd">
          <view class="weui-cell weui-cell_select">
@@ -22,8 +22,11 @@
                     </picker>
                 </view>
         </view>
-         <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
-        disabled="{{disabled}}"> 保存 </button>
+        
          <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(教育经历)</a>
 </view>
+    <view class="page__footer" >
+          <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
+    </view>
 </view>
