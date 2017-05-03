@@ -1,4 +1,4 @@
-"pages/export/preference",//导出PDF简历
+  "pages/export/preference",//职位偏好
   "pages/my/my",//我的简历Plus
    "pages/setting/setting_db",//编辑社交网络账户
   "pages/setting/setting_z",//编辑社交网络账户
@@ -7,7 +7,7 @@
   "pages/setting/setting_wb",//编辑社交网络账户
   "pages/setting/setting", //设置
   "pages/edit/createF", //编辑科研基金
-  "pages/my/fund",//科研基金
+  "pages/my/fund",//科研基金 
   "pages/my/scientific",//科研项目
   "pages/edit/createS", //编辑科研项目
    "pages/my/paper",//发表论文

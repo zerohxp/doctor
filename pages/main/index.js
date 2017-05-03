@@ -17,6 +17,15 @@ Page({
         url: '../my/my'
      })
   },
+  link:function(e){
+    var href = "";
+    if(e.currentTarget.dataset){
+      href = e.currentTarget.dataset.href;
+    }
+     wx.navigateTo({
+        url: '../'+href
+     })
+  },
   onLoad: function () {
     var that = this
     //调用应用实例的方法获取全局数据
@@ -48,14 +57,14 @@ Page({
     option.series = [{
       name:' ',
       data: [90, 110, 125, 95, 87],
-      color:'#82d6fe'
+      color:'#75d2fe'
     }]
     option.extra ={
       legendTextColor:'#ffffff',
        radar: {
                 max: 150,
-                labelColor:'#ffffff',
-                gridColor:'#ffffff'
+                labelColor:'#71d1fe',
+                gridColor:'#71d1fe'
             }
     }
     new wxCharts(option)

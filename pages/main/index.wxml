@@ -16,9 +16,9 @@
      </view>
      <view class="page__bd">
         <div class="login_center_block">
-          <span>导出简历</span>
-          <span>职位偏好</span>
-          <span>设置</span>
+          <span bindtap="link" data-href="">导出简历</span>
+          <span bindtap="link" data-href="export/preference">职位偏好</span>
+          <span bindtap="link" data-href="setting/setting">设置</span>
         </div>
         <div class="login_center_flag">
             <i></i>
@@ -40,6 +40,6 @@
    <view class="page__footer">
        <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
         disabled="{{disabled}}"> 提升指数 </button>
-       <button type="primary" class="doctor_back" bindtap="next"> 写案例 </button>
+       <button type="primary" class="doctor_back" bindtap="link" data-href="edit/createP"> 写案例 </button>
     </view>
 </view>

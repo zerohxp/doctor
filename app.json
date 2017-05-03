@@ -1,9 +1,10 @@
 {
   "pages":[
-    "pages/plus/capacity",
+     "pages/my/business",
+   "pages/main/index",
+  "pages/plus/capacity",
     "pages/plus/doctor",
    "pages/main/main",
-   "pages/main/index",
    "pages/export/preference",
   "pages/my/my",
    "pages/setting/setting_db",
@@ -27,7 +28,6 @@
    "pages/my/base",
    "pages/my/technical",
    "pages/my/education",
-   "pages/my/business",
    "pages/create/hospital", 
    "pages/edit/createE",
    "pages/edit/createT", 
