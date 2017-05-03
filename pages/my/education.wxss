@@ -1,8 +1,5 @@
 @import '../common/css/common.wxss';
-page{
-    height:100%;
-    background-color:#EEECED;
-}
+
 .page {
     height:100%;
 }
@@ -14,6 +11,8 @@ page{
     font-size:15px;
     margin-bottom:10px;
     padding:10px 15px 5px 15px;
+     border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
 }
 .weui-cell__bd{
     width:100%;
@@ -28,26 +27,53 @@ page{
     height:70%;
 }
 .data{
-    height:70%;
-    overflow-y:auto;
-    overflow-x:hidden;
+
 }
 .no_data span{
     padding-top:50%;
     display:inline-block;
 }
+button[type="primary"].doctor_button{
+    width:60%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
 .doctor_back[type="primary"]
 {
     font-weight:600;
-    width:80%;
-    background-color:#fff;
-    border:1px solid #50BE8A;
-    color:#50BE8A;
+    width:28%;
+    background-color:#77d2fd;
     margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
 }
 .weui-cell p{
     width:100%;
     display:inline-block;
+    color:#414b50;
+}
+.weui-cell p:first-child{   
+    font-size:15px;
+    color:#919191;
+}
+.weui-cell p:last-child{
+    color:#919191;
+    position:relative;
+    margin-top:-8px;
+    display:block;
+
+}
+.weui-cell p:first-child span{
+    border-left:3px solid #00a9ff;
+    padding-left:10px;
+}
+.weui-cell p:last-child span{
+    margin-left:22px;
+}
+.weui-cell p:last-child span:last-child{
+    margin-left:42px;
 }
 .weui-cell p.ellipsis{
     overflow: hidden;
@@ -66,4 +92,13 @@ page{
 }
 .next_a:before{
     border-color:#00acff;
+}
+.load_more{
+    font-size:16px;
+    text-align:center;
+    display:block;
+}
+
+.page.has_bottom{
+    padding-bottom:100px;
 }

@@ -1,6 +1,8 @@
 {
   "pages":[
    "pages/index/index",
+    "pages/edit/createT", 
+  "pages/edit/createA",
       "pages/my/base",
    "pages/my/adept",
    "pages/edit/createP", 
@@ -33,7 +35,6 @@
   "pages/my/education",
    "pages/create/hospital", 
    "pages/edit/createE",
-   "pages/edit/createT", 
    "pages/edit/createA",
    "pages/edit/createW", 
    "pages/my/title",

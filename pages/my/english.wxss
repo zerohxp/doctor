@@ -1,0 +1,25 @@
+@import '../common/css/common.wxss';
+.page__hd .weui-cell{
+    color:#414b50;
+    font-size:15px;
+    font-weight:600;
+    background-color:#fff;
+
+}
+.page__bd .weui-cells__title{
+    border-bottom:1px solid #e1e1e1;
+    margin-top:0;
+    margin-bottom:0;
+    padding:10px 15px;
+    color:#00acff;
+    font-size:15px;
+
+}
+.page__bd .weui-cell{
+    font-size:15px;
+    color:#919191;
+    border-bottom:1px dashed #e1e1e1;
+    background-color:#fafafa;
+    padding:5px 15px;
+
+}

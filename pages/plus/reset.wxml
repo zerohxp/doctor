@@ -1,0 +1,29 @@
+
+<view class="page js_show has_bottom">
+<!--页头-->
+<view class="page__hd">
+    <image src="../common/img/doctor-img.png"></image>
+</view>
+<!--主体-->
+<view class="page__bd">
+    <p class="doctor_p">请选择最符合自己的描述......<span>{{type[currentSelect]}}</span></p> 
+    <view class="weui-cell weui-cell_p" >
+            <p><i class="wrong"></i> 将展示在简历和主页上</p>
+    </view>
+   <div class="doctor_choose_block weui-cell {{currentSelect == 0 ? 'active':''}}"  bindtap="selectBlock" data-select="0">
+        我是业务型：<b  bindtap="selectBlock" data-select="0">门诊、手术量多质高</b>
+    </div>
+     <div class="doctor_choose_block weui-cell {{currentSelect == 1 ? 'active':''}}"  bindtap="selectBlock" data-select="1">
+        我是科研型：<b bindtap="selectBlock" data-select="1">写论文、做项目，手到擒来</b>
+    </div>
+     <div class="doctor_choose_block weui-cell {{currentSelect == 2 ? 'active':''}}"  bindtap="selectBlock" data-select="2">
+        我是管理型：<b bindtap="selectBlock" data-select="2">带团队我经验丰富</b>
+    </div>
+
+    
+</view>
+ <view class="page__footer">
+       <button type="primary" class="doctor_button" bindtap="create" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
+    </view>
+</view>

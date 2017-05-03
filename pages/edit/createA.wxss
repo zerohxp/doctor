@@ -1,46 +1,80 @@
 @import '../common/css/common.wxss';
-@import '../create/create.wxss';
-.weui-cell__bd{
-    text-align:right;
+button[type="primary"].doctor_button{
+    width:60%;
+    display:inline-block;
+    float:right;
+    right:5%;
 }
 .doctor_back[type="primary"]
 {
     font-weight:600;
-    width:80%;
-    background-color:#fff;
-    border:1px solid #50BE8A;
-    color:#50BE8A;
+    width:28%;
+    background-color:#77d2fd;
     margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
+}
+.weui-cell{
+    background-color:#fff;
+    border-bottom:1px solid #e1e1e1;
+    margin-top:0px;
+    font-size:16px;
+    color:#414b50;
 }
 .weui-cells__title{
-    padding:10px 15px 0px;
+    background-color:#fff;
+    margin-bottom:0;
+    margin-top:5px;
+    border-top:1px solid #e1e1e1;
+     font-size:16px;
+    color:#414b50;
+    font-weight:600;
+    padding-top:10px;
+
+}
+.weui-cells__title span{
+     color:#fd8925;
+    margin-left:5px;
+}
+.weui-label{
+    font-weight:600;
 }
 .weui-cell_input{
-    padding-top:0px;
-   
+    padding:0px 0px 5px 0px;
 }
-.weui-cell_input .weui-input{
-     width:100%;
-     background-color:#F2F2F2;
-    border-radius:5px;
-    padding-left:5px;
-
-}
-.weui-cell_image .default{
-    width:80px;
-    height:80px;
-    border:1px solid #D7D7D7;
-    border-radius:5px;
-
-}
-.weui-cell_image{
-    border:0;
-}
-.weui-cell_image .upload{
+.weui-cell_input input{
     width:100%;
-    height:200px;
+   padding:0px 15px;
+    background-color:#fafafa;
+}
+.weui-cell_upload{
+    margin-top:0;
+    border-top:0;
 
 }
-.doctor_button{
-    margin-bottom:15px;
+.weui-uploader__files{
+    float:left;
+}
+.weui-uploader__file{
+    position:relative;
+}
+.weui-uploader__file .delete{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IArs4c6QAAAD9QTFRFAAAADg4OAAAAe3t7AAAAwcHBVVVVAAAAz8/PxcXFtLS0AAAAaGholJSUHBwcGhoaPDw8v7+/AAAAQEBAo6OjELPsWgAAABV0Uk5TZmo+kVm7gADHv7Eih5xsbHa5Aningu5UmAAAAHhJREFUKM/NkMkWwBAMRRFDTEen///WVrGgyb4WXrwbkRDix8ucIypmAgVtCyRu8xXp06vefqrtULdEvBOyCEB2cGGmW8sYSB+CgJ3wUzWTl+Osu1rfBEs3VJMNe+o5Jo99irKWPjTzfS5ywCkOMOQBLmoGuCOqld2QDgLHuq9Z0AAAAABJRU5ErkJggg==);
+    width:20px;
+    height:20px;
+    background-size:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:999;
+}
+.weui-select_in-select-after{
+    text-align:right;
+    padding-right:15px;
+    font-size:15px;
+
+}
+.weui-input{
+    width:100%;
 }

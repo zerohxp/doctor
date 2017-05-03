@@ -313,3 +313,12 @@ button[disabled][type="primary"].doctor_button {
     display:inline-block;
 
 }
+.weui-select_in-select-after {
+    color:#414b50;
+
+}
+@media only screen and (min-width:320px) and (max-width:350px){
+    .doctor_back[type="primary"] span{
+        font-size:12px!important;
+    }
+}

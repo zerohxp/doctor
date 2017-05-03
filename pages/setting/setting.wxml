@@ -1,7 +1,7 @@
 
 <view class="page js_show">
   <view class="page__hd">
-      <navigator  url="../plus/capacity"  class="weui-cell weui-cell_access"  >
+      <navigator  url="../plus/reset"  class="weui-cell weui-cell_access"  >
                 <view class="weui-cell__hd">
                     重置能力类型<b>（业务型、科研型、管理型）</b>
                 </view>

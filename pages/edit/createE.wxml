@@ -1,5 +1,5 @@
 
-<view class="page js_show">
+<view class="page js_show has_bottom">
 
 <!--主体-->
 <view class="page__bd">
@@ -8,7 +8,7 @@
                     <view class="weui-label">学校名称<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入学校名称"/>
+                    <input class="weui-input" placeholder="请输入学校名称" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -17,7 +17,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindEducationChange" value="{{educationIndex}}" range="{{educations}}">
-                        <view class="weui-select weui-select_in-select-after">{{educations[educationIndex]}}</view>
+                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{educations[educationIndex]}}</view>
                     </picker>
                 </view>
         </view>
@@ -26,7 +26,7 @@
                     <view class="weui-label">专业<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入专业名称"/>
+                    <input class="weui-input" placeholder="请输入专业名称" placeholder-class="weui-input-placeholder"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -35,7 +35,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker mode="date" value="{{entrance}}" fields="month" bindchange="bindEntranceChange">
-                        <view class="weui-select weui-select_in-select-after">{{entrance}}<span wx:if="{{!entrance}}">请选择入学时间</span></view>
+                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{entrance}}<span wx:if="{{!entrance}}">请选择入学时间</span></view>
                     </picker>
                 </view>
         </view>
@@ -43,9 +43,10 @@
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
                     <view class="weui-label">毕业时间</view>
                 </view>
-                <view class="weui-cell__bd">
+                <view class="weui-cell__bd weui-cell__date">
+                    <span class="tit">不选择则默认为至今</span>
                     <picker mode="date" value="{{graduation}}" fields="month" bindchange="bindGraduationChange">
-                        <view class="weui-select weui-select_in-select-after">{{graduation}}</view>
+                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{graduation}}</view>
                     </picker>
                 </view>
         </view>
@@ -56,18 +57,19 @@
                 <view class="weui-cell__bd">
                    <radio-group class="radio-group" bindchange="radioChange">
                         <label class="radio">
-                            <radio value="0" checked="{{radio == 0}}"/>是
+                            <radio value="0" checked="{{radio == 0}}"  color="#00acff"/>是
                         </label>
                         <label class="radio">
-                            <radio value="1" checked="{{radio == 1}}"/>否
+                            <radio value="1" checked="{{radio == 1}}"  color="#00acff"/>否
                         </label>
                     </radio-group>
                 </view>
         </view>
+        
+</view>
+    <view class="page__footer">
          <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
         disabled="{{disabled}}"> 保存 </button>
          <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
-
-         
-</view>
+    </view>
 </view>

@@ -3,15 +3,48 @@
 .weui-cell__bd{
     text-align:right;
 }
+button[type="primary"].doctor_button{
+    width:60%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
 .doctor_back[type="primary"]
 {
     font-weight:600;
-    width:80%;
-    background-color:#fff;
-    border:1px solid #50BE8A;
-    color:#50BE8A;
+    width:28%;
+    background-color:#77d2fd;
     margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
 }
 .doctor_button{
     margin-bottom:15px;
+}
+.weui-cell__date span.tit{
+    margin-top:8px;
+    display:inline-block;
+    float:left;
+    color:#d0d0d0;
+
+}
+.weui-cell__date picker{
+    width:38%;
+    float:right;
+
+}
+@media only screen and (min-width:320px) and (max-width:350px){
+    .weui-cell__date wx-span.tit{
+        font-size:13px;
+        margin-top:12px;
+        margin-left:-18px;
+
+    }
+    .weui-cell__hd_in-select-after{
+        padding-left:0px;
+    }
+    .weui-cell__date picker{
+        width:46%;
+    }
 }

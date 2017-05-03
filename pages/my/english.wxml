@@ -1,0 +1,31 @@
+
+<view class="page js_show has_bottom">
+<!--页头-->
+<view class="page__hd">
+    <view  class="weui-cell">
+         <p>请勾选英文水平（多选）</p>
+     </view>
+</view>
+<!--主体-->
+<view class="page__bd">
+      <checkbox-group bindchange="checkboxChange">
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>能够阅读英文文献</p> 
+            </view>
+           <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>能够用英文写作</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>能够翻译英文文献</p> 
+            </view>
+            <view  class="weui-cell">
+                 <checkbox color="#00acff"/><p>能够使用英文与患者交流</p> 
+            </view>
+           
+     </checkbox-group>
+</view>
+ <view class="page__footer">
+       <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
+        disabled="{{disabled}}"> 保存 </button>
+    </view>
+</view>

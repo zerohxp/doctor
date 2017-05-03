@@ -1,2 +1,2 @@
 @import '../common/css/common.wxss';
-@import '../my/education.wxss';
+@import '../my/paper.wxss';

@@ -1,7 +1,7 @@
 
 <view class="page js_show has_bottom">
 
-<view class="page__bd">
+<view class="page__bd"> 
              <navigator class="weui-cell" url="../edit/createPa?id=1">
                 <view class="weui-cell__bd">
                     <p class="ellipsis">一种以虾原肌球蛋白为致敏原的Th2 反应小</p>

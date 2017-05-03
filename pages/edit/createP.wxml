@@ -1,7 +1,7 @@
 
 <view class="page js_show has_bottom">
 
-<!--主体-->
+<!--主体--> 
 <view class="page__bd">
         <view class="weui-cell" >
                  <view class="weui-cell__hd">
