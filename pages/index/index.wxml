@@ -121,6 +121,10 @@
          <view class="weui-cell__bd">导出PDF简历</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
    </navigator>
+   <navigator url="../export/resume" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">预览简历</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
    <navigator url="../export/preference" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">职位偏好</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>

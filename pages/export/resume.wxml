@@ -1,25 +1,126 @@
-<view class="page js_show export_resume">
-    <div class="resume_head">
-        <div  class="resume_head_block resume_head_left">
-            <text class="block_line">王倩文</text>
-            <text class="block_line"><text>三甲医院</text><text class="ml5">脑外科</text><text class="ml5">主治医生</text></text>
-            <text class="block_line"><text>女</text><text class="ml5">1998</text><text class="ml5">现居上海</text><text class="ml5">党员</text></text>
-        </div>
-        <div  class="resume_head_block resume_head_image">
-             <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
-        </div>
-        <div  class="resume_head_block resume_head_right">
-            <text class="block_line"></text>
-             <text class="block_line">电话号码：139</text>
-            <text class="block_line">邮箱：XXXXX</text>
-        </div>
-    </div>
-    <div class="resume_content">
+<view class="page js_show has_bottom" >
+    <view class="page__hd">
 
-    </div>
-     <div class="resume_footer">
-         <button type="primary" class="doctor_button" bindtap="dowbload" loading="{{loading}}"
-        disabled="{{disabled}}"> 下载本地 </button>
-         <button type="primary" class="doctor_button" bindtap="send" > 发送邮箱 </button>
-    </div>
+        <view  class="weui-cell">
+            <image src="{{userInfo.avatarUrl}}" alt="" class="user_image"></image>
+        </view>
+        <view  class="weui-cell base_info">
+            <view class="weui-cell__hd">
+                 <p class="name"><i></i><span class="head">张三</span><span>现居上海</span></p>   
+                 <p class="six"><span>男</span><span>1971年7月出生</span></p>   
+                 <p class="dec"><i></i><span class="head">科研型人才</span><span class="block">管理经验</span><span class="block">海外经历</span><span class="block">精通英文</span></p>
+            </view>
+            <view class="weui-cell__bd">
+                <p class="tit"><i></i><span>副主任医师</span><span>副教授</span></p>
+                <p class="email"><i></i><span>zhangsan1971@163.com</span></p>
+                <p class="phone"><i></i><span>18800000000</span></p>
+            </view>
+        </view>
+         
+    </view>
+    
+    <view class="page__bd">
+        <view  class="weui-cell weui-cell_access  base_title first">
+            <view class="weui-cell__hd">
+                 <p class="tit1"><i></i><span class="head">社会头衔</span></p>
+            </view>
+             <view class="weui-cell__bd">
+                 <p><span>中华生物医学协会</span><span>副会长</span></p>
+                 <p><span>中华生物医学协会</span><span>副会长</span></p>
+             </view>           
+         </view>
+          <view  class="weui-cell weui-cell_access base_title">
+            <view class="weui-cell__hd">
+                 <p class="tit2"><i></i><span class="head">社会活动</span></p>
+            </view>
+             <view class="weui-cell__bd">
+                 <p><span>XXXXXXXXXXX论坛</span><span>主讲人</span></p>
+             </view>           
+         </view>
+         <view  class="weui-cell weui-cell_access base_title">
+            <view class="weui-cell__hd">
+                 <p class="tit3"><i></i><span class="head">社会网络</span></p>
+            </view>
+             <view class="weui-cell__bd">
+                 <p><span class="sj-icon-1 icon">用户名</span>
+                 <span class="sj-icon-2 icon">用户名</span>
+                 <span class="sj-icon-3 icon">用户名</span>
+                 <span class="sj-icon-4 icon">用户名</span>
+                 <span class="sj-icon-5 icon">用户名</span></p>
+             </view>           
+         </view>
+         <view  class="weui-cell base-block">
+            <p class="tit1"><i></i><span class="head">自我评价</span></p>
+            <view class="weui-cell__bd">
+                <p>工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故。
+                工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故。</p>
+            </view>
+         </view>
+          <view  class="weui-cell base-block">
+            <p class="tit2"><i></i><span class="head">教育经历</span></p>
+            <view class="weui-cell__bd">
+                <p><span class="dian"></span> <span>1995.9~2000.6</span><span>上海第二军医大学</span><span>本科</span><span>临床医学</span></p>
+                <p><span class="dian"></span> <span>1995.9~2000.6</span><span>上海第二军医大学</span><span>本科</span><span>临床医学</span></p>
+            </view>
+         </view>
+          <view  class="weui-cell base-block">
+            <p class="tit3"><i></i><span class="head">工作经历</span></p>
+            <view class="weui-cell__bd">
+                <p class="long"><span class="dian"></span> <span>1995.9~2000.6</span><span>上海第二军医大学附属长征医院</span><span> 消化内科 </span><span>主治医生</span></p>
+                <p class="content">工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工</p>
+                <p class="long"><span class="dian"></span> <span>1995.9~2000.6</span><span>上海第二军医大学附属长征医院</span><span> 消化内科 </span><span>科室副主任</span><span>管理岗位</span></p>
+              <p class="content">工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工作内容工</p>
+            </view>
+         </view>
+          <view  class="weui-cell base-block">
+            <p class="tit4"><i></i><span class="head">业务能力</span></p>
+            <view class="weui-cell__bd">
+                <p><span class="dian"></span> <span>业务量（月均）</span></p>
+                <p><span>普通门诊量:0~2000次</span><span>专家门诊量: 0~1000次</span><span>特需门诊量:0~1000次</span></p>
+                <p><span>手术量: 0~2000次</span><span>检查/检验量: 0~1000次</span><span>读片量: 0~1000次</span><span>管床数量：1000次</span></p>
+                <p><span class="dian"></span> <span>擅长</span></p>
+                <p><span>经皮间隔心肌消蚀术 </span><span>经皮冠状动脉介入治疗</span><span>球囊扩张术</span><span>支架植入术</span></p>
+                <p><span>经皮间隔心肌消蚀术 </span><span>经皮冠状动脉介入治疗</span><span>球囊扩张术</span><span>支架植入术</span></p>
+                <p><span class="dian"></span> <span>案例</span></p>
+                <p><span>2016.09.09</span><span>案例名称案例名称</span></p>
+                <p><span>2016.09.09</span><span>案例名称案例名称</span></p>
+                
+            </view>
+         </view>
+         <view  class="weui-cell base-block">
+            <p class="tit5"><i></i><span class="head">科研能力</span></p>
+            <view class="weui-cell__bd">
+                <p><span class="dian"></span> <span>发表论文</span></p>
+                <p class="title">论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题</p>
+                <p class="content"><span>发表于XXXXXXXXXXXXXXXXXX期刊</span><span>影响因子:1.06</span></p>
+                 <p class="title">论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题目论文题</p>
+                <p class="content"><span>发表于XXXXXXXXXXXXXXXXXX期刊</span><span>影响因子:1.06</span></p>
+                <p class="mt5"><span class="dian"></span> <span>科研项目</span></p>
+                <p class="title">项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项</p>
+                <p class="content">项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项</p>
+                <p class="title">项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项</p>
+                <p class="content">项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项目内容项</p>
+                <p class="mt5"><span class="dian"></span> <span>科研基金</span></p>
+                <p><span>国家自然基金 </span><span>100万</span></p>
+                <p><span>卫生部科研基金</span><span>80万</span></p>
+            </view>
+         </view>
+         <view  class="weui-cell base-block">
+            <p class="tit6"><i></i><span class="head">沟通能力</span></p>
+             <view class="weui-cell__bd">
+                <p><span class="dian"></span> <span>沟通技巧</span><span>良好</span>
+                <span class="dian ml20"></span><span>英文水平</span><span>良好</span></p>
+
+              </view>   
+         </view>  
+         <p class="bottom_icon"><i></i><span>医患无忧</span></p> 
+    </view>
+
+    <view class="page__footer">
+      <button type="primary" class="doctor_button" bindtap="send" loading="{{loading2}}"
+        disabled="{{disabled2}}" > 发送到邮箱 </button>
+       <button type="primary" class="doctor_button" bindtap="dowbload" loading="{{loading}}"
+        disabled="{{disabled}}"> 下载到本地 </button>
+        
+    </view>
 </view>
