@@ -8,8 +8,16 @@ Page({
     loading:false
   },
   //事件处理函数
-  uploadImg:function(){
+  chooseImage:function(){
       var that = this;
+      if(that.data.tempFilePaths.length > 2){
+           wx.showToast({
+                title: '图片不能超过3张',
+                image:'../common/img/error.png',
+                duration: 2000
+           })
+          return;
+      }
       wx.chooseImage({
         count: 1, // 默认9
         sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -23,7 +31,20 @@ Page({
         }
       })
   },
-   save:function(){
+  delImg:function(e){
+      var that = this;
+      var dataset = e.target.dataset;
+        var item = 0;
+        if(dataset){
+            item = dataset.item;
+            var  tempFilePaths = that.data.tempFilePaths;
+            tempFilePaths.splice(item,1);
+             that.setData({
+                tempFilePaths:tempFilePaths
+            })
+        }
+  },
+  save:function(){
          that.setData({
            disabled:true,
            loading:true
