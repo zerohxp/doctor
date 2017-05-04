@@ -1,6 +1,8 @@
 //create.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+
+
 Page({
   data: {
     userImg:'',
@@ -8,13 +10,14 @@ Page({
     sixIndex:0,
     birthday:'1970-07-01',
     selectArea:false,
-    place:[1,1,1],
-    provinces:[1,2,3],
-    province:'1',
-    citys:[4,5],
-    city:'4',
-    areas:[6,7],
-    area:'6'
+    place:[0,0,0],
+    provinces:[],
+    province:'上海',
+    citys:[],
+    city:'上海市',
+    areas:[],
+    area:'闵行区',
+    placeholder:true
   },
   //事件处理函数
   bindSixChange:function(e){
@@ -29,8 +32,20 @@ Page({
   },
   chooseArea:function(){
      var that = this;
+     var province = that.data.province;
+     var city = that.data.city;
+     var area = that.data.area;
+     var provinces = app.getProvinces();
+     var citys = app.getCitys(province);
+     var areas = app.getAreas(city);
+     var province_index = provinces.indexOf(province);
+     var city_index = citys.indexOf(city);
+     var areae_index = areas.indexOf(area);
       that.setData({
-             selectArea:true
+            citys:citys,
+            areas:areas,
+            place:[province_index,city_index,areae_index],
+            selectArea:true
       })
   },
   colseArea:function(){
@@ -42,17 +57,29 @@ Page({
      var that = this;
     var value = e.detail.value;
     var array = that.data.place;
+     var provinces = that.data.provinces;
     if(value[0] != array[0]){
+       var province = provinces[value[0]];
+       var citys = app.getCitys(province);
+       var city = citys[0];
+       var areas =app.getAreas(city);
        that.setData({
+            citys:citys,
+            areas:areas,
             place:[value[0],0,0]
       })
     }else if(value[1] != array[1]){
+       var citys = that.data.citys;
+        var city = citys[value[1]];
+      var areas = app.getAreas(city);
        that.setData({
+             areas:areas,
             place:[value[0],value[1],0]
       })
     }else{
+      
        that.setData({
-            place:value
+         place:value
       })
     }
     
@@ -76,10 +103,10 @@ Page({
   chooseImg:function(){
       wx.chooseImage({
         count: 1, // 默认9
-        sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
-        sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+        sizeType: ['compressed'], // 可以指定是原图还是压缩图,默认二者都有
+        sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机,默认二者都有
         success: function (res) {
-          // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+          // 返回选定照片的本地文件路径列表,tempFilePath可以作为img标签的src属性显示图片
           var tempFilePaths = res.tempFilePaths
         }
       })
@@ -108,7 +135,28 @@ Page({
               userImg:userinfo.avatarUrl
             })
         }
+        
     })
-   
+    that.setData({
+            provinces:app.getProvinces()
+       })
+   //调用数据时,判断下自我评价的字段是否有值,如果有值的话,请将placeholder设置成false
+  },
+  isPlaceholder:function(e){
+    var value = e.detail.value;
+    if(!value){
+      this.setData({
+            placeholder:true
+      })
+    }else{
+      this.setData({
+              placeholder:false
+      })
+    } 
+  },
+  disPlaceholder:function(e){
+    this.setData({
+              placeholder:false
+    })
   }
 })

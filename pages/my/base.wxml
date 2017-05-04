@@ -27,7 +27,7 @@
                     <view class="weui-label">性别</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindSixChange" value="{{sixIndex}}" range="{{sixs}}">
+                    <picker bindchange="bindSixChange" value="{{sixIndex}}" range="{{sixs}}"  color="#00acff">
                         <view class="weui-select weui-select_in-select-after weui-select-down">{{sixs[sixIndex]}}</view>
                     </picker>
                 </view>
@@ -67,9 +67,10 @@
                 </view>
         </view>
         <view class="weui-cells__title">自我评价（200字内）</view>
-        <view class="weui-cell weui-cell_textarea">
+        <view class="weui-cell weui-cell_textarea weui-cell_do">
                 <view class="weui-cell__bd">
-                    <textarea  placeholder="请简单介绍自己，如工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故..." placeholder-class="weui-input-placeholder"></textarea>
+                    <textarea bindblur="isPlaceholder" bindfocus="disPlaceholder"></textarea>
+                    <span wx:if="{{placeholder}}">请简单介绍自己，如工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故...</span>
                 </view>
         </view>
         

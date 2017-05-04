@@ -80,32 +80,7 @@ margin-bottom:5px;
     padding-bottom:8px;
 
 }
-.select_area{
-    position:absolute;
-    bottom:0;
-    left:0;
-    height:246px;
-    width:100%;
-    z-index:9999;
-    background-color:#FFFFFF;
-}
-picker-view-column{
-    text-align:center;
-}
-.select_area .area_button{
-    font-size:14px;
-    color:#586C94;
-    margin-top:6px;
-    position:relative;
-    padding:10px;
-    display:inline-block;
-    width:100%;
-    font-weight:600;
-}
-.select_area .area_button span:last-child{
-    float:right;
-    margin-right:20px;
-}
+
 .weui-cells__title{
     background-color:#FFFFFF;
     margin-top:0;
