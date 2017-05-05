@@ -56,7 +56,7 @@
                 </view>
             </view>
             <view  class="weui-cell weui-cell_access"  >
-                <view class="weui-cell__bd">导出附录</view>
+                <view class="weui-cell__bd">导出附录<span>（包含案例详情、社会头衔和活动图片）</span></view>
                <view class="weui-cell__ft">
                     <switch checked="{{switch5}}" bindchange="switchChange5"/>
                 </view>
@@ -73,17 +73,18 @@
     <div class="doctor_modal_head">
         <span>选择发表论文</span>
     </div>
-    <div class="doctor_modal_content" >
+    <scroll-view class="doctor_modal_content" scroll-y="true">
         <checkbox-group bindchange="checkboxChange">
-            <label class="checkbox" color="#00acff">
-               <checkbox checked="{{checkbox1}}"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
+            <label class="checkbox">
+               <checkbox checked="{{checkbox1}}"  color="#00acff"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
              <label class="checkbox">
                  <checkbox  checked="{{checkbox2}}" color="#00acff"/> <p>中华医学生物免疫学会委员</p> <span>20W</span>
             </label>
+            
         </checkbox-group>
         
-    </div>
+    </scroll-view>
     <div class="doctor_modal_footer">
         <checkbox-group bindchange="checkAll"><checkbox value="1" color="#00acff"/></checkbox-group>
          <span>全选</span><a bindtap="sure1">确定</a>

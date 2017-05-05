@@ -70,3 +70,7 @@ color:#414b50;
 .weui-cell_select .weui-select:before{
     right:12px;
 }
+.block{
+    font-size:16px;
+    opacity:.9;
+}

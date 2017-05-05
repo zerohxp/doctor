@@ -32,6 +32,7 @@
 .page__bd .weui-cell__bd span{
     color:#919191;
     font-size:14px;
+     font-weight:normal;
 }
 .weui-cell-block{
     margin:0 15px;

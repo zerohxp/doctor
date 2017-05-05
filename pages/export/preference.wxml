@@ -19,7 +19,7 @@
                             
             </view>  
         </view>  
-        <view wx:if="{{check1}}">
+        <view wx:if="{{check1}}" class="block">
             <view class="weui-cell weui-cell_select">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
                     <view class="weui-label">地区</view>
@@ -48,7 +48,7 @@
                             
             </view>  
         </view> 
-        <view wx:if="{{check2}}">
+        <view wx:if="{{check2}}" class="block">
             <view class="weui-cell weui-cell_select">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
                     <view class="weui-label">地区</view>

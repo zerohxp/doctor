@@ -243,10 +243,10 @@ button[disabled][type="primary"].doctor_button {
 }
 .doctor_modal{
     width:80%;
-    position:absolute;
+    position:fixed;
     background-color:#fff;
     z-index:99999;
-    top:40%;
+    top:30%;
     left:10%;
     border-radius:5px;
     padding-bottom:10px;
@@ -260,6 +260,9 @@ button[disabled][type="primary"].doctor_button {
     text-align:center;
     color:#fff;
     font-size:16px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+
 }
 .doctor_modal .doctor_modal_content{
     border-bottom:1px solid #e1e1e1;
@@ -270,6 +273,7 @@ button[disabled][type="primary"].doctor_button {
     padding-bottom:5px;
     font-size:14px;
     color:#414b50;
+    max-height:120px;
 }
 .doctor_modal .doctor_modal_content .checkbox{
     display:inline-block;
