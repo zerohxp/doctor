@@ -78,10 +78,10 @@
                     </picker>
                 </view>
         </view>
-        <view class="weui-cells__title">工作内容</view>
+        <view class="weui-cells__title">工作内容（300字内）</view>
         <view class="weui-cell weui-cell_input weui-cell_textarea">
                 <view class="weui-cell__bd">
-                    <textarea  ></textarea>
+                    <textarea  maxlength="300"></textarea>
                 </view>
         </view>
         

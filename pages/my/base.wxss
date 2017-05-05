@@ -54,7 +54,7 @@
 }
 .weui-cell_do span{
     position:absolute;
-    margin-top:-92px;
+    margin-top:-88px;
     width:90%;
     padding-left:15px;
     color:#bfbfbf;

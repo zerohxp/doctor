@@ -45,6 +45,7 @@
     padding:5px 0px;
     border-bottom:1px solid #e1e1e1;
     color:#414b50;
+    background-color:#fafafa;
 }
 .weui-cell-block  .weui-cell_select{
     padding:0px;

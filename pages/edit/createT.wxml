@@ -13,7 +13,7 @@
                  <input class="weui-input" placeholder="如，副会长" 
                  placeholder-class="weui-input-placeholder" bindinput="dutyValue"/>
         </view>
-        <view class="weui-cells__title">(选填)可上传能够证实身份的照片</view>
+        <view class="weui-cells__title no_weight">(选填)可上传能够证实身份的照片</view>
         <view class="weui-cell weui-cell_upload">
             <view class="weui-uploader">
                 <view class="weui-uploader__bd">

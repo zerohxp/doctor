@@ -29,11 +29,16 @@ button[type="primary"].doctor_button{
     padding-right:0;
 
 }
+.weui-cell_textarea  .weui-cell__bd{
+     background-color:#fafafa;
+     padding-left:15px;
+     
+}
 .weui-cell_textarea textarea{
     height:80px;
     background-color:#fafafa;
     width:100%;
-    padding-left:15px;
+    
     padding-top:5px;
     font-size:16px;
 }

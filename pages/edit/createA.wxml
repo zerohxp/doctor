@@ -5,13 +5,15 @@
 <view class="page__bd">
         <view class="weui-cells__title">活动名称<span>*</span></view>
         <view class="weui-cell weui-cell_input" >
-            <input class="weui-input" placeholder="请输入担任过重要角色的社会活动" placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
+            <input class="weui-input" placeholder="请输入担任过重要角色的社会活动" 
+            placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
        </view>
         <view class="weui-cells__title">角色<span>*</span></view>
         <view class="weui-cell weui-cell_input" >
-            <input class="weui-input" placeholder="如，主讲人" placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
+            <input class="weui-input" placeholder="如，主讲人" 
+            placeholder-class="weui-input-placeholder" bindinput="peopleValue"/>
        </view>
-        <view class="weui-cells__title">(选填)可上传参加活动的照片</view>
+        <view class="weui-cells__title .no_weight">(选填)可上传参加活动的照片</view>
        <view class="weui-cell weui-cell_upload">
             <view class="weui-uploader">
                 <view class="weui-uploader__bd">

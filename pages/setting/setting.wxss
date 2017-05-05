@@ -5,8 +5,8 @@
 }
 .page__hd{
     margin-top:5px;
-    border-top:1px solid #e1e1e1;
-    border-bottom:1px solid #e1e1e1;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
 }
 .weui-cell .weui-cell__hd{
     width:100%;
@@ -23,7 +23,7 @@
 }
 .weui-cells__title{
     color:#919191;
-    border-bottom:1px solid #e1e1e1;
+    border-bottom:1px solid #F2F2F2;
     margin-bottom:0px;
     margin-top:0px;
     padding:5px 15px;
@@ -31,7 +31,7 @@
 
 }
 .page__bd{
-     border-bottom:1px solid #e1e1e1;
+     border-bottom:1px solid #F2F2F2;
      background-color:#fff;
 }
 .page__bd .weui-cell__hd{
@@ -48,7 +48,7 @@
 
 }
 .page__bd .weui-cell{
-     border-bottom:1px solid #e1e1e1;
+     border-bottom:1px solid #F2F2F2;
      margin-left:15px;
      padding:10px 0px;
      min-height:26px;

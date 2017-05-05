@@ -14,7 +14,7 @@
       
        <view class="weui-cells__title">个人主页链接<b>（非必填）</b></view>
        <view class="weui-cell weui-cell_textarea" >
-         <textarea bindinput="descriptionValue"></textarea>       
+         <textarea bindinput="descriptionValue" maxlength="512"></textarea>       
        </view> 
        <p>如需定制微信公众号，请直接在公众号留言</p>
       

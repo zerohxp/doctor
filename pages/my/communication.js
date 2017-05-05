@@ -106,6 +106,7 @@ Page({
             title: '提示',
             content: '一项符合的都没有吗？再确认下吧~',
             confirmColor:'#00acff',
+            confirmText:'好的',
             showCancel:false,
             success: function(res) {
                 if (res.confirm) {

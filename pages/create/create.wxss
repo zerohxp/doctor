@@ -2,8 +2,8 @@
 
 .page__bd{
     background-color:#fff;
-    border-top:1px solid #e1e1e1;
-    border-bottom:1px solid #e1e1e1;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
 }
 .page__bd .weui-cell{
    margin-left:15px;
@@ -11,8 +11,8 @@
 
 }
 .page__ft{
-     border-top:1px solid #e1e1e1;
-    border-bottom:1px solid #e1e1e1;
+     border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
     margin-top:5px;
 }
 .page__ft .weui-cell,.page__bd .weui-cell:last-child{
@@ -23,11 +23,11 @@
 }
 .weui-cell{
     background-color:#fff;
-    border-bottom:1px solid #e1e1e1;
+    border-bottom:1px solid #F2F2F2;
     font-size:16px;
 }
 .page__hd .weui-cell{
-    border-top:1px solid #e1e1e1;
+    border-top:1px solid #F2F2F2;
 margin-top:5px;
 margin-bottom:5px;
 
@@ -52,8 +52,8 @@ margin-bottom:5px;
     width:100%;
     position:relative;
     display:-webkit-box;
-    border-top:1px solid #e1e1e1;
-    border-bottom:1px solid #e1e1e1;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2;
     padding:10px 0px;
 
 }

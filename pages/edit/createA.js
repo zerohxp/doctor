@@ -4,10 +4,23 @@ var app = getApp()
 Page({
   data: {
     tempFilePaths:[],
+    title:'',
+    people:'',
     disabled:false,
     loading:false
   },
   //事件处理函数
+   titleValue:function(e){
+     this.setData({
+            title: e.detail.value
+      })
+  },
+  peopleValue:function(e){
+     this.setData({
+            people: e.detail.value
+      })
+  },
+  
   chooseImage:function(){
       var that = this;
       if(that.data.tempFilePaths.length > 2){
@@ -45,6 +58,39 @@ Page({
         }
   },
    save:function(){
+         var that = this;
+      if(!that.data.title){
+           wx.showToast({
+            title: '请输入活动名称',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.title.length > 50){
+           wx.showToast({
+            title: '活动名称限50个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.people){
+           wx.showToast({
+            title: '请输入角色',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.people.length > 50){
+           wx.showToast({
+            title: '角色限50个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
          that.setData({
            disabled:true,
            loading:true

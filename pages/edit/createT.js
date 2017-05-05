@@ -58,7 +58,7 @@ Page({
        }
       if(that.data.unit.length > 50){
            wx.showToast({
-            title: '限50个汉字以内',
+            title: '单位限50个汉字以内',
             image:'../common/img/error.png',
             duration: 2000
            })
@@ -74,7 +74,7 @@ Page({
        }
       if(that.data.duty.length > 50){
            wx.showToast({
-            title: '限50个汉字以内',
+            title: '职务限50个汉字以内',
             image:'../common/img/error.png',
             duration: 2000
            })

@@ -28,7 +28,8 @@
             <input class="weui-input" placeholder="请输入标题（必填）" placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
        </view>
        <view class="weui-cell weui-cell_textarea" >
-         <textarea  placeholder="请简单描述经过（必填）" placeholder-class="weui-input-placeholder" bindinput="descriptionValue"></textarea>       
+         <textarea  placeholder="请简单描述经过（必填，500字内）" 
+         placeholder-class="weui-input-placeholder" bindinput="descriptionValue" maxlength="500"></textarea>       
        </view> 
        <view class="weui-cell weui-cell_upload">
             <view class="weui-uploader">
