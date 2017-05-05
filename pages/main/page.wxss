@@ -1,0 +1,281 @@
+@import '../common/css/common.wxss';
+page{
+    background-color:#fff;
+}
+.before_login{
+    height:100%;
+}
+.before_login .before_login_p{
+    width:100%;
+    padding:0px 10px;
+    display:inline-block;
+    font-size:16px;
+    color:#414b50;
+}
+.before_login .before_login_p:first-child{
+    margin-top:20px;
+}
+.before_login  .before_login_p .point{
+    margin-right:10px;
+}
+.my_develop{
+    height:75%;
+    width:100%;
+    text-align:center;
+    display:inline-block;
+    background: -webkit-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -ms-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -moz-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    margin-top:15px;
+}
+.my_develop image{
+    width:300px;
+    height:320px;
+
+}
+.login_page{
+    height:100%;
+}
+.weui-cell_p{
+    color:#ff7a00;
+    padding-right:0px;
+    padding-top:0px;
+    font-size:15px;
+    padding-left:6px;
+}
+.weui-cell_p p{
+    position:relative;
+    padding-left:23px;
+    padding-top:0px;
+    letter-spacing:-0.5px;
+
+}
+.weui-cell_p .wrong{
+    top:3px;
+}
+
+
+
+
+.page_index .page_profession .before_login_p{
+    width:100%;
+    padding:5px 20px;
+    display:inline-block;
+
+}
+.page_index .page__hd .weui-cell{
+    border-bottom:1px solid #e1e1e1;
+}
+
+.page_index .weui-cell_image span{
+   line-height:60px;
+    float:left;
+    font-size:16px;
+    margin-left:10px;
+    color:#414b50;
+    font-weight:600;
+}
+.page_index .weui-cell_image image{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:1px solid #0cb0ff;
+   float:left;
+}
+.page_index .login_user_info p{
+    font-size:15px;
+    margin-left:10px;
+}
+.page_index .login_user_right{
+   float:right;
+    width:58px;
+    text-align:right;
+    font-size:12px;
+    color:#919191;
+    margin-right:5px;
+}
+.page_index .login_user_right span{
+    width:100%;
+    display:inline-block;
+    white-space: nowrap;
+}
+.page_index .login_user_right span:last-child{
+   color:#fd8925;
+}
+.page_index .weui-cell__ft_in-access:after{
+    border-color:#00acff;
+}
+.page_index .login_top_bottom{
+   font-size:14px;
+    padding:5px 20px;
+    display:flex;
+
+}
+ .page_index .login_center_block{
+    text-align:center;
+    width:100%;
+    display:inline-block;
+    white-space: nowrap;
+    padding:10px 0;
+    border-bottom:1px solid #e1e1e1;
+    font-size:14px;
+    color:#00acff;
+    font-weight:600;
+}
+.page_index .login_center_block span{
+    display:inline-block;
+    width:33%;
+    border-right:1px solid #919191;
+
+}
+.page_index .login_center_block span:last-child{
+    border:0;
+}
+.page_index .login_center_flag{
+    width:100%;
+    display:inline-block;
+    font-size:16px;
+    background-color:#77d2fd;
+   padding:8px 0px 8px 0px;
+    position: relative;
+
+}
+.page_index .login_center_flag i{
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAApCAYAAAGzYWJlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiM2Y2YjUxNi00ZWQzLTRmNjMtODUwNS0xZTdhODYwZjgyZTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDcyRDI3N0UyRjMwMTFFN0I4ODVGMjM0MTI1NjI3QTYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDcyRDI3N0QyRjMwMTFFN0I4ODVGMjM0MTI1NjI3QTYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNzU5NmU2MS05Y2M0LTQ0YTAtYjkzMi00ZDQzN2RkMGZmYTgiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyNzdmYzE5Ni02ODZjLTExN2EtOGM1Mi1iYjFkOGM3YThlMDYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6/dbghAAADJklEQVR42mL8//8/AxDMB2IQI4kRKgAmgICRiQEB2EASLDAZdBX/YdpgAp0wVQABxAAyFIjngWiQDb+BgiwwpTADwQxGZA4Duokg2QMAAQRzIrIzGbA5BgZioPQ1mDtAGBlYwtyFbNR/ZH8ih8JtJHYwiAAIIJhOLiCeApUAaUhA9sdXJF2L4c5FC22Yff9hXulC899/ZJ3onkcJBJAxolABMZQoQwoEEJ6OzMcWCPAowYhoKH0H2SvYvAMPBFZk42AAIIDQHXT8P26giKwWWZMjHk2w6J6ATSMu8BuI85H4wsjBgyvkkeMPa7IESV7GoukcEG9B4n/FlvD0oIIgHAYVM4aGP0ycB1eoIuMkpIDBwLC4Apl0CYi5kRIQtggG2f4SiG2wmXYWR+gW4opH9Gg5BY3bX1D+EWR1AAGEnlrnoAUYshPb0PMcriIEBhSBmA8aBihObCGQ1N6RksxAwAs5OmAauPFoqAfiz1C2D7Km00TkAjifnMQMTshueDS8AOLJaGLTCAWACS73gnAAkf4px5aUJqMpkobSu/AlIxi4AS3s1aH4P75SCxlb4ZJjxF1og02/B8TK6BJMODSshdJKQCyJq1DtB+JbBIL/JxDfA1WDyG6d8J8wMMEW5Bp4ClS8AfEfTxrEGhBBSOxEIF6EPVxRnbcciGWxxA0ombnC+AABhi9yE/6TDlbiMQ9nolCEJghSwHsgFgLibdBCOZFQcMDwMzJ85YSWC7XQzcVm0SoyLLqORe9bQpal/icPyEMre3SwFZdlamRatB2q/wShOhLZsldkWsYOxAYE1OgjW7abTItgzcmnBNR9Q7YM1ADfTIZlIL1hBNRcA+JgfJkaFM7vCRhSDFX7E4vcLCCWIibpo2NjaCJABp+hcpOgfFDZHUnILGIsQ8eg8j0UypYhRS85loHwZaiPjGhpGQ+0okEGNcTqx1c7c0ALZFAfTwOItYG4EofaC0A8G4hvAvErIH4DxM/xFcRM0Hbcy//UBaBEJEQoGCOxBBkp9RoHOXHWS4IlvylJILJk+KqXXMuWIjWoFgKxMxY1oJKiDFoswYAANvMALGOeOxiMUokAAAAASUVORK5CYII=);
+    width:15px;
+    height:22px;
+    display:inline-block;
+    background-size:100%;
+    position:absolute;
+    left:15px;
+    background-repeat:no-repeat;
+    top:10px;
+}
+.page_index .login_center_flag .flag_tit{
+    color:#fff;
+    margin-right:5px;
+    margin-left:32px;
+}
+ .page_index .login_center_flag .flag_span{
+    font-size:12px;
+    color:#fd8925;
+    margin-left:8px;
+    background-color:#fff;
+    border-radius:15px;
+    padding:3px 5px;
+
+}
+.page_index .page_profession{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    position: relative;
+    padding-bottom:40px;
+    padding-top:20px;
+     background: -webkit-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -ms-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: -moz-linear-gradient(top, #01acff 0%, #75d1fd 100%);
+    background: linear-gradient(top, #01acff 0%, #75d1fd 100%);
+}
+.page_index .page_profession image{
+    width:320px;
+    height:280px;
+    z-index:999;
+    top:50%;
+    left:50%;
+    position:absolute;
+    margin-left:-160px;
+    margin-top:-96px;
+
+
+}
+.page_index .page_profession .score{
+    z-index:99999;
+   top:55%;
+    left:50%;
+    position:absolute;
+    font-size:30px;
+    color:#fff;
+    font-weight:600;
+    margin-left:-20px;
+    font-family:微软雅黑;
+
+}
+.page_index .profession_develop{
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+    padding:0;
+    color:#fff;
+}
+
+.page_index .profession_develop_tit{
+     text-align:center;
+    padding:0;
+    color:#fff;
+    font-size:14px;
+}
+.page_index canvas{
+    width: 320px;
+    height: 220px;
+    margin-top:35px;
+    position:relative;
+    left:50%;
+    margin-left:-160px;
+    z-index:999;
+
+}
+.page_index .page.has_bottom{
+    margin-bottom:0px;
+}
+
+.page_index button[type="primary"].doctor_button{
+    width:58%;
+    display:inline-block;
+    float:right;
+    right:5%;
+}
+.page_index .doctor_back[type="primary"]
+{
+    font-weight:600;
+    width:30%;
+    background-color:#77d2fd;
+    margin-top:10px;
+    display:inline-block;
+    left:5%;
+    height:46px;
+    padding:0px;
+}
+@media only screen and (min-width:320px) and (max-width:350px){
+     .page_index .login_center_flag .flag_span{
+          font-size:13px;
+        margin-left:5px;
+     }
+     .page_index .page_profession image{
+         margin-left:-160px;
+        margin-top:-106px;
+
+     }
+     .page_index .page_profession{
+         padding-top:0px;
+         padding-bottom:30px;
+     }
+     .page_index .page_profession image{
+         margin-top:-99px;
+     }
+}
+@media only screen and (min-width:400px) and (max-width:414px){
+    .page_index .page_profession{
+         padding-bottom:85px;
+        padding-top:40px;
+
+     }
+     .page_index .page_profession image{
+         margin-top:-103px;
+     }
+     .page_index .page_profession .score{
+         top:53%;
+     }
+}
+

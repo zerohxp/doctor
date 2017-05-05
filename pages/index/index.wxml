@@ -1,5 +1,9 @@
 <view class="page js_show">
   <view class="page__bd">
+    <navigator url="../main/page" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">合并</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
    <navigator url="../main/main" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">主页1（未创建简历）</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>

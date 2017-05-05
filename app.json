@@ -1,6 +1,7 @@
 {
   "pages":[
-   "pages/index/index",
+  "pages/index/index",
+   "pages/main/page",
     "pages/edit/createT", 
    "pages/edit/createA",
       "pages/my/base",
