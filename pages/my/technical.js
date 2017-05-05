@@ -7,6 +7,8 @@ Page({
     technicalIndex:0,
     positions:['无','助教','讲师','副教授','教授','博士生导师'],
     positionIndex:0,
+    scientifics:['无','实习研究员','助理研究员','副研究员','研究员'],
+    scientificIndex:0,
     loading: false,
     pageLoaded:false
   },

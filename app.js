@@ -489,6 +489,16 @@ App({
   },
   getAreas(city){
     return areaArray[city];
+  },
+  getToday(flag){
+     var date = new Date();
+     var year = date.getFullYear();
+     var month = date.getMonth() + 1;
+     var day = date.getDate();
+     if(flag){
+       return year+"-"+month+"-"+day;
+     }
+     return year+"-"+month;
   }
   
 })

@@ -67,7 +67,7 @@
    </navigator>
    <navigator url="../edit/createW" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">编辑工作经历</view>
-         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view> 
    </navigator>
    <navigator url="../my/business" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">业务量</view>

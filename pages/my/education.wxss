@@ -51,7 +51,7 @@ button[type="primary"].doctor_button{
 }
 .weui-cell p{
     width:100%;
-    display:inline-block;
+    display:block;
     color:#414b50;
 }
 .weui-cell p:first-child{   
@@ -61,7 +61,6 @@ button[type="primary"].doctor_button{
 .weui-cell p:last-child{
     color:#919191;
     position:relative;
-    margin-top:-8px;
     display:block;
 
 }

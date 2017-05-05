@@ -7,10 +7,23 @@
                  <view class="weui-cell__hd">
                      <view class="weui-label">所属工作经历</view>
                 </view>
-                <view class="weui-cell__bd" bindtap="chooseWork">
-                      <view class="weui-select weui-select_in-select-after">{{hospitals[work[0]]}} {{posts[work[1]]}}</view>
+                <view class="weui-cell__bd">
+                     <picker bindchange="bindHospitalChange" value="{{hospitalIndex}}" range="{{hospitals}}">
+                        <view class="weui-select weui-select_in-select-after">{{hospitals[hospitalIndex]}}</view>
+                    </picker>
+                     
                 </view>
-      </view> 
+      </view>
+      <view class="weui-cell">
+                <view class="weui-cell__hd ">
+                    <view class="weui-label">发生日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker mode="date" value="{{happen}}" bindchange="bindHappenChange">
+                        <view class="weui-select weui-select_in-select-after ">{{happenShow}}</view>
+                    </picker>
+                </view>
+        </view> 
       <view class="weui-cell weui-cell_input" >
             <input class="weui-input" placeholder="请输入标题（必填）" placeholder-class="weui-input-placeholder" bindinput="titleValue"/>
        </view>
@@ -25,7 +38,7 @@
                               <i class="delete" bindtap="delImg" data-item="{{index}}"></i>
                               <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
                          </view>
-                         <view class="weui-uploader__input-box">
+                         <view class="weui-uploader__input-box" wx:if="{{tempFilePaths.length < 9}}">
                             <view class="weui-uploader__input" bindtap="chooseImage"></view>
                      </view>
                      </view>
@@ -41,17 +54,3 @@
          <button type="primary" class="doctor_back" bindtap="delete"> 删除 </button>
     </view>
 </view>
-<block wx:if="{{selectWork}}">
-    <view class="backdrop" bindtap="colseWork"></view>
-    <view class="select_work">
-    <div class="work_button"><span bindtap="colseWork">取消</span><span bindtap="sureWork">确定</span></div>
-    <picker-view indicator-style="height: 50px;" style="width: 100%;height:230px;" value="{{work}}"  bindchange="bindChange">
-         <picker-view-column>
-                 <view wx:for="{{hospitals}}" style="line-height: 50px">{{item}}</view>
-         </picker-view-column>
-         <picker-view-column>
-                 <view wx:for="{{posts}}" style="line-height: 50px">{{item}}</view>
-         </picker-view-column>
-    </picker-view>
-    </view>
-</block>

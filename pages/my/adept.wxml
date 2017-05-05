@@ -4,7 +4,7 @@
 <view class="page__hd">
      <view class="weui-cell weui-cell_input ">
                 <view class="weui-cell__hd">
-                     <input class="weui-input" bindinput="titleValue"/>
+                     <input class="weui-input" bindinput="titleValue" value="{{title}}"/>
                 </view>
                 <view class="weui-cell__bd">
                     <button type="primary" class="doctor_button" bindtap="add"> 添加 </button>

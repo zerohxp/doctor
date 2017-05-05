@@ -8,7 +8,7 @@
                     <view class="weui-label">单位名称<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <view class="weui-select weui-select_in-select-after"><span wx:if="{{!hospital}}">请选择</span>{{hospital}}</view>
+                    <view class="weui-select weui-select_in-select-after" bindtap="chooseHospital"><span wx:if="{{!hospital}}">请选择</span>{{hospital}}</view>
                 </view>
         </view>
         <view class="weui-cell weui-cell_input">
@@ -63,7 +63,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker mode="date" value="{{in}}" fields="month" bindchange="bindInChange">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{in}}<span wx:if="{{!in}}">请选择入职时间</span></view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{inShow}}<span wx:if="{{!in}}">请选择入职时间</span></view>
                     </picker>
                 </view>
         </view>
@@ -74,7 +74,7 @@
                 <view class="weui-cell__bd weui-cell__date">
                     <span class="tit">不选择则默认为至今</span>
                     <picker mode="date" value="{{out}}" fields="month" bindchange="bindOutChange">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{out}}<span wx:if="{{!out}}">至今</span></view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{outShow}}<span wx:if="{{!out}}">至今</span></view>
                     </picker>
                 </view>
         </view>

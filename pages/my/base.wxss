@@ -9,17 +9,16 @@
     margin-left:0px;
     padding-left:0px;
     border:0;
+    padding-right:0px;
 }
 .weui-cell_textarea textarea{
     height:80px;
     background-color:#fafafa;
-    width:96%;
-    padding-left:15px;
-    padding-right:15px;
+    width:100%;
     font-size:16px;
     border:0;
     padding-bottom:0;
-
+    display:block;
 }
 .weui-cells__title{
     font-size:16px;
@@ -45,10 +44,13 @@
 }
 .weui-cell_do .weui-cell__bd{
     background-color:#fafafa;
+    padding-left:10px;
+
 }
 .weui-cell_do textarea{
     background-color:transparent;
     z-index:9;
+    
 }
 .weui-cell_do span{
     position:absolute;

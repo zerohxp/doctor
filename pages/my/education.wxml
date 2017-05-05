@@ -13,7 +13,7 @@
             </navigator>
             <navigator class="weui-cell" url="../edit/createE?id=2">
                 <view class="weui-cell__bd">
-                    <p>2010.5~至今</p>
+                    <p><span>2010.5~至今</span></p>
                     <p class="ellipsis">学校名称学校名称学校名称学校名称学校名称学校名称学</p>
                     <p>专业名称</p>
                 </view>

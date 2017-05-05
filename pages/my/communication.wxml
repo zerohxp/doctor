@@ -11,39 +11,40 @@
      <view class="weui-cells__title">在问诊时，我会：</view>
       <checkbox-group bindchange="checkboxChange">
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>说明问诊理由（了解情况/进一步诊断治疗/汇 报上级医师）</p> 
+                 <checkbox color="#00acff" value="1" checked="{{checkedArray[0]}}"/><p bindtap="select" data-check="1" data-index="0">说明问诊理由（了解情况/进一步诊断治疗/汇报上级医师）</p> 
             </view>
            <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>保护患者的隐私（如关门等）/尊重患者的选 择权/隐私权</p> 
+                 <checkbox color="#00acff"  value="2" checked="{{checkedArray[1]}}"/><p bindtap="select" data-check="2" data-index="1">保护患者的隐私（如关门等）/尊重患者的选择权/隐私权</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>引导/帮助患者完成主诉</p> 
+                 <checkbox color="#00acff" value="3" checked="{{checkedArray[2]}}"/><p bindtap="select" data-check="3" data-index="2">引导/帮助患者完成主诉</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>避免诱导性提问/命令式提问</p> 
+                 <checkbox color="#00acff" value="4" checked="{{checkedArray[3]}}"/><p bindtap="select" data-check="4" data-index="3">避免诱导性提问/命令式提问</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>给患者说话的时间和机会，并且用心倾听，不 轻易打断患者的讲话</p> 
+                 <checkbox color="#00acff" value="5" checked="{{checkedArray[4]}}"/><p bindtap="select" data-check="5" data-index="4">给患者说话的时间和机会，并且用心倾听，不轻易打断患者的讲话</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>核实所获得的信息（如复述、询问具体数量）</p> 
+                 <checkbox color="#00acff" value="6" checked="{{checkedArray[5]}}"/><p bindtap="select" data-check="6" data-index="5">核实所获得的信息（如复述、询问具体数量）</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>解释诊断性操作的理论依据（如体格检查、实 验室检查等）</p> 
+                 <checkbox color="#00acff" value="7" checked="{{checkedArray[6]}}"/><p bindtap="select" data-check="7" data-index="6">解释诊断性操作的理论依据（如体格检查、实验室检查等）</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>鼓励患者提问/核实自己的理解/安慰、鼓励患 者</p> 
+                 <checkbox color="#00acff" value="8" checked="{{checkedArray[7]}}"/><p bindtap="select" data-check="8" data-index="7">鼓励患者提问/核实自己的理解/安慰、鼓励患 者</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>根据患者的理解能力进行适当（语速、音量） 调整，避免使用专业术语</p> 
+                 <checkbox color="#00acff" value="9" checked="{{checkedArray[8]}}"/><p bindtap="select" data-check="9" data-index="8">根据患者的理解能力进行适当（语速、音量）调整，避免使用专业术语</p> 
             </view>
              <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>观察细微，能够从患者不经意的言语中发掘出 有助于诊断的信息</p> 
+                 <checkbox color="#00acff" value="10" checked="{{checkedArray[9]}}"/><p bindtap="select" data-check="10" data-index="9">观察细微，能够从患者不经意的言语中发掘出有助于诊断的信息</p> 
             </view>
              <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>结束问诊时进一步说明下一步的诊治方案，并 询问患者是否还有其他问题需要探讨</p> 
+                 <checkbox color="#00acff" value="11" checked="{{checkedArray[10]}}"/><p bindtap="select" data-check="11" data-index="10">结束问诊时进一步说明下一步的诊治方案，并询问患者是否还有其他问题需要探讨</p> 
             </view>
      </checkbox-group>
+      <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(英文水平)</a>
 </view>
  <view class="page__footer">
        <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"

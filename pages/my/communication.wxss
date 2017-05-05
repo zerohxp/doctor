@@ -4,7 +4,7 @@
     font-size:15px;
     font-weight:600;
     background-color:#fff;
-
+    
 }
 .page__bd .weui-cells__title{
     border-bottom:1px solid #e1e1e1;
@@ -21,5 +21,17 @@
     border-bottom:1px dashed #e1e1e1;
     background-color:#fafafa;
     padding:5px 15px;
-
+    min-height:40px;
+}
+.next_a{
+    font-size:15px;
+    float:right;
+    color:#00acff;
+    margin-bottom:20px;
+    padding-left:0px;
+    border:0;
+    padding-right:25px;
+}
+.next_a:before{
+    border-color:#00acff;
 }

@@ -45,7 +45,7 @@
 }
 .radio-group .weui-cell p{
     width:100%;
-    display:inline-block;
+    display:block;
     font-size:15px;
     color:#919191;
     font-weight:normal;

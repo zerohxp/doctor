@@ -36,8 +36,6 @@ button[type="primary"].doctor_button{
     left:5%;
     height:46px;
     padding:0px;
-    line-height:20px;
-    font-size:16px;
 
 }
 .doctor_back[type="primary"] span{
@@ -63,7 +61,7 @@ button[type="primary"].doctor_button{
 
 .weui-cell p{
     width:100%;
-    display:inline-block;
+    display:block;
     color:#414b50;
 }
 .weui-cell p:first-child{   

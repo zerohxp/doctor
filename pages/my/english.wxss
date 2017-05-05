@@ -4,7 +4,10 @@
     font-size:15px;
     font-weight:600;
     background-color:#fff;
-
+    
+}
+.page__hd{
+    border-bottom:1px solid #e1e1e1;
 }
 .page__bd .weui-cells__title{
     border-bottom:1px solid #e1e1e1;
@@ -21,5 +24,5 @@
     border-bottom:1px dashed #e1e1e1;
     background-color:#fafafa;
     padding:5px 15px;
-
+    min-height:40px;
 }

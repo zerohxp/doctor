@@ -8,11 +8,10 @@ Page({
     description:'',
     disabled:false,
     loading:false,
-    work_str:[0,0],
-    work:[0,0],
-    hospitals:['','长征医院'],
-    posts:['','主治医生'],
-    selectWork:false
+    happen:'',
+    happenShow:'',
+    hospitals:['','长征医院 主治医生'],
+    hospitalIndex:0
   },
   //事件处理函数
   chooseImage:function(){
@@ -77,30 +76,18 @@ Page({
         }
     })
   },
-  chooseWork:function(){
-     var that = this;
-      that.setData({
-             selectWork:true
+  bindHospitalChange:function(e){
+       this.setData({
+            hospitalIndex: e.detail.value
       })
   },
-  colseWork:function(){
-    this.setData({
-            selectWork:false
+  
+   
+  bindHappenChange:function(e){
+       this.setData({
+            happen: e.detail.value,
+            happenShow: e.detail.value
       })
-  },
-  bindChange:function(e){
-     var that = this;
-     this.setData({
-            work_str: e.detail.value
-    })
-  },
-  sureWork:function(e){
-    var that = this;
-    var work_str = that.data.work_str;
-    this.setData({
-            work: work_str,
-             selectWork:false
-    })
   },
   save:function(){
       var that = this;
@@ -143,7 +130,10 @@ Page({
         wx.navigateBack();
   },
   onLoad: function (option) {
-    var that = this
+    var that = this;
+    that.setData({
+           happen:app.getToday(true)
+      });
     //调用应用实例的方法获取全局数据
    
   }

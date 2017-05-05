@@ -28,6 +28,7 @@ Page({
        var titleArray = that.data.titleArray;
        titleArray.unshift(that.data.title);
       that.setData({
+             title:'',
             titleArray: titleArray
       })
   },
@@ -35,8 +36,9 @@ Page({
     var that = this;
     var dataset = e.target.dataset;
     var title = "";
+    var item = "";
     if(dataset){
-        var item = dataset.item;
+        item = dataset.item;
         title = that.data.titleArray[item];
     }
       wx.showModal({
@@ -46,7 +48,11 @@ Page({
         cancelColor:'#cdcdcd',
         success: function(res) {
             if (res.confirm) {
-                wx.navigateBack();
+                var array = that.data.titleArray;
+                array.splice(item,1);
+                that.setData({
+                    titleArray:array
+                })
             } else if (res.cancel) {
             
             }

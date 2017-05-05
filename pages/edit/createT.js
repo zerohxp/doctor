@@ -4,6 +4,8 @@ var app = getApp()
 Page({
   data: {
     tempFilePaths:[],
+    unit:'',
+    duty:'',
     disabled:false,
     loading:false
   },
@@ -45,6 +47,39 @@ Page({
         }
   },
   save:function(){
+      var that = this;
+      if(!that.data.unit){
+           wx.showToast({
+            title: '请输入单位',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.unit.length > 50){
+           wx.showToast({
+            title: '限50个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.duty){
+           wx.showToast({
+            title: '请输入职务',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.duty.length > 50){
+           wx.showToast({
+            title: '限50个汉字以内',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
          that.setData({
            disabled:true,
            loading:true
@@ -66,6 +101,16 @@ Page({
             }
         }
     })
+  },
+   unitValue:function(e){
+     this.setData({
+            unit: e.detail.value
+      })
+  },
+  dutyValue:function(e){
+     this.setData({
+            duty: e.detail.value
+      })
   },
   onLoad: function (option) {
     var that = this

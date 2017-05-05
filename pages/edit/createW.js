@@ -5,6 +5,8 @@ Page({
   data: {
     in:'',
     out:'',
+    inShow:'',
+    outShow:'',
     radio1:0,
     radio2:0,
     office:'',
@@ -16,12 +18,14 @@ Page({
   //事件处理函数
  bindInChange:function(e){
      this.setData({
-            in: e.detail.value
+            in: e.detail.value,
+            inShow: e.detail.value
       })
   },
   bindOutChange:function(e){
        this.setData({
-            out: e.detail.value
+            out: e.detail.value,
+            outShow: e.detail.value
       })
   },
   radioChange1:function(e){
@@ -43,6 +47,11 @@ Page({
        this.setData({
             post: e.detail.value
       })
+  },
+  chooseHospital:function(){
+       wx.navigateTo({
+             url: '../create/hospital'
+       })
   },
    save:function(){
        var that = this;
@@ -117,7 +126,11 @@ Page({
     })
   },
   onLoad: function (option) {
-    var that = this
+    var that = this;
+     that.setData({
+           in:app.getToday(),
+           out:app.getToday()
+      });
     //调用应用实例的方法获取全局数据
    
   },

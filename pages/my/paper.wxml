@@ -22,6 +22,6 @@
 </view>
     <view class="page__footer">
         <button type="primary" class="doctor_button" bindtap="add"><i class="add"></i><span>添加</span> </button>
-       <button type="primary" class="doctor_back" bindtap="back"> 返回 <span>【我的简历Plus】</span></button>
+       <button type="primary" class="doctor_back" bindtap="back"> 返回 </button>
     </view>
 </view>

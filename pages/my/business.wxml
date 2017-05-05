@@ -30,11 +30,11 @@
          <view class="weui-cell-block" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
             <view class="weui-cell weui-cell_select" >
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <view class="weui-label">普通门诊</view>
+                    <view class="weui-label opacity8">普通门诊</view>
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindOutpatientChange1" value="{{outpatientIndex1}}" range="{{outpatients1}}">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{outpatients1[outpatientIndex1]}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down opacity8">{{outpatients1[outpatientIndex1]}}</view>
                     </picker>
                 </view>
             </view>
@@ -42,11 +42,11 @@
         <view class="weui-cell-block" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
             <view class="weui-cell weui-cell_select ">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <view class="weui-label">专家门诊</view>
+                    <view class="weui-label opacity8">专家门诊</view>
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindOutpatientChange2" value="{{outpatientIndex2}}" range="{{outpatients2}}">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{outpatients2[outpatientIndex2]}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down opacity8">{{outpatients2[outpatientIndex2]}}</view>
                     </picker>
                 </view>
             </view>
@@ -54,17 +54,17 @@
        <view class="weui-cell-block weui-cell-block-last" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
             <view class="weui-cell weui-cell_select">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <view class="weui-label">特需门诊</view>
+                    <view class="weui-label opacity8">特需门诊</view>
                 </view>
                 <view class="weui-cell__bd">
                     <picker bindchange="bindOutpatientChange3" value="{{outpatientIndex3}}" range="{{outpatients3}}">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{outpatients3[outpatientIndex3]}}</view>
+                        <view class="weui-select weui-select_in-select-after weui-select-down opacity8">{{outpatients3[outpatientIndex3]}}</view>
                     </picker>
                 </view>
             </view>
         </view>
        
-        <view class="weui-cell weui-cell_select weui-cell_block" wx:if="{{officeIndex != 0 && officeIndex != 7 && officeIndex != 3}}">
+        <view class="weui-cell weui-cell_select weui-cell_block" wx:if="{{officeIndex != 0 && officeIndex != 7 && officeIndex != 3&& officeIndex != 4}}">
                 <view class="weui-cell__hd weui-cell__hd_in-select-after">
                     <view class="weui-label">手术数量（月均）</view>
                 </view>
@@ -94,7 +94,14 @@
                     </picker>
                 </view>
          </view>
-        
+         <view class="weui-cell weui-cell_input weui-cell_block" wx:if="{{officeIndex != 7}}">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">管床数量（月均）</view>
+                </view>
+                <view class="weui-cell__bd">
+                   <input class="weui-input" type="number" placeholder="请输入管床数量" placeholder-class="weui-input-placeholder" bindinput="numValue"/>
+                </view>
+         </view>
 
 </view>
 <view class="page__footer" wx:if="{{officeIndex != 0}}">

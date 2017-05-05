@@ -3,11 +3,15 @@
 var app = getApp()
 Page({
   data: {
-    educations:['大专以下','大专','本科','硕士','博士','博士后'],
+    educations:['大专以下','大专','本科','硕士','博士'],
     educationIndex:3,
-    entrance:'2017-09',
+    entrance:'',
     graduation:'',
+    entranceShow:'',
+    graduationShow:'',
     radio:0,
+    name:'',
+    specialty:'',
     disabled:false,
     loading:false
   },
@@ -20,18 +24,72 @@ Page({
   bindEntranceChange:function(e){
       console.info(e)
      this.setData({
-            entrance: e.detail.value
+            entrance: e.detail.value,
+            entranceShow: e.detail.value
       })
   },
   bindGraduationChange:function(e){
        this.setData({
-            graduation: e.detail.value
+            graduation: e.detail.value,
+            graduationShow: e.detail.value
       })
   },
   radioChange:function(e){
 
   },
+  nameValue:function(e){
+     this.setData({
+            name: e.detail.value
+      })
+  },
+  specialtyValue:function(e){
+     this.setData({
+            specialty: e.detail.value
+      })
+  },
    save:function(){
+       var that = this;
+       if(!that.data.name){
+           wx.showToast({
+            title: '请输入学校名称',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(that.data.name.length > 50){
+           wx.showToast({
+            title: '学校名称最多50个汉字',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.specialty){
+           wx.showToast({
+            title: '请输入专业名称',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+      if(that.data.specialty.length > 50){
+           wx.showToast({
+            title: '专业名称最多50个汉字',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       if(!that.data.entrance){
+           wx.showToast({
+            title: '请选择入学时间',
+            image:'../common/img/error.png',
+            duration: 2000
+           })
+           return;
+       }
+       
         that.setData({
            disabled:true,
            loading:true
@@ -55,7 +113,11 @@ Page({
     })
   },
   onLoad: function (option) {
-    var that = this
+    var that = this;
+    that.setData({
+           entrance:app.getToday(),
+           graduation:app.getToday()
+      });
     //调用应用实例的方法获取全局数据
    
   },

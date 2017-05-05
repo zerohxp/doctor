@@ -25,7 +25,10 @@
     border-bottom:1px solid #e1e1e1;
     margin-bottom:0;
 }
-.weui-select-down:before{
+.page__hd .weui-select_in-select-after{
+    color:#00acff;
+} 
+.page__hd  .weui-select-down:before{
     border-color:#00acff;
 }
 .page__bd{
@@ -103,6 +106,12 @@
 .weui-cell_p .wrong{
     left:-5px;
     top:2px;
+}
+.opacity8{
+    opacity:.8;
+}
+.weui-cell_input{
+    padding-left:0px;
 }
 @media only screen and (min-width:320px) and (max-width:350px){
     .weui-cell_p{

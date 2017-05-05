@@ -10,16 +10,16 @@
 <view class="page__bd">
       <checkbox-group bindchange="checkboxChange">
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>能够阅读英文文献</p> 
+                 <checkbox color="#00acff" value="1"  checked="{{checkedArray[0]}}"/><p bindtap="select" data-check="1" data-index="0">能够阅读英文文献</p> 
             </view>
            <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>能够用英文写作</p> 
+                 <checkbox color="#00acff" value="2" checked="{{checkedArray[1]}}"/><p bindtap="select" data-check="2" data-index="1">能够用英文写作</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>能够翻译英文文献</p> 
+                 <checkbox color="#00acff" value="3" checked="{{checkedArray[2]}}"/><p bindtap="select" data-check="3" data-index="2">能够翻译英文文献</p> 
             </view>
             <view  class="weui-cell">
-                 <checkbox color="#00acff"/><p>能够使用英文与患者交流</p> 
+                 <checkbox color="#00acff" value="4" checked="{{checkedArray[3]}}"/><p bindtap="select" data-check="4" data-index="3">能够使用英文与患者交流</p> 
             </view>
            
      </checkbox-group>

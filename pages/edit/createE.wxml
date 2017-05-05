@@ -8,7 +8,8 @@
                     <view class="weui-label">学校名称<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入学校名称" placeholder-class="weui-input-placeholder"/>
+                    <input class="weui-input" placeholder="请输入学校名称" 
+                    placeholder-class="weui-input-placeholder" bindinput="nameValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -26,7 +27,8 @@
                     <view class="weui-label">专业<span>*</span></view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" placeholder="请输入专业名称" placeholder-class="weui-input-placeholder"/>
+                    <input class="weui-input" placeholder="请输入专业名称" 
+                    placeholder-class="weui-input-placeholder" bindinput="specialtyValue"/>
                 </view>
         </view>
         <view class="weui-cell weui-cell_select">
@@ -35,7 +37,7 @@
                 </view>
                 <view class="weui-cell__bd">
                     <picker mode="date" value="{{entrance}}" fields="month" bindchange="bindEntranceChange">
-                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{entrance}}<span wx:if="{{!entrance}}">请选择入学时间</span></view>
+                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{entranceShow}}<span wx:if="{{!entrance}}">请选择入学时间</span></view>
                     </picker>
                 </view>
         </view>
@@ -46,7 +48,7 @@
                 <view class="weui-cell__bd weui-cell__date">
                     <span class="tit">不选择则默认为至今</span>
                     <picker mode="date" value="{{graduation}}" fields="month" bindchange="bindGraduationChange">
-                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{graduation}}</view>
+                        <view class="weui-select weui-select_in-select-after  weui-select-down">{{graduationShow}}</view>
                     </picker>
                 </view>
         </view>

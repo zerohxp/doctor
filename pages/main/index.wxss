@@ -39,6 +39,11 @@ page{
     color:#919191;
     margin-right:5px;
 }
+.login_user_right span{
+    width:100%;
+    display:inline-block;
+    white-space: nowrap;
+}
 .login_user_right span:last-child{
    color:#fd8925;
 }
@@ -76,7 +81,7 @@ page{
     display:inline-block;
     font-size:16px;
     background-color:#77d2fd;
-   padding:8px 0px 8px 32px;
+   padding:8px 0px 8px 0px;
     position: relative;
 
 }
@@ -94,14 +99,15 @@ page{
 .login_center_flag .flag_tit{
     color:#fff;
     margin-right:5px;
+    margin-left:32px;
 }
  .login_center_flag .flag_span{
-    font-size:13px;
+    font-size:12px;
     color:#fd8925;
     margin-left:8px;
     background-color:#fff;
     border-radius:15px;
-    padding:5px;
+    padding:3px 5px;
 
 }
 .page_profession{
@@ -129,7 +135,7 @@ padding-top:20px;
 
 }
 .page_profession .score{
-    z-index:999;
+    z-index:99999;
    top:55%;
     left:50%;
     position:absolute;
@@ -161,6 +167,7 @@ canvas{
     position:relative;
     left:50%;
     margin-left:-160px;
+    z-index:999;
 
 }
 .page.has_bottom{
@@ -202,3 +209,17 @@ button[type="primary"].doctor_button{
          margin-top:-99px;
      }
 }
+@media only screen and (min-width:400px) and (max-width:414px){
+    .page_profession{
+         padding-bottom:85px;
+        padding-top:40px;
+
+     }
+     .page_profession image{
+         margin-top:-103px;
+     }
+     .page_profession .score{
+         top:53%;
+     }
+}
+
