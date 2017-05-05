@@ -71,8 +71,8 @@
                     <view class="weui-label">技术职称</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <picker bindchange="bindSixChange" value="{{technicalIndex}}" range="{{technicals}}">
-                        <view class="weui-select weui-select_in-select-after weui-select-down">{{technicals[technicalIndex]}}</view>
+                    <picker bindchange="bindTechnicalChange" value="{{technicalIndex}}" range="{{technicals}}" range-key="dicValue">
+                        <view class="weui-select weui-select_in-select-after weui-select-down">{{technicals[technicalIndex].dicValue}}</view>
                     </picker>
                 </view>
         </view>

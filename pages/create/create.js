@@ -10,7 +10,15 @@ Page({
     sixIndex:0,
     birthday:'1970-07-01',
     hospital:'请选择',
-    technicals:['医学生','规培生','住院医师','主治医师','副主任医师','主任医师'],
+    technicals:[{
+        dicKey: "dic.doctor.1",
+        dicValue: '医学生'
+      },
+      {
+         dicKey: "dic.doctor.2",
+        dicValue: '规培生'
+      }
+    ],
     technicalIndex:0,
     selectArea:false,
     place:[0,0,0],
@@ -34,6 +42,12 @@ Page({
   bindBirthdayChange:function(e){
      this.setData({
             birthday: e.detail.value
+      })
+  },
+  bindTechnicalChange:function(e){
+
+     this.setData({
+            technicalIndex: e.detail.value
       })
   },
   chooseArea:function(){
