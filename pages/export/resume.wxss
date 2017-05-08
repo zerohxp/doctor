@@ -269,7 +269,7 @@
     margin-top:5px;
 }
 .ml20{
-    margin-left:20px;
+    margin-left:20px!important;
 }
 .bottom_icon{
     width:100%;
