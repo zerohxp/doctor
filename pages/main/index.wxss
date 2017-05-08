@@ -140,7 +140,7 @@ padding-top:20px;
     left:50%;
     position:absolute;
     font-size:30px;
-    color:#fff;
+    color:#fdbe8b;
     font-weight:600;
     margin-left:-20px;
     font-family:微软雅黑;

@@ -25,8 +25,8 @@
                  <p class="tit1"><i></i><span class="head">社会头衔</span></p>
             </view>
              <view class="weui-cell__bd">
-                 <p><span>中华生物医学协会</span><span>副会长</span></p>
-                 <p><span>中华生物医学协会</span><span>副会长</span></p>
+                 <p class="fs10"><span>中华生物医学协会</span><span>副会长</span></p>
+                 <p  class="fs10"><span>中华生物医学协会</span><span>副会长</span></p>
              </view>           
          </view>
           <view  class="weui-cell weui-cell_access base_title">
@@ -34,12 +34,12 @@
                  <p class="tit2"><i></i><span class="head">社会活动</span></p>
             </view>
              <view class="weui-cell__bd">
-                 <p><span>XXXXXXXXXXX论坛</span><span>主讲人</span></p>
+                 <p class="fs10"><span>XXXXXXXXXXX论坛</span><span>主讲人</span></p>
              </view>           
          </view>
          <view  class="weui-cell weui-cell_access base_title">
             <view class="weui-cell__hd">
-                 <p class="tit3"><i></i><span class="head">社会网络</span></p>
+                 <p class="tit3"><i></i><span class="head">社交网络</span></p>
             </view>
              <view class="weui-cell__bd">
                  <p><span class="sj-icon-1 icon">用户名</span>
@@ -123,4 +123,21 @@
         disabled="{{disabled}}"> 下载到本地 </button>
         
     </view>
+</view>
+<div class="backdrop" wx:if="{{modal}}" bindtap="closeModal" ></div>
+<view class="doctor_modal" style="" wx:if="{{modal1}}">
+    <div class="doctor_modal_head">
+        <span>发送到邮箱</span>
+    </div>
+    <scroll-view class="doctor_modal_content" scroll-y="true">
+        <view class="weui-cell weui-cell_input" >
+            <input class="weui-input" bindinput="emailValue" placeholder="请输入邮箱地址" placeholder-class="weui-input-placeholder"/>
+       </view>
+       <view class="weui-cell weui-cell_p" >
+            <p><i class="wrong"></i>{{errorMsg}} </p>
+       </view>   
+    </scroll-view>
+    <div class="doctor_modal_footer">
+        <a bindtap="cancel">取消</a><a bindtap="send2">发送</a>
+    </div>
 </view>

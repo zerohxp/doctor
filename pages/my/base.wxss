@@ -47,14 +47,10 @@
     padding-left:10px;
 
 }
-.weui-cell_do textarea{
-    background-color:transparent;
-    z-index:9;
-    
-}
+
 .weui-cell_do span{
     position:absolute;
-    margin-top:-88px;
+    margin-top:-84px;
     width:90%;
     padding-left:15px;
     color:#bfbfbf;

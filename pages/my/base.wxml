@@ -1,5 +1,5 @@
 
-<view class="page js_show has_bottom">
+<view class="page js_show">
 <!--页头-->
 <view class="page__hd">
      <view  class="weui-cell weui-cell_access"   bindtap="chooseImg">
@@ -68,19 +68,18 @@
                 </view>
         </view>
         <view class="weui-cells__title">自我评价（200字内）</view>
-        <view class="weui-cell weui-cell_textarea weui-cell_do">
+        <view class="weui-cell weui-cell_textarea weui-cell_do ">
                 <view class="weui-cell__bd">
-                    <textarea bindblur="isPlaceholder" bindfocus="disPlaceholder" maxlength="200"></textarea>
-                    <span wx:if="{{placeholder}}">请简单介绍自己，如工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故...</span>
+                    <textarea placeholder="请简单介绍自己，如工作28年以来，施行各类麻醉2万余例，其中心脏体外麻醉3000余例，无任何医疗差错事故..."  placeholder-class="weui-input-placeholder" maxlength="200"></textarea>
+                   
                 </view>
         </view>
-        
-         <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(职称)</a>
-</view>
-<view class="page__footer">
+        <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(职称)</a>
          <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"
         disabled="{{disabled}}"> 保存 </button>
-    </view>
+         
+</view>
+
 </view>
 <block wx:if="{{selectArea}}">
     <view class="backdrop" bindtap="colseArea"></view>

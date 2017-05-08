@@ -4,6 +4,10 @@ var app = getApp()
 Page({
   data: {
     userInfo: {},
+    modal:false,
+    modal1:false,
+    email:'',
+    errorMsg:'请输入邮箱地址',
     loading:false,
     loading2:false,
     disabled:false,
@@ -27,14 +31,45 @@ Page({
         }
     })
   },
+  closeModal:function(){
+     var that = this;
+       that.setData({
+           modal:false,
+           modal1:false
+       })
+  },
   send:function(){
-    this.setData({
-            loading2:true,
-            disabled2:true
+       var that = this;
+       that.setData({
+           modal:true,
+           modal1:true
+       })
+   
+   
+  },
+  send2:function(){
+      var email = this.data.email;
+      if(!email){
+           this.setData({
+            errorMsg:'请输入邮箱地址',
         })
+        return;
+      }
+     else if(!/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/.test(email)){
+            this.setData({
+                errorMsg:'请输入正确的邮箱地址',
+            })
+            return;
+       }
+      this.setData({
+           email:'',
+           errorMsg:'请输入邮箱地址',
+           modal:false,
+           modal1:false
+       })
       wx.showModal({
         title: '简历已发送到邮箱',
-        content: ' 若未收到邮件，请 1.检查是否在垃圾箱，邮件有可能    被当作垃圾邮件过滤了。2.或许邮箱地址填错了，请填写正确的地址后重新发送。   ',
+        content: ' 若未收到邮件，请检查：1.邮件是否在垃圾箱，有可能被当作垃圾邮件过滤了。2.邮箱地址是否填写正确。 ',
         confirmColor:'#00acff',
         showCancel:false,
         success: function(res) {
@@ -43,6 +78,21 @@ Page({
             } 
         }
     })
+  },
+  cancel:function(){
+       var that = this;
+       that.setData({
+           email:'',
+           errorMsg:'请输入邮箱地址',
+           modal:false,
+           modal1:false
+       })
+   
+  },
+  emailValue:function(e){
+       this.setData({
+            email: e.detail.value
+      })
   },
   onLoad: function () {
     var that = this

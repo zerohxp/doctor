@@ -19,7 +19,6 @@ Page({
     city:'上海市',
     areas:[],
     area:'闵行区',
-    placeholder:true,
      name:'',
      email:'',
     phone:''
@@ -204,23 +203,7 @@ Page({
     that.setData({
             provinces:app.getProvinces()
        })
-   //调用数据时,判断下自我评价的字段是否有值,如果有值的话,请将placeholder设置成false
-  },
-  isPlaceholder:function(e){
-    var value = e.detail.value;
-    if(!value){
-      this.setData({
-            placeholder:true
-      })
-    }else{
-      this.setData({
-              placeholder:false
-      })
-    } 
-  },
-  disPlaceholder:function(e){
-    this.setData({
-              placeholder:false
-    })
+  
   }
+  
 })
