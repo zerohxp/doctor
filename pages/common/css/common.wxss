@@ -22,11 +22,17 @@ button[loading][type="primary"].doctor_button{
     color:#fff;
    
 }
+
+
 button[disabled][type="primary"].doctor_button {
     background-color:#00acff;
     opacity:0.4;
 }
-
+button[loading][type="primary"] {
+    color:rgba(255, 255, 255, 0.6);
+    background-color:#00acff;
+    opacity:0.4;
+}
 .backdrop{
       width: 100%;
     height: 100%;
