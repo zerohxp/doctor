@@ -56,6 +56,9 @@
     padding:2px 0px;
      border-top:1px solid #e1e1e1;
 }
+.weui-cell.bgw{
+    background-color:#fff;
+}
 .weui-cell-block .weui-cell__hd_in-select-after{
     padding-left:0px;
 }

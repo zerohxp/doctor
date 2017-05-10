@@ -122,6 +122,8 @@
     overflow:hidden;
     padding-left:0px;
     padding-right:0px;
+    padding-bottom:0px;
+
 }
 .base_title.first{
     padding-top:10px;

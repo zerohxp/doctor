@@ -17,9 +17,9 @@
  </view>
 <view class="page__bd" wx:if="{{officeIndex != 0}}">
         <view class="weui-cell-block" wx:if="{{officeIndex != 0 && officeIndex != 7}}">
-            <view class="weui-cell" >
+            <view class="weui-cell bgw" >
                 <view class="weui-cell__hd">
-                        <span>普通门诊</span>
+                        <span>门诊类型</span>
                     </view>
                     <view class="weui-cell__bd">
                         <span>门诊数量（月均）</span>

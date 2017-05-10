@@ -7,7 +7,7 @@ Page({
     modal:false,
     modal1:false,
     email:'',
-    errorMsg:'请输入邮箱地址',
+    errorMsg:'',
     loading:false,
     loading2:false,
     disabled:false,
@@ -63,7 +63,7 @@ Page({
        }
       this.setData({
            email:'',
-           errorMsg:'请输入邮箱地址',
+           errorMsg:'',
            modal:false,
            modal1:false
        })
@@ -83,7 +83,7 @@ Page({
        var that = this;
        that.setData({
            email:'',
-           errorMsg:'请输入邮箱地址',
+           errorMsg:'',
            modal:false,
            modal1:false
        })

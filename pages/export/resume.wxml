@@ -113,7 +113,7 @@
 
               </view>   
          </view>  
-         <p class="bottom_icon"><i></i><span>医患无忧</span></p> 
+         <p class="bottom_icon"><i></i><span>医途</span></p> 
     </view>
 
     <view class="page__footer">
@@ -133,7 +133,7 @@
         <view class="weui-cell weui-cell_input" >
             <input class="weui-input" bindinput="emailValue" placeholder="请输入邮箱地址" placeholder-class="weui-input-placeholder"/>
        </view>
-       <view class="weui-cell weui-cell_p" >
+       <view class="weui-cell weui-cell_p" wx:if="{{errorMsg}}">
             <p><i class="wrong"></i>{{errorMsg}} </p>
        </view>   
     </scroll-view>
