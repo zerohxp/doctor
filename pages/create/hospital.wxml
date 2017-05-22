@@ -18,6 +18,12 @@
   -->
   <view class="weui-cell" bindtap="chooseHospital" data-hospital="1">
      <view class="weui-cell__bd">
+        <p>医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称医院名称</p>
+        <p>广东省</p>
+     </view>
+  </view>
+  <view class="weui-cell" bindtap="chooseHospital" data-hospital="1">
+     <view class="weui-cell__bd">
         <p>其他</p>
         <p>没有匹配的医院时，请选择此项</p>
      </view>

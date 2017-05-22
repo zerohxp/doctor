@@ -19,6 +19,8 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
            <p class="load_more">查看更多<i class="down"></i></p>  
+
+           <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(沟通技巧)</a>
 </view>
     <view class="page__footer">
         <button type="primary" class="doctor_button" bindtap="add"><i class="add"></i><span>添加</span> </button>

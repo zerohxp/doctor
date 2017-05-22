@@ -41,7 +41,7 @@ page{
     width:100%;
     display:inline-block;
     font-size:16px;
-    line-height:11px;
+    line-height:18px;
     font-weight:600;
     color:#414b50;
 }

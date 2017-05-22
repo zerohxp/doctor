@@ -7,7 +7,9 @@ Page({
     description:'',
     divisor:'',
     disabled:false,
-    loading:false
+    loading:false,
+    disabled2:false,
+    loading2:false
   },
   //事件处理函数
   delete:function(){
@@ -43,7 +45,7 @@ Page({
   },
    save:function(){
       var that = this;
-      if(!that.data.title){
+        if(!that.data.title){
            wx.showToast({
             title: '请输入论文题目',
             image:'../common/img/error.png',

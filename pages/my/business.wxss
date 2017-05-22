@@ -117,6 +117,18 @@
 .weui-cell_input{
     padding-left:0px;
 }
+.next_a{
+    font-size:15px;
+    float:right;
+    color:#00acff;
+    margin-bottom:20px;
+    padding-left:0px;
+    border:0;
+    padding-right:25px;
+}
+.next_a:before{
+    border-color:#00acff;
+}
 @media only screen and (min-width:320px) and (max-width:350px){
     .weui-cell_p{
         font-size:12px;

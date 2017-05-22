@@ -98,6 +98,36 @@ Page({
             }
         }
   },
+  next:function(){
+    wx.showModal({
+        title: '跳过',
+        content: '确认要跳过吗？本页编辑过的数据将不会被保存。',
+        confirmColor:'#00acff',
+        cancelColor:'#cdcdcd',
+        success: function(res) {
+            if (res.confirm) {
+                var hasPlus = false;
+                var currentPages = getCurrentPages();
+                    for(var i=0;i<currentPages.length;i++){
+                        var current = currentPages[i];
+                        if(current.data && current.data.myPlus){
+                             hasPlus = true;
+                            var num = i + 1;
+                            num = currentPages.length - num;
+                            wx.navigateBack({
+                                delta: num
+                            })
+                        }
+                    }
+                if(!hasPlus){
+                     wx.redirectTo({
+                        url: '../my/my'
+                    })
+                }    
+            } 
+        }
+    })
+  },
   onLoad: function (option) {
     var that = this
     //调用应用实例的方法获取全局数据

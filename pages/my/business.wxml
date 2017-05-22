@@ -102,8 +102,9 @@
                    <input class="weui-input" type="number" placeholder="请输入管床数量" placeholder-class="weui-input-placeholder" bindinput="numValue"/>
                 </view>
          </view>
-
+        
 </view>
+ <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(发表论文)</a>
 <view class="page__footer" wx:if="{{officeIndex != 0}}">
          <button type="primary" class="doctor_button" bindtap="save"   loading="{{loading}}"
         disabled="{{disabled}}"> 保存 </button>

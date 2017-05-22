@@ -23,6 +23,8 @@
             </view>
            
      </checkbox-group>
+
+      <a class="next_a weui-select" bindtap="next">跳过,返回(我的简历Plus)</a>
 </view>
  <view class="page__footer">
        <button type="primary" class="doctor_button" bindtap="save" loading="{{loading}}"

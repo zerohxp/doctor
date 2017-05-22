@@ -85,9 +85,9 @@
                 <view class="weui-cell__hd">
                     <view class="weui-label">医院</view>
                 </view>
-                <view class="weui-cell__bd">{{hospital}}</view>
+                <view class="weui-cell__bd hospital_title">医院名称医院名称医院名称医院名称医院名称医院名称医院名称</view>
                 
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                <view class="weui-cell__ft weui-cell__ft_in-access hospital_title_right"></view>
                 </view>
         </navigator>
         <view class="weui-cell weui-cell_input ">

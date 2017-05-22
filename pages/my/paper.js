@@ -29,6 +29,21 @@ Page({
     //调用应用实例的方法获取全局数据
    
   },
+   next:function(){
+    wx.showModal({
+        title: '跳过',
+        content: '确认要跳过吗？本页编辑过的数据将不会被保存。',
+        confirmColor:'#00acff',
+        cancelColor:'#cdcdcd',
+        success: function(res) {
+            if (res.confirm) {
+                 wx.redirectTo({
+                    url: '../my/communication'
+                })
+            } 
+        }
+    })
+  },
   onPullDownRefresh:function(){
     wx.stopPullDownRefresh();//处理完数据后执行
 

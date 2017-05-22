@@ -46,8 +46,8 @@
             <span class="flag_span">精通英文</span>
         </div>    
         <view class="page_profession">
-        <p class="before_login_p profession_develop">━━━ 我的职业发展指数 ━━━ </p>
-        <p class="before_login_p profession_develop_tit">超过了上海地区80%的主治医师。棒棒哒！</p>
+        <p class=" profession_develop">━━━ 我的职业发展指数 ━━━ </p>
+        <p class=" profession_develop_tit">超过了上海地区80%的主治医师。棒棒哒！</p>
           <p class="score">746</p>
           <canvas canvas-id="radarCanvas"></canvas> 
          <image src="../common/img/index.png"></image>

@@ -13,7 +13,9 @@ Page({
     name:'',
     specialty:'',
     disabled:false,
-    loading:false
+    loading:false,
+    disabled2:false,
+    loading2:false
   },
   //事件处理函数
   bindEducationChange:function(e){
@@ -49,6 +51,11 @@ Page({
   },
    save:function(){
        var that = this;
+        that.setData({
+           disabled:true,
+           loading:true,
+           disabled2:true
+       });
        if(!that.data.name){
            wx.showToast({
             title: '请输入学校名称',

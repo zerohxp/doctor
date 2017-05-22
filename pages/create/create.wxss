@@ -117,3 +117,16 @@ navigator.weui-cell{
     color:#bfbfbf;
     font-size:16px;
 }
+.hospital_title{
+    padding-right:20px;
+}
+.weui-cell .block .weui-cell__ft.hospital_title_right{
+    position:absolute;
+    top:50%;
+    margin-top:-3px;
+    right:15px;
+
+}
+.weui-cell__ft_in-access.hospital_title_right::after{
+    margin-top:0px;
+}
