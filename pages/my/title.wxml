@@ -17,6 +17,48 @@
                 </view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
+             <navigator class="weui-cell" url="../edit/createT?id=1">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">单位名称单位名称单位名称单位名称单位名称单位位名称单位</p>
+                    <p class="ellipsis">职务职务职务职务职务职务职务职位名称单位名称单</p>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>  
        <p class="load_more">查看更多<i class="down"></i></p>  
 </view>
  <view class="page__footer">

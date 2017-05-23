@@ -15,7 +15,49 @@
                     <p class="ellipsis">角色</p>
                 </view>
      </navigator>
-      
+        <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+       <navigator class="weui-cell" url="../edit/createA?id=2">
+                <view class="weui-cell__bd">
+                    <p class="ellipsis">活动名称</p>
+                    <p class="ellipsis">角色</p>
+                </view>
+     </navigator>
+     
     <p class="load_more">查看更多<i class="down"></i></p>  
 </view>
     <view class="page__footer">

@@ -18,7 +18,41 @@
                     <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
                 </view>
             </navigator>
-            
+              <navigator class="weui-cell" url="../edit/createW?id=2">
+                <view class="weui-cell__bd">
+                    <p><span>2010.5~至今</span></p>
+                    <p class="ellipsis">海第二军医大学附属海第二军医大学附属长</p>
+                    <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
+                </view>
+            </navigator>
+              <navigator class="weui-cell" url="../edit/createW?id=2">
+                <view class="weui-cell__bd">
+                    <p><span>2010.5~至今</span></p>
+                    <p class="ellipsis">海第二军医大学附属海第二军医大学附属长</p>
+                    <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
+                </view>
+            </navigator>
+              <navigator class="weui-cell" url="../edit/createW?id=2">
+                <view class="weui-cell__bd">
+                    <p><span>2010.5~至今</span></p>
+                    <p class="ellipsis">海第二军医大学附属海第二军医大学附属长</p>
+                    <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
+                </view>
+            </navigator>
+              <navigator class="weui-cell" url="../edit/createW?id=2">
+                <view class="weui-cell__bd">
+                    <p><span>2010.5~至今</span></p>
+                    <p class="ellipsis">海第二军医大学附属海第二军医大学附属长</p>
+                    <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
+                </view>
+            </navigator>
+              <navigator class="weui-cell" url="../edit/createW?id=2">
+                <view class="weui-cell__bd">
+                    <p><span>2010.5~至今</span></p>
+                    <p class="ellipsis">海第二军医大学附属海第二军医大学附属长</p>
+                    <p><i class="work-icon-1"></i><span>科室名称</span><i class="work-icon-2"></i><span>职位名称</span></p>
+                </view>
+            </navigator>
        </view>
       
        <a class="next_a weui-select" bindtap="next">跳过,编辑下一项(业务量)</a>

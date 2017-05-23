@@ -23,6 +23,46 @@
                     <p class="time"><i></i><span>2017-04-03</span></p>
                 </view>
       </navigator>
+      <navigator class="weui-cell" url="../edit/createP?id=2">
+                 <view class="weui-cell__hd">
+                     <image src="../common/img/profession-img.jpg"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <p class="title">记录一次术中大出血记录一次术中大出</p>
+                    <p class="content">案例描述案例描述案例描述案例描述案例描述案例描述案例描述案 述案例描述案例描述案例描述案</p>
+                    <p class="time"><i></i><span>2017-04-03</span></p>
+                </view>
+      </navigator>
+      <navigator class="weui-cell" url="../edit/createP?id=2">
+                 <view class="weui-cell__hd">
+                     <image src="../common/img/profession-img.jpg"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <p class="title">记录一次术中大出血记录一次术中大出</p>
+                    <p class="content">案例描述案例描述案例描述案例描述案例描述案例描述案例描述案 述案例描述案例描述案例描述案</p>
+                    <p class="time"><i></i><span>2017-04-03</span></p>
+                </view>
+      </navigator>
+      <navigator class="weui-cell" url="../edit/createP?id=2">
+                 <view class="weui-cell__hd">
+                     <image src="../common/img/profession-img.jpg"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <p class="title">记录一次术中大出血记录一次术中大出</p>
+                    <p class="content">案例描述案例描述案例描述案例描述案例描述案例描述案例描述案 述案例描述案例描述案例描述案</p>
+                    <p class="time"><i></i><span>2017-04-03</span></p>
+                </view>
+      </navigator>
+      <navigator class="weui-cell" url="../edit/createP?id=2">
+                 <view class="weui-cell__hd">
+                     <image src="../common/img/profession-img.jpg"></image>
+                </view>
+                <view class="weui-cell__bd">
+                    <p class="title">记录一次术中大出血记录一次术中大出</p>
+                    <p class="content">案例描述案例描述案例描述案例描述案例描述案例描述案例描述案 述案例描述案例描述案例描述案</p>
+                    <p class="time"><i></i><span>2017-04-03</span></p>
+                </view>
+      </navigator>
       <p class="load_more">查看更多<i class="down"></i></p>  
 </view>
     <view class="page__footer">

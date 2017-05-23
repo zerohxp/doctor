@@ -1,2 +1,5 @@
 @import '../common/css/common.wxss';
 @import '../my/paper.wxss';
+.load_more{
+    margin-bottom:80px;
+}

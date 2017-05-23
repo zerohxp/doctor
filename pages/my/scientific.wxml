@@ -18,6 +18,7 @@
                 </view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
+            
            <p class="load_more">查看更多<i class="down"></i></p>  
 </view>
     <view class="page__footer">
