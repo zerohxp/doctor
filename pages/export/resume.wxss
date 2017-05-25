@@ -148,7 +148,6 @@
 .base_title .weui-cell__bd p{
     display:inline-block;
     width:100%;
-    white-space: nowrap;
    
 }
 .base_title .weui-cell__bd p span{
@@ -175,7 +174,8 @@
     padding-left:15px;
 }
 .base_title .icon{
-    width:36px;
+    min-width:36px;
+    width:auto;
     background-size:contain;
     background-repeat:no-repeat;
     padding-left:16px;
