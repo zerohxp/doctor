@@ -174,7 +174,7 @@
               <switch bindchange="allowChange" checked class="allowSwitch"/>
           </view>
           <view class="content_block">
-                  <button type="primary" class="primary_btn" bindtap="save"   loading="{{loading}}"
+                  <button type="primary" class="primary_btn" bindtap="save" loading="{{loading}}"
             disabled="{{disabled}}"> 保存 </button>
           </view>
     </view>

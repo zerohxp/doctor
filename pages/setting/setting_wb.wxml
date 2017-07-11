@@ -9,12 +9,12 @@
 <view class="page__bd">
      <view class="weui-cells__title">用户名<span>*</span></view>
      <view class="weui-cell weui-cell_input" >
-               <input bindinput="titleValue"></input>       
+               <input bindinput="titleValue" placeholder="请点击这里输入" placeholder-class="weui-input-placeholder"></input>       
       </view> 
       
        <view class="weui-cells__title">个人主页链接<b>（非必填）</b></view>
        <view class="weui-cell weui-cell_textarea" >
-         <textarea bindinput="descriptionValue" maxlength="512"></textarea>       
+         <textarea bindinput="descriptionValue" maxlength="512" placeholder="请点击这里输入" placeholder-class="weui-input-placeholder"></textarea>       
        </view> 
        <p>如需定制微信公众号，请直接在公众号留言</p>
       

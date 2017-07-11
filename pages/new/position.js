@@ -101,6 +101,10 @@ Page({
   allowChange:function (e){
     console.log('allowChange 发生 change 事件，携带值为', e.detail.value)
   },
+  //保存
+  save:function(){
+
+  },
   onLoad: function (option) {
      var that = this
     wx.getSystemInfo({  
