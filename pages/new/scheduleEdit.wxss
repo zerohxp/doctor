@@ -57,6 +57,6 @@
 button[type="primary"].left_btn{
     font-size:14px;
 }
-button[type="primary"].right_btn{
+button[type="primary"].right_btn{ 
      font-size:14px;
 }
