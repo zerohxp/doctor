@@ -127,39 +127,39 @@
                                     <view class="weui-label">科室</view>
                               </view>
                               <view class="weui-cell__bd">
-                                      <picker bindchange="bindOfficeChange" value="{{officeIndex}}" range="{{offices}}">
-                                          <view class="weui-select  weui-select-down">{{offices[officeIndex]}}</view>
+                                      <picker bindchange="bindOfficeChange2" value="{{officeIndex2}}" range="{{offices2}}">
+                                          <view class="weui-select  weui-select-down">{{offices2[officeIndex2]}}</view>
                                     </picker>
                               </view>
                         </view>
                         <view class="title">医院等级<span>(可多选)</span></view>
                         <view class="content_select">
-                             <div bindtap="choiceCheck1" data-index="0" class="select-block {{choice_one[0]==true?'checked':''}}"><span>不限</span></div>
-                             <div bindtap="choiceCheck1" data-index="1" class="select-block {{choice_one[1]==true?'checked':''}}"><span>三级甲等</span></div>
-                             <div bindtap="choiceCheck1" data-index="2" class="select-block {{choice_one[2]==true?'checked':''}}"><span>三级乙等</span></div>
-                             <div bindtap="choiceCheck1" data-index="3" class="select-block {{choice_one[3]==true?'checked':''}}"><span>二级甲等</span></div>
-                             <div bindtap="choiceCheck1" data-index="4" class="select-block {{choice_one[4]==true?'checked':''}}"><span>二级乙等</span></div>
-                             <div bindtap="choiceCheck1" data-index="5" class="select-block {{choice_one[5]==true?'checked':''}}"><span>一级甲等</span></div>
-                             <div bindtap="choiceCheck1" data-index="6" class="select-block {{choice_one[6]==true?'checked':''}}"><span>一级乙等</span></div>
+                             <div bindtap="choiceSelect1" data-index="0" class="select-block {{choice_one2[0]==true?'checked':''}}"><span>不限</span></div>
+                             <div bindtap="choiceSelect1" data-index="1" class="select-block {{choice_one2[1]==true?'checked':''}}"><span>三级甲等</span></div>
+                             <div bindtap="choiceSelect1" data-index="2" class="select-block {{choice_one2[2]==true?'checked':''}}"><span>三级乙等</span></div>
+                             <div bindtap="choiceSelect1" data-index="3" class="select-block {{choice_one2[3]==true?'checked':''}}"><span>二级甲等</span></div>
+                             <div bindtap="choiceSelect1" data-index="4" class="select-block {{choice_one2[4]==true?'checked':''}}"><span>二级乙等</span></div>
+                             <div bindtap="choiceSelect1" data-index="5" class="select-block {{choice_one2[5]==true?'checked':''}}"><span>一级甲等</span></div>
+                             <div bindtap="choiceSelect1" data-index="6" class="select-block {{choice_one2[6]==true?'checked':''}}"><span>一级乙等</span></div>
                         </view>
                         <view class="title">公司性质</view>
                          <view class="content_select">
-                             <div bindtap="choiceCheck2" data-index="0" class="select-block {{choice_two[0]==true?'checked':''}}"><span>不限</span></div>
-                             <div bindtap="choiceCheck2" data-index="1" class="select-block {{choice_two[1]==true?'checked':''}}"><span>公立</span></div>
-                             <div bindtap="choiceCheck2" data-index="2" class="select-block {{choice_two[2]==true?'checked':''}}"><span>民营</span></div>
+                             <div bindtap="choiceSelect2" data-index="0" class="select-block {{choice_two2[0]==true?'checked':''}}"><span>不限</span></div>
+                             <div bindtap="choiceSelect2" data-index="1" class="select-block {{choice_two2[1]==true?'checked':''}}"><span>公立</span></div>
+                             <div bindtap="choiceSelect2" data-index="2" class="select-block {{choice_two2[2]==true?'checked':''}}"><span>民营</span></div>
                              
                         </view>
                        <view class="title">公司类型<span>(可多选)</span></view>
                         <view class="content_select" style="border-bottom:0;">
-                             <div bindtap="choiceCheck3" data-index="0" class="select-block {{choice_three[0]==true?'checked':''}}"><span>不限</span></div>
-                             <div bindtap="choiceCheck3" data-index="1" class="select-block {{choice_three[1]==true?'checked':''}}"><span>综合医院</span></div>
-                             <div bindtap="choiceCheck3" data-index="2" class="select-block {{choice_three[2]==true?'checked':''}}"><span>专科医院</span></div>
-                             <div bindtap="choiceCheck3" data-index="3" class="select-block {{choice_three[3]==true?'checked':''}}"><span>中医医院</span></div>
-                             <div bindtap="choiceCheck3" data-index="4" class="select-block {{choice_three[4]==true?'checked':''}}"><span>军队医院</span></div>
-                             <div bindtap="choiceCheck3" data-index="5" class="select-block {{choice_three[5]==true?'checked':''}}"><span>外资医院</span></div>
-                             <div bindtap="choiceCheck3" data-index="6" class="select-block {{choice_three[6]==true?'checked':''}}"><span>生物企业</span></div>
-                             <div bindtap="choiceCheck3" data-index="7" class="select-block {{choice_three[7]==true?'checked':''}}"><span>医药企业</span></div>
-                             <div bindtap="choiceCheck3" data-index="8" class="select-block {{choice_three[8]==true?'checked':''}}"><span>诊所药房</span></div>
+                             <div bindtap="choiceSelect3" data-index="0" class="select-block {{choice_three2[0]==true?'checked':''}}"><span>不限</span></div>
+                             <div bindtap="choiceSelect3" data-index="1" class="select-block {{choice_three2[1]==true?'checked':''}}"><span>综合医院</span></div>
+                             <div bindtap="choiceSelect3" data-index="2" class="select-block {{choice_three2[2]==true?'checked':''}}"><span>专科医院</span></div>
+                             <div bindtap="choiceSelect3" data-index="3" class="select-block {{choice_three2[3]==true?'checked':''}}"><span>中医医院</span></div>
+                             <div bindtap="choiceSelect3" data-index="4" class="select-block {{choice_three2[4]==true?'checked':''}}"><span>军队医院</span></div>
+                             <div bindtap="choiceSelect3" data-index="5" class="select-block {{choice_three2[5]==true?'checked':''}}"><span>外资医院</span></div>
+                             <div bindtap="choiceSelect3" data-index="6" class="select-block {{choice_three2[6]==true?'checked':''}}"><span>生物企业</span></div>
+                             <div bindtap="choiceSelect3" data-index="7" class="select-block {{choice_three2[7]==true?'checked':''}}"><span>医药企业</span></div>
+                             <div bindtap="choiceSelect3" data-index="8" class="select-block {{choice_three2[8]==true?'checked':''}}"><span>诊所药房</span></div>
                         </view>
                 </view>
                 <view class="department" style="border-top:1px solid #e1e1e1">
@@ -174,8 +174,8 @@
               <switch bindchange="allowChange" checked class="allowSwitch"/>
           </view>
           <view class="content_block">
-                  <button type="primary" class="primary_btn" bindtap="save" loading="{{loading}}"
-            disabled="{{disabled}}"> 保存 </button>
+                  <button type="primary" class="primary_btn" bindtap="save2" loading="{{loading2}}"
+            disabled="{{disabled2}}"> 保存 </button>
           </view>
     </view>
 </view>
