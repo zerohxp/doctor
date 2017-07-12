@@ -1,46 +1,6 @@
 @import 'common.wxss';
 
-.tab_head{
-    width:50%;
-    margin-left:25%;
-    border:1px solid #00acff;
-    border-radius:5px;
-    height:40px;
-    line-height:40px;
-    font-size:16px;
-    margin-top:5px;
-    margin-bottom:5px;
-    color:#414b50;
-    font-weight:600;
-    font-family:华文细黑;
-    background-color:#f5f5f5;
-}
-.tab_head .tab_head_title{
-    float:left;
-    width:50%;
-    text-align:center;
-    
-}
-.tab_head .tab_head_title.active{
-    background-color:#00acff;
-    color:#fff;
-}
-.tab_content{
-    display:none;
-   
 
-}
-.tab_content.show{
-    display:block;
-}
-.content_block{
-    padding:0px;
-    width:100%;
-    background-color:#fff;
-    margin-bottom:5px;
-    border-top:1px solid #e1e1e1;
-    border-bottom:1px solid #e1e1e1;
-}
 
 .content_block .title{
     font-size:16px;
@@ -120,19 +80,7 @@
     color:#414b50;
 
 }
-.weui-select{
-    border-right:0px;
-    padding-left:0px;
-    text-align:right;
-    padding-right:15px;
 
-}
-.weui-select::before{
-    right:0px;
-}
-.weui-select-down:before{
-    border-width:0px 2px 2px 0px;
-}
 .department .weui-cell{
     border-bottom:1px solid #e1e1e1;
     padding:0px;

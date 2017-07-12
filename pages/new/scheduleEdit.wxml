@@ -1,0 +1,99 @@
+<view class="page">
+    <view class="tab_head">
+        <view class="tab_head_title {{tab_active==1?'active':''}}" bindtap="tabClick" data-tab="1">多点执业</view>
+        <view class="tab_head_title {{tab_active==2?'active':''}}" bindtap="tabClick" data-tab="2">空闲时间</view>
+    </view>
+    <view class="tab_content {{tab_active==1?'show':''}}">
+          <view class="title">添加日程，方便为您推荐更多多点执业机会!</view>
+           <view class="content_block">
+                 <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">医院<span>*</span></view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                      <input type="text" class="weui-input" placeholder="例如：xx医院" placeholder-class="weui-input-placeholder" maxlength="50"/>
+                              </view>
+                        </view>
+           </view>  
+           <view class="content_block">
+                 <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">科室</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                      <input type="text" class="weui-input" placeholder="例如：消化科" placeholder-class="weui-input-placeholder" maxlength="50"/>
+                              </view>
+                        </view>
+           </view>   
+           <view class="content_block">
+                 <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">地点</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                      <input type="text" class="weui-input" placeholder="例如：上海市闵行区xx路xx号" placeholder-class="weui-input-placeholder" maxlength="50"/>
+                              </view>
+                        </view>
+           </view>
+           <view class="content_block">
+                <view  class="content_time_block">
+                     <view class=" weui-cell  weui-cell_input " wx:for="{{times}}">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label" ><i wx-if="{{index==0}}">时间</i></view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                    <picker bindchange="weekChange" data-index="{{index}}" value="{{item.weekIndex}}" range="{{item.week}}">
+                                          <view class="weui-select  weui-select-down">{{item.week[item.weekIndex]}}</view>
+                                    </picker>
+                                    <picker bindchange="beginChange" data-index="{{index}}" value="{{item.beginIndex}}" range="{{item.begin}}">
+                                          <view class="weui-select  weui-select-down">{{item.begin[item.beginIndex]}}</view>
+                                    </picker>
+                                     <picker bindchange="endChange" data-index="{{index}}" value="{{item.endIndex}}" range="{{item.end}}">
+                                          <view class="weui-select  weui-select-down">{{item.end[item.endIndex]}}</view>
+                                    </picker>
+                                    <i class="add"  bindtap="add" wx-if="{{index==0}}"></i>
+                                    <i class="del"  bindtap="del" wx-if="{{index!=0}}" data-index="{{index}}"></i>
+                              </view>
+                        </view>
+                </view>
+                
+           </view>     
+           <view class="footer">
+                <button type="primary" class="primary_btn left_btn" bindtap="save1" loading="{{loading1}}"
+                    disabled="{{disabled1}}"> 保存并添加新日程 </button>
+                <button type="primary" class="primary_btn right_btn" bindtap="save2" loading="{{loading2}}"
+                    disabled="{{disabled2}}"> 保存日程表 </button>
+           </view>
+    </view>
+    <view class="tab_content {{tab_active==2?'show':''}}">
+          <view class="title">添加日程，方便为您推荐更多多点执业机会!</view>
+          <view class="content_block">
+                <view  class="content_time_block">
+                     <view class=" weui-cell  weui-cell_input " wx:for="{{times2}}">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label" ><i wx-if="{{index==0}}">时间</i></view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                    <picker bindchange="weekChange2" data-index="{{index}}" value="{{item.weekIndex}}" range="{{item.week}}">
+                                          <view class="weui-select  weui-select-down">{{item.week[item.weekIndex]}}</view>
+                                    </picker>
+                                    <picker bindchange="beginChange2" data-index="{{index}}" value="{{item.beginIndex}}" range="{{item.begin}}">
+                                          <view class="weui-select  weui-select-down">{{item.begin[item.beginIndex]}}</view>
+                                    </picker>
+                                     <picker bindchange="endChange2" data-index="{{index}}" value="{{item.endIndex}}" range="{{item.end}}">
+                                          <view class="weui-select  weui-select-down">{{item.end[item.endIndex]}}</view>
+                                    </picker>
+                                    <i class="add"  bindtap="add2" wx-if="{{index==0}}"></i>
+                                    <i class="del"  bindtap="del2" wx-if="{{index!=0}}" data-index="{{index}}"></i>
+                              </view>
+                        </view>
+                </view>
+        </view>                
+            <view class="footer">
+                <button type="primary" class="primary_btn left_btn" bindtap="save3" loading="{{loading3}}"
+                    disabled="{{disabled3}}"> 保存并添加新日程 </button>
+                <button type="primary" class="primary_btn right_btn" bindtap="save4" loading="{{loading4}}"
+                    disabled="{{disabled4}}"> 保存日程表 </button>
+           </view>
+    </view>
+</view>
