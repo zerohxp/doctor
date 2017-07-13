@@ -1,0 +1,114 @@
+<view class="page">
+     <view class="content_block">
+            <table style="{{style}}" border="1" class="calendar_table">
+                  <thead>
+                        <tr>
+                              <td style="width:40px"></td>
+                              <td>8:00</td>
+                              <td>13:00</td>
+                              <td>18:00</td>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        <tr>
+                            <td>一</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[0].no_appoint.style}}">{{info[0].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[0].appoint.style}}">{{info[0].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[0].free.style}}">{{info[0].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>二</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[1].no_appoint.style}}">{{info[1].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[1].appoint.style}}">{{info[1].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[1].free.style}}">{{info[1].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>三</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[2].no_appoint.style}}">{{info[2].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[2].appoint.style}}">{{info[2].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[2].free.style}}">{{info[2].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>四</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[3].no_appoint.style}}">{{info[3].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[3].appoint.style}}">{{info[3].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[3].free.style}}">{{info[3].free.span}}</span>
+                            </td>
+                            <td>></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>五</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[4].no_appoint.style}}">{{info[4].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[4].appoint.style}}">{{info[4].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[4].free.style}}">{{info[4].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>六</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[5].no_appoint.style}}">{{info[5].no_appoint.span}}</span>
+                            <span bindtap="appointClick" class="appoint" style="{{info[5].appoint.style}}">{{info[5].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[5].free.style}}">{{info[5].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>日</td>
+                            <td>
+                            <span bindtap="noAppoint" class="no_appoint" style="{{info[6].no_appoint.style}}">{{info[6].no_appoint.span}}</span>
+                            <span class="appoint" style="{{info[6].appoint.style}}">{{info[6].appoint.span}}</span>
+                            <span bindtap="freeClick" class="free" style="{{info[6].free.style}}">{{info[6].free.span}}</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                  </tbody>
+                </table>
+     </view>
+      <view class="footer">
+                <button type="primary" class="primary_btn left_btn" bindtap="save1" loading="{{loading1}}"
+                    disabled="{{disabled1}}"> 添加多点执业记录 </button>
+                <button type="primary" class="primary_btn right_btn" bindtap="save2" loading="{{loading2}}"
+                    disabled="{{disabled2}}"> 查看多点执业记录 </button>
+           </view>
+</view>
+<div class="backdrop" wx:if="{{modal}}"></div>
+<view class="doctor_modal" style="" wx:if="{{modal}}">
+    <div class="doctor_modal_head"> 
+        <span>待办事项</span>
+        <i class="close" bindtap="closeModal"></i>
+    </div>
+    <scroll-view class="doctor_modal_content" scroll-y="true">
+       <view class="title">医院：</view>
+       <view class="content">上海第二军医大学附属长征医院</view>
+       <view class="title">医院联系人：</view>
+       <view class="content"><span>朱女士</span><span>13800000000</span></view>
+       <view class="content"><span class="title">日期：</span><span>2017年6月28日</span></view>
+        <view class="timer">8:00～9:00</view>
+        <view class="content"><span class="title">患者：</span><span>李晓明</span></view>
+        <view class="content"><span class="title">患者：</span><span>李晓明</span></view>
+        <view class="timer">10:00～11:00</view>
+        <view class="content"><span class="title">患者：</span><span>李晓明</span></view>
+        <view class="content"><span class="title">患者：</span><span>李晓明</span></view>
+        <view class="title">备注：</view>
+        <view class="content">备注备注备注备注备注备注备注备注 备注备注</view>
+    </scroll-view>
+</view>

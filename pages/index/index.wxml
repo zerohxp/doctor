@@ -20,6 +20,10 @@
          <view class="weui-cell__bd">多点执业记录（新需求）</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
    </navigator>
+     <navigator url="../new/calendar" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">每日日程表（新需求）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
    <navigator url="../main/page" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">合并</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>

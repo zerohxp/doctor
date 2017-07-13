@@ -104,3 +104,50 @@ weui-cell::before{
 button{
     font-size:16px;
 }
+.backdrop{
+      width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    z-index:9999;
+
+}
+.doctor_modal{
+    width:80%;
+    position:fixed;
+    background-color:#fff;
+    z-index:99999;
+    top:30%;
+    left:10%;
+    border-radius:5px;
+    padding-bottom:10px;
+
+}
+.doctor_modal .doctor_modal_head{
+    background-color:#00acff;
+    width:100%;
+    display:inline-block;
+    padding:10px 0;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+
+}
+.doctor_modal .doctor_modal_content{
+    border-bottom:1px solid #e1e1e1;
+    width:96%;
+    display:inline-block;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:5px;
+    font-size:14px;
+    color:#414b50;
+    max-height:120px;
+}

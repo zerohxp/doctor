@@ -126,7 +126,7 @@
 </view>
 <div class="backdrop" wx:if="{{modal}}" bindtap="closeModal" ></div>
 <view class="doctor_modal" style="" wx:if="{{modal1}}">
-    <div class="doctor_modal_head">
+    <div class="doctor_modal_head"> 
         <span>发送到邮箱</span>
     </div>
     <scroll-view class="doctor_modal_content" scroll-y="true">

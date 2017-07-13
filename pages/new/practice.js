@@ -41,7 +41,6 @@ getDates:function(){
         dates[day].push((d.getMonth()+1)+'月'+d.getDate()+'日');
         d.setDate(d.getDate()-1);
     }
-    console.info(dates);
     that.setData({
         dates:dates
     })

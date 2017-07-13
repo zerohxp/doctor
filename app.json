@@ -1,6 +1,7 @@
 {
   "pages":[
   "pages/index/index",
+  "pages/new/calendar",
    "pages/export/resume",
    "pages/new/record",
   "pages/new/scheduleEdit",
