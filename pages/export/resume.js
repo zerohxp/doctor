@@ -6,30 +6,38 @@ Page({
     userInfo: {},
     modal:false,
     modal1:false,
+    modal2:false,
     email:'',
     errorMsg:'',
     loading:false,
     loading2:false,
     disabled:false,
-    disabled2:false
+    disabled2:false,
+    modal2:false,
+    modal3:false
   },
   //事件处理函数
   dowbload:function(){
-     this.setData({
-            loading:true,
-            disabled:true
-        })
-    wx.showModal({
-        title: '下载到本地',
-        content: '正在下载PDF简历到本地，请稍后 到微信默认存储路径查询。',
-        confirmColor:'#00acff',
-        showCancel:false,
-        success: function(res) {
-            if (res.confirm) {
+    //  this.setData({
+    //         loading:true,
+    //         disabled:true
+    //     })
+    // wx.showModal({
+    //     title: '下载到本地',
+    //     content: '正在下载PDF简历到本地，请稍后 到微信默认存储路径查询。',
+    //     confirmColor:'#00acff',
+    //     showCancel:false,
+    //     success: function(res) {
+    //         if (res.confirm) {
                 
-            } 
-        }
-    })
+    //         } 
+    //     }
+    // })
+     var that = this;
+       that.setData({
+           modal:true,
+           modal3:true
+       })
   },
   closeModal:function(){
      var that = this;
@@ -42,7 +50,7 @@ Page({
        var that = this;
        that.setData({
            modal:true,
-           modal1:true
+           modal2:true
        })
    
    
@@ -101,6 +109,54 @@ Page({
         that.setData({
             userInfo:userinfo
         })
+    })
+  },
+  //新增需求
+  checkboxChange:function(e){
+       console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+  },
+  checkboxChange2:function(e){
+       console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+  },
+  cancelPicker:function(e){
+       var that = this;
+       that.setData({
+           modal:false,
+           modal2:false
+       })
+  },
+  surePicker:function(e){
+        var that = this;
+       that.setData({
+           modal:true,
+           modal1:true,
+           modal2:false
+       })
+  },
+  cancelPicker2:function(e){
+       var that = this;
+       that.setData({
+           modal:false,
+           modal3:false
+       })
+  },
+  surePicker2:function(e){
+         this.setData({
+            loading:true,
+            disabled:true,
+             modal:false,
+            modal3:false
+        })
+    wx.showModal({
+        title: '下载到本地',
+        content: '正在下载PDF简历到本地，请稍后 到微信默认存储路径查询。',
+        confirmColor:'#00acff',
+        showCancel:false,
+        success: function(res) {
+            if (res.confirm) {
+                
+            } 
+        }
     })
   }
 })

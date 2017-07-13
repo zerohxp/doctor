@@ -215,38 +215,33 @@ Page({
       })
  },
  save1:function(){
-     wx.showModal({
-            title: '提示',
-            content: '确定删除本条日程？',
-            confirmColor:'#00acff',
-            success: function(res) {
-                if (res.confirm) {
-                    wx.navigateBack();
-                } else if (res.cancel) {
-                    
-                }
-            }
-        })
+      wx.showToast({
+          title: '日程有冲突，请核对',
+          duration:3000,
+          image:'../common/img/error.png',
+      })
  },
  save2:function(){
-      wx.navigateBack();
+      wx.showToast({
+          title: '日程有冲突，请核对',
+           image:'../common/img/error.png',
+           duration:3000
+      })
  },
  save3:function(){
-     wx.showModal({
-            title: '提示',
-            content: '确定删除本条日程？',
-            confirmColor:'#00acff',
-            success: function(res) {
-                if (res.confirm) {
-                   
-                } else if (res.cancel) {
-                    
-                }
-            }
-        })
+      wx.showToast({
+          title: '日程有冲突，请核对',
+           image:'../common/img/error.png',
+           duration:3000
+          
+      })
  },
  save4:function(){
-   
+      wx.showToast({
+          title: '日程有冲突，请核对',
+          image:'../common/img/error.png',
+          duration:3000
+      })
  },
   onLoad: function (option) {
      var that = this

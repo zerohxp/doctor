@@ -1,0 +1,86 @@
+<view class="page">
+     <view class="title">添加执业记录  
+        <a class="edit_practice" wx:if="{{type == 1}}" bindtap="edit"><i></i>修改日程</a>
+        <a class="edit_practice" wx:if="{{type == 2}}" bindtap="kefu"><i></i>修改日程请联系客服</a>
+     </view>
+      <view class="content_block">
+                 <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">医院</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                    <picker bindchange="hospitalChange" value="{{hospitalIndex}}" range="{{hospital}}">
+                                          <view class="weui-select  weui-select-down {{hospitalIndex==0?'label':''}}">{{hospital[hospitalIndex]}}</view>
+                                    </picker>
+                              </view>
+                        </view>
+                  <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">科室</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                   <span>消化科</span>
+                              </view>
+                </view> 
+                <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">地点</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                   <span>xx省xx市xx区xxxx路xx弄xx号101</span>
+                              </view>
+                </view>    
+                <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">日期</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                  <picker bindchange="weekChange" value="{{weekIndex}}" range="{{weeks}}">
+                                          <view class="weui-select  weui-select-down ">{{weeks[weekIndex]}}</view>
+                                    </picker>
+                              </view>
+                </view>    
+                <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label"></view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                   <picker bindchange="dateChange" value="{{dateIndex}}" range="{{dates[weekIndex]}}">
+                                          <view class="weui-select  weui-select-down ">{{dates[weekIndex][dateIndex]}}</view>
+                                    </picker>
+                              </view>
+                </view>      
+           </view> 
+    <view class="content_block">
+         <view class=" weui-cell  weui-cell_input ">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">工作类型</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                  <picker bindchange="workChange" value="{{workIndex}}" range="{{works}}">
+                                          <view class="weui-select  weui-select-down  {{workIndex==0?'label':''}}">{{works[workIndex]}}</view>
+                                    </picker>
+                              </view>
+                </view>    
+         <view class=" weui-cell  weui-cell_input">
+                              <view class="weui-cell__hd">
+                                    <view class="weui-label">工作量</view>
+                              </view>
+                              <view class="weui-cell__bd">
+                                 <input type="number" class="weui-input" placeholder="请填写数字" placeholder-class="weui-input-placeholder" maxlength="5"/>
+                              </view>
+        </view>
+         <view class=" weui-cell  weui-cell_input" style="padding:0px;"> 
+         <view class="remarks">
+            <view class="title">备注</view>
+            <view class="textarea" style="border-bottom:0">
+                <textarea placeholder="例如：特殊病例"  placeholder-class="textarea-placeholder" maxlength="300" style="{{style}}"></textarea>
+            </view>
+         </view>  
+         </view> 
+    </view>  
+     <view class="footer">
+                <button type="primary" class="primary_btn" bindtap="save" loading="{{loading}}"
+                    disabled="{{disabled}}"> 保存 </button>
+    </view>
+</view>

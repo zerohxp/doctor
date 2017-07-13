@@ -141,3 +141,38 @@
         <a bindtap="cancel">取消</a><a bindtap="send2">发送</a>
     </div>
 </view>
+<view class="pickerModal" wx:if="{{modal2}}">
+     <view class="pickerModal_btn">
+                <a class="left" bindtap="cancelPicker">取消</a>
+                <span>请选择文件格式（可多选）</span>
+                <a class="right" bindtap="surePicker">确定</a>
+    </view>
+    <view class="pickerModal_content">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox">
+                <checkbox value="1" color="#00acff"/>pdf
+            </label>
+            <label class="checkbox">
+                <checkbox value="2" color="#00acff"/>图片
+            </label>
+        </checkbox-group>
+    </view>
+</view>
+
+<view class="pickerModal" wx:if="{{modal3}}">
+     <view class="pickerModal_btn">
+                <a class="left" bindtap="cancelPicker2">取消</a>
+                <span>请选择文件格式（可多选）</span>
+                <a class="right" bindtap="surePicker2">确定</a>
+    </view>
+    <view class="pickerModal_content">
+        <checkbox-group bindchange="checkboxChange2">
+            <label class="checkbox">
+                <checkbox value="1" color="#00acff"/>pdf
+            </label>
+            <label class="checkbox">
+                <checkbox value="2" color="#00acff"/>图片
+            </label>
+        </checkbox-group>
+    </view>
+</view>

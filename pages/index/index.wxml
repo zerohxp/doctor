@@ -4,8 +4,20 @@
          <view class="weui-cell__bd">职位偏好（新需求）</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
    </navigator>
-     <navigator url="../new/scheduleEdit" class="weui-cell weui-cell_access" >
+     <navigator url="../new/schedule" class="weui-cell weui-cell_access" >
          <view class="weui-cell__bd">日程管理（新需求）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+     <navigator url="../new/practice" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">添加/编辑执业记录（新需求）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+     <navigator url="../new/scheduleEdit" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">修改日程（新需求）</view>
+         <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+   </navigator>
+     <navigator url="../new/record" class="weui-cell weui-cell_access" >
+         <view class="weui-cell__bd">多点执业记录（新需求）</view>
          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
    </navigator>
    <navigator url="../main/page" class="weui-cell weui-cell_access" >

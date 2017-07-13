@@ -1,0 +1,90 @@
+<view class="page">
+    <a class="filter"><i></i>筛选日期</a>
+    <picker mode="date" class="filterPicker" value="{{filterDate}}" fields="month" bindchange="filterDateChange">
+       <view class="weui-select weui-select_in-select-after  weui-select-down"></view>
+    </picker>
+     <view class="content_block">
+        <view class="record_block">
+            <view class="title">2017年6月</view>
+            <view class="content">
+                <span class="content_title">xxx医院</span>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+            </view>
+             <view class="content">
+                <span class="content_title">xxx诊所</span>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+            </view>
+            <i></i>
+        </view>
+        <view class="record_block_edit first">
+            <view class="title">
+                <span>2017/6/25</span><span>xx医院</span><span>儿科</span>
+                <i class="edit" bindtap="edit"></i>
+            </view>
+            <view class="record_title"><span> 手术x次 </span></view>
+            <view class="record_desc"><span> 备注备注备注备注备注备注备注备注备注备注备 注备注备注 </span></view>
+        </view>
+        <view class="record_block_edit">
+            <view class="title">
+                <span>2017/6/25</span><span>yy医院</span><span>儿科</span>
+                <i class="edit" bindtap="edit"></i>
+            </view>
+            <view class="record_title"><span>门诊 </span></view>
+        </view>
+    </view>
+    <view class="content_block">
+        <view class="record_block">
+            <view class="title">2017年5月</view>
+            <view class="content">
+                <span class="content_title">xxx医院</span>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+            </view>
+             <view class="content">
+                <span class="content_title">xxx诊所</span>
+                <view class="content_record">
+                    <span>门诊x次</span>
+                    <span>手术x次</span>
+                    <span>查病房x次</span>
+                </view>
+            </view>
+            <i></i>
+        </view>
+        <view class="record_block_edit first" >
+            <view class="title">
+                <span>2017/5/25</span><span>xx医院</span><span>儿科</span>
+                <i class="edit" bindtap="edit"></i>
+            </view>
+            <view class="record_title"><span> 手术x次 </span></view>
+            <view class="record_desc"><span> 备注备注备注备注备注备注备注备注备注备注备 注备注备注 </span></view>
+        </view>
+        <view class="record_block_edit">
+            <view class="title">
+                <span>2017/6/25</span><span>yy医院</span><span>儿科</span>
+                <i class="edit" bindtap="edit"></i>
+            </view>
+            <view class="record_title"><span>门诊 </span></view>
+        </view>
+    </view>
+</view>

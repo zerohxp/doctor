@@ -60,9 +60,9 @@
            </view>     
            <view class="footer">
                 <button type="primary" class="primary_btn left_btn" bindtap="save1" loading="{{loading1}}"
-                    disabled="{{disabled1}}"> 删除该日程 </button>
+                    disabled="{{disabled1}}"> 保存并添加新日程 </button>
                 <button type="primary" class="primary_btn right_btn" bindtap="save2" loading="{{loading2}}"
-                    disabled="{{disabled2}}"> 保存 </button>
+                    disabled="{{disabled2}}"> 保存日程表 </button>
            </view>
     </view>
     <view class="tab_content {{tab_active==2?'show':''}}">
@@ -91,9 +91,9 @@
         </view>                
             <view class="footer">
                 <button type="primary" class="primary_btn left_btn" bindtap="save3" loading="{{loading3}}"
-                    disabled="{{disabled3}}"> 删除该日程 </button>
+                    disabled="{{disabled3}}"> 保存并添加新日程 </button>
                 <button type="primary" class="primary_btn right_btn" bindtap="save4" loading="{{loading4}}"
-                    disabled="{{disabled4}}"> 保存 </button>
+                    disabled="{{disabled4}}"> 保存日程表 </button>
            </view>
     </view>
 </view>

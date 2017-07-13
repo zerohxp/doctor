@@ -353,3 +353,46 @@ button[type="primary"].doctor_button:last-child{
 .weui-cell_p .wrong{
     top:3px;
 }
+
+/*新增*/
+.pickerModal{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    z-index:99999;
+    background-color:#fff;
+
+}
+.pickerModal .pickerModal_btn{
+    font-size:14px;
+    background-color:#f5f5f5;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+.pickerModal .pickerModal_btn span{
+    color:#414b50;
+}
+.pickerModal .pickerModal_btn .left{
+    float:left;
+    margin-left:15px;
+    color:#919191;
+
+}
+.pickerModal .pickerModal_btn .right{
+    float:right;
+    margin-right:15px;
+    color:#00acff;
+
+}
+.pickerModal .checkbox{
+    width:100%;
+    display:block;
+    border-bottom:1px solid #e1e1e1;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:44%;
+    font-size:15px;
+
+}

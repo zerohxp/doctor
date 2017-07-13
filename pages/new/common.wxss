@@ -78,7 +78,6 @@ button[type="primary"].left_btn{
     width:44%;
     font-size:16px;
     float:left;
-    margin:0;
     margin-left:5%;
     margin-right:2%;
     background-color:#48c2fc;
@@ -86,7 +85,6 @@ button[type="primary"].left_btn{
 button[type="primary"].right_btn{
     width:44%;
     font-size:16px;
-    margin:0;
     margin-right:5%;
 
 }
@@ -99,7 +97,10 @@ button[type="primary"].right_btn{
     background-color:#ffffff;
     border-top:1px solid #e1e1e1;
     z-index:999;
-    padding-top:10px;
-    padding-bottom:10px;
-
+}
+weui-cell::before{
+    border-top:1rpx solid #e1e1e1;
+}
+button{
+    font-size:16px;
 }
