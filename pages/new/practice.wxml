@@ -54,7 +54,7 @@
     <view class="content_block">
          <view class=" weui-cell  weui-cell_input ">
                               <view class="weui-cell__hd">
-                                    <view class="weui-label">工作类型</view>
+                                    <view class="weui-label">工作类型<span>*</span></view>
                               </view>
                               <view class="weui-cell__bd">
                                   <picker bindchange="workChange" value="{{workIndex}}" range="{{works}}">

@@ -4,7 +4,7 @@ var app = getApp()
 Page({
   data: {
     style:"",
-    weeks:["星期一","星期二","星期三","星期四","星期五","星期六","星期日"],
+    weeks:["周一","周二","周三","周四","周五","周六","周日"],
     weekIndex:0,
     dates:[],
     dateIndex:0,

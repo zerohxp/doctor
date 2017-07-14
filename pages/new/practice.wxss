@@ -5,18 +5,22 @@
     font-size:16px;
     font-weight:600;
     margin-left:15px;
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 .weui-cell_input{
     min-height:42px;
 }
 .content_block .weui-label{
-    width:70px;
+    width:80px;
     color:#414b50;
     font-size:15px;
     font-weight:600;
 
+}
+.content_block .weui-label span{
+     color:#fd8925;
+    margin-left:5px;
 }
 .weui-select{
     text-align:left;
@@ -41,7 +45,7 @@
 }
 .edit_practice{
     position:absolute;
-    right:15px;
+    right:8px;
     background-color:#00acff;
     color:#fff;
     padding:2px 8px;
