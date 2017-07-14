@@ -215,6 +215,27 @@ Page({
     
   },
  touchmove:function(e){
+    var windowWidth = this.data.windowWidth;
+    var windowHeight = this.data.windowHeight;
+    var pageX_end= e.touches[0].pageX;
+    var pageY_end = e.touches[0].pageY;
+    
+    var x = windowWidth - pageX_end;
+    var y = windowHeight - pageY_end;
+    if(x < 10){
+        x = 10;
+    }else if(x > (windowWidth - 40)){
+        x = (windowWidth - 40);
+    }
+
+    if(y < 10 ){
+       y = 10;
+    }else if(y > (windowHeight - 40)){
+        y = windowHeight - 40
+    }
+    this.setData({
+      homeStyle:'right:'+x+'px;bottom:'+y+"px;"
+    })
       this.setData({
       pageX_end:e.touches[0].pageX,
       pageY_end:e.touches[0].pageY
@@ -241,8 +262,8 @@ Page({
     }else if(y > (windowHeight - 40)){
         y = windowHeight - 40
     }
-    this.setData({
-      homeStyle:'right:'+x+'px;bottom:'+y+"px;"
-    })
+    // this.setData({
+    //   homeStyle:'right:'+x+'px;bottom:'+y+"px;"
+    // })
   }
 })
