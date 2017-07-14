@@ -12,11 +12,12 @@
     color:#00acff;
     font-size:16px;
     font-weight:600;
+    margin-bottom:5px;
 
 }
 .record_block .content{
     margin-left:15px;
-    margin-top:10px;
+    margin-top:2px;
 
 }
 .record_block .content_title{

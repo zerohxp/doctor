@@ -5,6 +5,11 @@ Page({
   data: {
     tab_active:1,
     style:"",
+    homeStyle:"",
+    windowWidth:0,
+    windowHeight:0,
+     pageX_end:0,
+    pageY_end:0,
     offices:['请选择科室','外科','内科','中医科','中西医结合科','妇产科','儿科','医技科'],
     officeIndex:0,
     bespeak_array:[[false,false,false,false,false,false,false],[false,false,false,false,false,false,false],[false,false,false,false,false,false,false]],
@@ -199,13 +204,45 @@ Page({
     wx.getSystemInfo({  
       success: function (res) {  
         var windowWidth = res.windowWidth; 
-        windowWidth = windowWidth - 30; 
         that.setData({
-          style:"width:"+windowWidth+"px"
+          style:"width:"+(windowWidth - 30)+"px",
+          windowWidth:windowWidth,
+          windowHeight:res.windowHeight          
         });         
       }  
     })  
    //调用应用实例的方法获取全局数据
     
+  },
+ touchmove:function(e){
+      this.setData({
+      pageX_end:e.touches[0].pageX,
+      pageY_end:e.touches[0].pageY
+    })
+  },
+  touchend:function(e){ 
+    // var pageX = e.touches[0].pageX;
+    // var pageY = e.touches[0].pageY;
+    var windowWidth = this.data.windowWidth;
+    var windowHeight = this.data.windowHeight;
+    var pageX_end= this.data.pageX_end;
+    var pageY_end = this.data.pageY_end;
+    
+    var x = windowWidth - pageX_end;
+    var y = windowHeight - pageY_end;
+    if(x < 10){
+        x = 10;
+    }else if(x > (windowWidth - 40)){
+        x = (windowWidth - 40);
+    }
+
+    if(y < 10 ){
+       y = 10;
+    }else if(y > (windowHeight - 40)){
+        y = windowHeight - 40
+    }
+    this.setData({
+      homeStyle:'right:'+x+'px;bottom:'+y+"px;"
+    })
   }
 })
