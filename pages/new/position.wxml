@@ -136,8 +136,8 @@
                              <div bindtap="choiceSelect1" data-index="0" class="select-block {{choice_one2[0]==true?'checked':''}}"><span>不限</span></div>
                              <div bindtap="choiceSelect1" data-index="1" class="select-block {{choice_one2[1]==true?'checked':''}}"><span>三级甲等</span></div>
                              <div bindtap="choiceSelect1" data-index="2" class="select-block {{choice_one2[2]==true?'checked':''}}"><span>三级乙等</span></div>
-                             <div bindtap="choiceCheck1" data-index="3" class="select-block {{choice_one2[3]==true?'checked':''}}"><span>二级</span></div>
-                             <div bindtap="choiceCheck1" data-index="4" class="select-block {{choice_one2[4]==true?'checked':''}}"><span>基层</span></div>
+                             <div bindtap="choiceSelect1" data-index="3" class="select-block {{choice_one2[3]==true?'checked':''}}"><span>二级</span></div>
+                             <div bindtap="choiceSelect1" data-index="4" class="select-block {{choice_one2[4]==true?'checked':''}}"><span>基层</span></div>
                         </view>
                         <view class="title">公司性质</view>
                          <view class="content_select">

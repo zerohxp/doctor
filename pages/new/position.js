@@ -92,7 +92,7 @@ Page({
       if(currentTarget){
         index = currentTarget.dataset.index;
       }
-       var choice_one2 = that.data.choice_one;
+       var choice_one2 = that.data.choice_one2;
       if(choice_one2[index]){
           choice_one2[index]= false;
       }else{
@@ -111,8 +111,15 @@ Page({
         index = currentTarget.dataset.index;
       }
       var choice_two = that.data.choice_two;
-      choice_two = [false,false,false];
-       choice_two[index] = true;
+       if(!choice_two[index]){
+          choice_two = [false,false,false];
+      
+          choice_two[index] = true;
+      
+       }else{
+          choice_two = [false,false,false];
+      
+       }
       that.setData({
             choice_two:choice_two
       });
@@ -126,8 +133,15 @@ Page({
         index = currentTarget.dataset.index;
       }
       var choice_two2 = that.data.choice_two2;
-      choice_two2 = [false,false,false];
-       choice_two2[index] = true;
+     if(!choice_two2[index]){
+          choice_two2 = [false,false,false];
+      
+          choice_two2[index] = true;
+      
+       }else{
+          choice_two2 = [false,false,false];
+      
+       }
       that.setData({
             choice_two2:choice_two2
       });
