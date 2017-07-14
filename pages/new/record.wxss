@@ -3,7 +3,7 @@
     margin-top:5px;
 }
 .record_block{
-    padding-top:5px;
+    padding-top:10px;
     padding-bottom:5px;
     background-color:#e5f7ff;
 }
@@ -16,7 +16,7 @@
 }
 .record_block .content{
     margin-left:15px;
-    margin-top:5px;
+    margin-top:10px;
 
 }
 .record_block .content_title{
@@ -101,7 +101,7 @@
     font-size:14px;
     padding:2px 10px;
     border-radius:5px;
-    top:7px;
+    top:10px;
     right:15px;
     padding-left:30px;
 }
@@ -122,7 +122,7 @@
     position:fixed;
     width:100px;
     height:30px;
-    top:7px;
+    top:10px;
     right:15px;
     z-index:9999;
     opacity:0;
