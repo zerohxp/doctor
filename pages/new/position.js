@@ -217,9 +217,8 @@ Page({
  touchmove:function(e){
     var windowWidth = this.data.windowWidth;
     var windowHeight = this.data.windowHeight;
-    var pageX_end= e.touches[0].pageX;
-    var pageY_end = e.touches[0].pageY;
-    
+    var pageX_end= e.touches[0].clientX;
+    var pageY_end = e.touches[0].clientY;
     var x = windowWidth - pageX_end;
     var y = windowHeight - pageY_end;
     if(x < 10){
@@ -237,8 +236,8 @@ Page({
       homeStyle:'right:'+x+'px;bottom:'+y+"px;"
     })
       this.setData({
-      pageX_end:e.touches[0].pageX,
-      pageY_end:e.touches[0].pageY
+      pageX_end:e.touches[0].clientX,
+      pageY_end:e.touches[0].clientY
     })
   },
   touchend:function(e){ 

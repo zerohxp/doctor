@@ -157,11 +157,11 @@ button{
     color:#fff;
     width:40px;
     height:40px;
-    font-size:14px;
+    font-size:13px;
     border-radius:50%;
     right:10px;
     bottom:50px;
-    z-index:9999;
+    z-index:99999999;
 
 }
 .home i{
@@ -178,5 +178,5 @@ button{
 .home span{
     top:18px;
     position:absolute;
-    left:5px;
+    left:6px;
 }
