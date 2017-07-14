@@ -97,23 +97,33 @@ Page({
       return "left:"+left+"px;width:"+_width+"px";
   },
   //
-  noAppoint:function(){
+  noAppoint:function(e){
       wx.navigateTo({
             url: '../new/practice'
         })
   },
   //空闲
-  freeClick:function(){
-    console.info(1)
+  freeClick:function(e){
      wx.navigateTo({
-            url: '../new/schedule'
+            url: '../new/scheduleEdit?tab=2'
         })
   },
   //预约
-  appointClick:function(){
+  appointClick:function(e){
     this.setData({
       modal:true
     })
+  },
+  //空白
+  blankClick:function(e){
+     var currentTarget = e.currentTarget;
+      var week = 0;
+      if(currentTarget){
+        week = currentTarget.dataset.week;
+      }
+      wx.navigateTo({
+            url: '../new/schedule?week='+week
+        })
   },
   //关闭弹框
   closeModal:function(){

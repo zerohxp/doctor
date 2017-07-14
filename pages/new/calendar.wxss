@@ -1,5 +1,7 @@
 @import 'common.wxss';
-
+.content_block{
+    height:100%;
+}
 .content_block table{
     font-size:15px;
     margin-left:15px;
@@ -15,6 +17,10 @@
         display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
+}
+.content_block table thead td{
+    font-size:14px;
+    text-align:left;
 }
 .content_block table tbody{
         display: table-row-group;
@@ -69,7 +75,7 @@
     bottom:0;
     left:0;
 }
-.calendar_table .no_appoint,.calendar_table .appoint,.calendar_table .free{
+.calendar_table .no_appoint{
     font-size:14px;
     color:#414b50;
     overflow:hidden;
@@ -78,7 +84,27 @@
     -webkit-line-clamp:3;
     -webkit-box-orient:vertical;
     line-height:16px;
-    text-align:left;
+    text-align:center;
+    font-weight:600;
+    z-index:99999;
+}
+.calendar_table .appoint{
+    font-size:14px;
+    color:#414b50;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    line-height:16px;
+    text-align:center;
+    font-weight:600;
+    z-index:99999;
+}
+.calendar_table .free{
+    font-size:14px;
+    color:#414b50;
+    text-align:center;
     font-weight:600;
     z-index:99999;
 }

@@ -12,7 +12,7 @@ Page({
     hospitalIndex:0,
     works:['请选择工作类型','门诊','手术','病房'],
     workIndex:0,
-    type:2
+    type:2//1：修改日程；2：修改日程请联系客服
   },
 
 getDates:function(){

@@ -9,7 +9,7 @@ Page({
   //edit
   edit:function(){
      wx.navigateTo({
-            url: '../new/scheduleEdit'
+            url: '../new/practice'
         })
   },
   //筛选

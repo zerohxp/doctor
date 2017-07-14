@@ -260,6 +260,10 @@ Page({
       }  
     })  
    //调用应用实例的方法获取全局数据
-    
+    if(option.tab){
+      that.setData({
+          tab_active:option.tab
+      })
+    }
   }
 })

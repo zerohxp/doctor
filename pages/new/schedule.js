@@ -255,6 +255,12 @@ Page({
       }  
     })  
    //调用应用实例的方法获取全局数据
-    
+    if(option.week){
+        var times = that.data.times;
+        times[0].weekIndex = option.week;
+        that.setData({
+          times:times
+        })
+    }
   }
 })
