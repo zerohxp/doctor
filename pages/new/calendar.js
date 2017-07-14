@@ -4,6 +4,7 @@ var app = getApp()
 Page({
   data: {
     style:"",
+    tdStyle:'',
     modal:false,
     info:[
       {//周一
@@ -165,8 +166,10 @@ Page({
         var windowWidth = res.windowWidth; 
         windowWidth = windowWidth - 30; 
         width = windowWidth;
+        var tdStyle = "width:"+(width-40)/3+"px";
         that.setData({
-          style:"width:"+windowWidth+"px"
+          style:"width:"+windowWidth+"px",
+          tdStyle:tdStyle
         });         
       }  
     })  
