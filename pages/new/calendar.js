@@ -6,6 +6,9 @@ Page({
     style:"",
     tdStyle:'',
     modal:false,
+    homeStyle:"",
+    windowWidth:0,
+    windowHeight:0,
     info:[
       {//周一
          no_appoint:{ //没有预约
@@ -164,12 +167,13 @@ Page({
     wx.getSystemInfo({  
       success: function (res) {  
         var windowWidth = res.windowWidth; 
-        windowWidth = windowWidth - 30; 
-        width = windowWidth;
+        width = windowWidth - 30;
         var tdStyle = "width:"+(width-40)/3+"px";
         that.setData({
-          style:"width:"+windowWidth+"px",
-          tdStyle:tdStyle
+          style:"width:"+width+"px",
+          tdStyle:tdStyle,
+          windowWidth:windowWidth,
+          windowHeight:res.windowHeight  
         });         
       }  
     })  
@@ -212,6 +216,28 @@ Page({
     info[2].free.span ="空闲";
     that.setData({
       info:info
+    })
+  },
+  touchmove:function(e){
+    var windowWidth = this.data.windowWidth;
+    var windowHeight = this.data.windowHeight;
+    var pageX_end= e.touches[0].clientX;
+    var pageY_end = e.touches[0].clientY;
+    var x = windowWidth - pageX_end;
+    var y = windowHeight - pageY_end;
+    if(x < 10){
+        x = 10;
+    }else if(x > (windowWidth - 40)){
+        x = (windowWidth - 40);
+    }
+
+    if(y < 10 ){
+       y = 10;
+    }else if(y > (windowHeight - 40)){
+        y = windowHeight - 40
+    }
+    this.setData({
+      homeStyle:'right:'+x+'px;bottom:'+y+"px;"
     })
   }
 })
