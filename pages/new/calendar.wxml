@@ -1,5 +1,6 @@
 <view class="page">
     <view class="home" style="{{homeStyle}}"  catchtouchmove="touchmove" ><i></i><span>首页</span></view>
+    <view class="title">点击添加日程，方便为您推荐更多执业机会！</view>
     <view class="content_block">
             <table style="{{style}}" border="1" class="calendar_table">
                   <thead>
