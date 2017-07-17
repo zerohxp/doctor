@@ -6,7 +6,6 @@
         <view class="tab_head_title {{tab_active==2?'active':''}}" bindtap="tabClick" data-tab="2">空闲<i></i></view>
     </view>
    <view class="tab_content {{tab_active==1?'show':''}}">
-          <view class="title">添加日程，方便为您推荐更多多点执业机会!</view>
            <view class="content_block">
                  <view class=" weui-cell  weui-cell_input ">
                               <view class="weui-cell__hd">
@@ -68,8 +67,7 @@
            </view>
     </view>
     <view class="tab_content {{tab_active==2?'show':''}}">
-          <view class="title">添加日程，方便为您推荐更多多点执业机会!</view>
-          <view class="content_block">
+           <view class="content_block">
                 <view  class="content_time_block">
                      <view class=" weui-cell  weui-cell_input " wx:for="{{times2}}">
                               <view class="weui-cell__hd">

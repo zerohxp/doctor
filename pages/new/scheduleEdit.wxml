@@ -67,7 +67,6 @@
            </view>
     </view>
     <view class="tab_content {{tab_active==2?'show':''}}">
-          <view class="title">添加日程，方便为您推荐更多多点执业机会!</view>
           <view class="content_block">
                 <view  class="content_time_block">
                      <view class=" weui-cell  weui-cell_input " wx:for="{{times2}}">
