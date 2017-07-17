@@ -55,10 +55,13 @@
                 </table>
           </view>
            <view class="content_block">
-                <view class="title">执业地点</view>
+                  <view class="title">执业地点</view>
                 <view class="textarea">
                    <textarea placeholder="例如：距离上海车程3小时"  placeholder-class="textarea-placeholder" maxlength="50" style="{{style}}"></textarea>
                 </view>
+           </view>
+           <view class="content_block">
+               
                 <view class="department">
                         <view class=" weui-cell  weui-cell_input ">
                               <view class="weui-cell__hd">

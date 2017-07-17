@@ -67,7 +67,6 @@
 .content_block .textarea{
     background-color:#fafafa;
     margin-bottom:5px;
-    border-bottom:1px solid #e1e1e1;
 }
 .content_block .textarea textarea{
     margin-left:15px;
