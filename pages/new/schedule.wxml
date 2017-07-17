@@ -11,7 +11,7 @@
                                     <view class="weui-label">医院<span>*</span></view>
                               </view>
                               <view class="weui-cell__bd">
-                                      <input type="text" class="weui-input" placeholder="例如：xx医院" placeholder-class="weui-input-placeholder" maxlength="50"/>
+                                      <input type="text" class="weui-input" placeholder="例如：xx医院" placeholder-class="weui-input-placeholder" maxlength="50" bindinput="hospitalInput"/>
                               </view>
                         </view>
            </view>  

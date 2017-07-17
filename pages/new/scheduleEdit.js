@@ -13,6 +13,7 @@ Page({
     loading4:false,
     disabled3:false,
     disabled4:false,
+     hospital:'',
     times:[
         {
             week:['周一','周二','周三','周四','周五','周六','周日'],
@@ -229,6 +230,16 @@ Page({
         })
  },
  save2:function(){
+   var hospital = this.data.hospital;
+    if(!hospital){
+      wx.showToast({
+          title: '请填写医院名称',
+          duration:3000,
+          image:'../common/img/error.png',
+      })
+      return;
+    }
+     
       wx.navigateBack();
  },
  save3:function(){
@@ -247,6 +258,11 @@ Page({
  },
  save4:function(){
    
+ },
+ hospitalInput:function(e){
+    this.setData({
+      hospital:e.detail.value
+    })
  },
   onLoad: function (option) {
      var that = this
