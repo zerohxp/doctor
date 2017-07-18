@@ -217,7 +217,7 @@ Page({
  },
  save1:function(){
     var hospital = this.data.hospital;
-    if(!hospital){
+    if(hospital){
       wx.showToast({
           title: '请填写医院名称',
           duration:3000,
@@ -231,7 +231,8 @@ Page({
       for(var j=i+1;j<times.length;j++){
         var _obj=times[j];
         if(obj.weekIndex == _obj.weekIndex){
-          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
+          if(obj.begin[obj.beginIndex] == _obj.begin[_obj.beginIndex] 
+          || obj.end[obj.endIndex] == _obj.end[_obj.endIndex]){
               wx.showToast({
                   title: '日程有冲突，请核对',
                   duration:3000,
@@ -260,8 +261,9 @@ Page({
       for(var j=i+1;j<times.length;j++){
         var _obj=times[j];
         if(obj.weekIndex == _obj.weekIndex){
-          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
-              wx.showToast({
+           if(obj.begin[obj.beginIndex] == _obj.begin[_obj.beginIndex] 
+          || obj.end[obj.endIndex] == _obj.end[_obj.endIndex]){ 
+               wx.showToast({
                   title: '日程有冲突，请核对',
                   duration:3000,
                   image:'../common/img/error.png',
@@ -279,8 +281,9 @@ Page({
       for(var j=i+1;j<times.length;j++){
         var _obj=times[j];
         if(obj.weekIndex == _obj.weekIndex){
-          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
-              wx.showToast({
+           if(obj.begin[obj.beginIndex] == _obj.begin[_obj.beginIndex] 
+          || obj.end[obj.endIndex] == _obj.end[_obj.endIndex]){   
+             wx.showToast({
                   title: '日程有冲突，请核对',
                   duration:3000,
                   image:'../common/img/error.png',
@@ -298,8 +301,9 @@ Page({
       for(var j=i+1;j<times.length;j++){
         var _obj=times[j];
         if(obj.weekIndex == _obj.weekIndex){
-          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
-              wx.showToast({
+           if(obj.begin[obj.beginIndex] == _obj.begin[_obj.beginIndex] 
+          || obj.end[obj.endIndex] == _obj.end[_obj.endIndex]){
+                wx.showToast({
                   title: '日程有冲突，请核对',
                   duration:3000,
                   image:'../common/img/error.png',
