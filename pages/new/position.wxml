@@ -1,10 +1,8 @@
 <view class="page">
     <view class="home" style="{{homeStyle}}"  catchtouchmove="touchmove" catchtouchend="touchend"><i></i><span>首页</span></view>
-    <view class="content_block" style="margin-top:5px;">
-       <view class="title" style="color:#919191;font-size:14px;">这段时间您如何安排？</view>
-          
-        <view class="tab_head_title {{tab_active==1?'active':''}}" bindtap="tabClick" data-tab="1">多点执业<i></i></view>
-        <view class="tab_head_title {{tab_active==2?'active':''}}" bindtap="tabClick" data-tab="2">全职<i></i></view>
+    <view class="tab_head">
+        <view class="tab_head_title {{tab_active==1?'active':''}}" bindtap="tabClick" data-tab="1">多点执业</view>
+        <view class="tab_head_title {{tab_active==2?'active':''}}" bindtap="tabClick" data-tab="2">全职</view>
     </view>
     <view class="tab_content {{tab_active==1?'show':''}}">
           <view class="content_block">
@@ -125,10 +123,10 @@
                 <view class="textarea">
                    <textarea placeholder="例如：距离上海车程3小时"  placeholder-class="textarea-placeholder" maxlength="50" style="{{style}}"></textarea>
                 </view>
-               
+                
      </view>
       <view class="content_block">
-                <view class="department">
+               <view class="department">
                         <view class=" weui-cell  weui-cell_input ">
                               <view class="weui-cell__hd">
                                     <view class="weui-label">科室</view>
