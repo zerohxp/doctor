@@ -225,11 +225,24 @@ Page({
       })
       return;
     }
-      wx.showToast({
-          title: '日程有冲突，请核对',
-          duration:3000,
-          image:'../common/img/error.png',
-      })
+    var times = this.data.times;
+    for(var i=0;i<times.length;i++){
+      var obj = times[i];
+      for(var j=i+1;j<times.length;j++){
+        var _obj=times[j];
+        if(obj.weekIndex == _obj.weekIndex){
+          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
+              wx.showToast({
+                  title: '日程有冲突，请核对',
+                  duration:3000,
+                  image:'../common/img/error.png',
+              })
+              return;
+          }
+        }
+      }
+    }
+      
  },
  save2:function(){
     var hospital = this.data.hospital;
@@ -241,26 +254,61 @@ Page({
       })
       return;
     }
-      wx.showToast({
-          title: '日程有冲突，请核对',
-           image:'../common/img/error.png',
-           duration:3000
-      })
+     var times = this.data.times;
+    for(var i=0;i<times.length;i++){
+      var obj = times[i];
+      for(var j=i+1;j<times.length;j++){
+        var _obj=times[j];
+        if(obj.weekIndex == _obj.weekIndex){
+          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
+              wx.showToast({
+                  title: '日程有冲突，请核对',
+                  duration:3000,
+                  image:'../common/img/error.png',
+              })
+              return;
+          }
+        }
+      }
+    }
  },
  save3:function(){
-      wx.showToast({
-          title: '日程有冲突，请核对',
-           image:'../common/img/error.png',
-           duration:3000
-          
-      })
+      var times = this.data.times2;
+    for(var i=0;i<times.length;i++){
+      var obj = times[i];
+      for(var j=i+1;j<times.length;j++){
+        var _obj=times[j];
+        if(obj.weekIndex == _obj.weekIndex){
+          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
+              wx.showToast({
+                  title: '日程有冲突，请核对',
+                  duration:3000,
+                  image:'../common/img/error.png',
+              })
+              return;
+          }
+        }
+      }
+    }
  },
  save4:function(){
-      wx.showToast({
-          title: '日程有冲突，请核对',
-          image:'../common/img/error.png',
-          duration:3000
-      })
+     var times = this.data.times2;
+    for(var i=0;i<times.length;i++){
+      var obj = times[i];
+      for(var j=i+1;j<times.length;j++){
+        var _obj=times[j];
+        if(obj.weekIndex == _obj.weekIndex){
+          if(obj.beginIndex == _obj.beginIndex || obj.endIndex == _obj.endIndex){
+              wx.showToast({
+                  title: '日程有冲突，请核对',
+                  duration:3000,
+                  image:'../common/img/error.png',
+              })
+              return;
+          }
+        }
+      }
+    }
  },
  hospitalInput:function(e){
     this.setData({
