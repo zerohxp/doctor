@@ -217,7 +217,7 @@ Page({
  },
  save1:function(){
     var hospital = this.data.hospital;
-    if(hospital){
+    if(!hospital){
       wx.showToast({
           title: '请填写医院名称',
           duration:3000,
