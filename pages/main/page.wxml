@@ -59,6 +59,6 @@
    <view class="page__footer">
        <button type="primary" class="doctor_button" bindtap="next" loading="{{loading}}"
         disabled="{{disabled}}"> 提升指数 </button>
-       <button type="primary" class="doctor_back" bindtap="link" data-href="new/schedule"> 日程管理  </button>
+       <button type="primary" class="doctor_back" bindtap="link" data-href="new/calendar"> 日程管理  </button>
     </view>
 </view>
