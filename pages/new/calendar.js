@@ -201,7 +201,7 @@ Page({
     var begin3 = "14:00";
     var end3 = "17:00";
     var begin4 = "15:00";
-    var end4 = "20:00";
+    var end4 = "16:00";
     var str = that.compute(begin1,end1,width);
     info[0].no_appoint.style = str;
     info[0].no_appoint.span ="上海交通大学 医学院附属第 九人民医院";

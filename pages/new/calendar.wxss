@@ -25,7 +25,7 @@
 
 }
 .content_block table thead{
-        display: table-header-group;
+    display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
@@ -116,6 +116,7 @@
     font-size:14px;
     color:#414b50;
     text-align:center;
+     line-height:16px;
     font-weight:600;
     z-index:99999;
 }
