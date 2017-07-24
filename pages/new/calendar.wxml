@@ -15,9 +15,9 @@
                         <tr>
                             <td>一</td>
                             <td catchtap="blankClick" data-week="0">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[0].no_appoint.style}}">{{info[0].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[0].appoint.style}}">{{info[0].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[0].free.style}}">{{info[0].free.span}}</span>
+                            <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[0].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[0].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[0].free}}" style="{{item.style}}">{{item.span}}</span>
                             </td>
                             <td catchtap="blankClick"  data-week="0"></td>
                             <td catchtap="blankClick"  data-week="0"></td>
@@ -25,19 +25,19 @@
                         <tr>
                             <td>二</td>
                             <td catchtap="blankClick"  data-week="1">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[1].no_appoint.style}}">{{info[1].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[1].appoint.style}}">{{info[1].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[1].free.style}}">{{info[1].free.span}}</span>
-                            </td>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[1].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[1].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[1].free}}" style="{{item.style}}">{{item.span}}</span>
+                           </td>
                             <td catchtap="blankClick" data-week="1"></td>
                             <td catchtap="blankClick" data-week="1"></td>
                         </tr>
                         <tr>
                             <td>三</td>
                             <td catchtap="blankClick" data-week="2">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[2].no_appoint.style}}">{{info[2].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[2].appoint.style}}">{{info[2].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[2].free.style}}">{{info[2].free.span}}</span>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[2].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[2].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[2].free}}" style="{{item.style}}">{{item.span}}</span>
                             </td>
                             <td catchtap="blankClick" data-week="2"></td>
                             <td catchtap="blankClick" data-week="2"></td>
@@ -45,9 +45,9 @@
                         <tr>
                             <td>四</td>
                             <td catchtap="blankClick" data-week="3">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[3].no_appoint.style}}">{{info[3].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[3].appoint.style}}">{{info[3].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[3].free.style}}">{{info[3].free.span}}</span>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[3].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[3].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[3].free}}" style="{{item.style}}">{{item.span}}</span>
                             </td>
                             <td catchtap="blankClick" data-week="3"></td>
                             <td catchtap="blankClick" data-week="3"></td>
@@ -55,30 +55,30 @@
                         <tr>
                             <td>五</td>
                             <td catchtap="blankClick" data-week="4">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[4].no_appoint.style}}">{{info[4].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[4].appoint.style}}">{{info[4].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[4].free.style}}">{{info[4].free.span}}</span>
-                            </td>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[4].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[4].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[4].free}}" style="{{item.style}}">{{item.span}}</span>
+                           </td>
                             <td catchtap="blankClick" data-week="4"></td>
                             <td catchtap="blankClick" data-week="4"></td>
                         </tr>
                         <tr>
                             <td>六</td>
                             <td catchtap="blankClick" data-week="5">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[5].no_appoint.style}}">{{info[5].no_appoint.span}}</span>
-                            <span catchtap="appointClick" class="appoint" style="{{info[5].appoint.style}}">{{info[5].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[5].free.style}}">{{info[5].free.span}}</span>
-                            </td>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[5].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[5].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[5].free}}" style="{{item.style}}">{{item.span}}</span>
+                           </td>
                             <td catchtap="blankClick" data-week="5"></td>
                             <td catchtap="blankClick" data-week="5"></td>
                         </tr>
                         <tr>
                             <td>日</td>
                             <td catchtap="blankClick" data-week="6">
-                            <span catchtap="noAppoint" class="no_appoint" style="{{info[6].no_appoint.style}}">{{info[6].no_appoint.span}}</span>
-                            <span class="appoint" style="{{info[6].appoint.style}}">{{info[6].appoint.span}}</span>
-                            <span catchtap="freeClick" class="free" style="{{info[6].free.style}}">{{info[6].free.span}}</span>
-                            </td>
+                             <span catchtap="noAppoint" class="no_appoint" wx:for="{{info[6].no_appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="appointClick" class="appoint" wx:for="{{info[6].appoint}}" style="{{item.style}}">{{item.span}}</span>
+                            <span catchtap="freeClick" class="free" wx:for="{{info[6].free}}" style="{{item.style}}">{{item.span}}</span>
+                           </td>
                             <td catchtap="blankClick" data-week="6"></td>
                             <td catchtap="blankClick" data-week="6"></td>
                         </tr>

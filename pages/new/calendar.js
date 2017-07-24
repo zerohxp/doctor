@@ -11,81 +11,81 @@ Page({
     windowHeight:0,
     info:[
       {//周一
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周二
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周三
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周四
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周五
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周六
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       },
        {//周日
-         no_appoint:{ //没有预约
+         no_appoint:[{ //没有预约
            style:'',span:''
-         },
-         appoint:{//预约
+         }],
+         appoint:[{//预约
            style:'',span:''
-         },
-         free:{//空闲
+         }],
+         free:[{//空闲
             style:'',span:''
-         }
+         }]
       }
     ]
   },
@@ -202,18 +202,27 @@ Page({
     var end3 = "17:00";
     var begin4 = "15:00";
     var end4 = "16:00";
+     var begin5 = "9:00";
+    var end5 = "11:00";
     var str = that.compute(begin1,end1,width);
-    info[0].no_appoint.style = str;
-    info[0].no_appoint.span ="上海交通大学 医学院附属第 九人民医院";
+    info[0].no_appoint[0].style = str;
+    info[0].no_appoint[0].span ="上海交通大学 医学院附属第 九人民医院";
     str = that.compute(begin2,end2,width);
-    info[1].no_appoint.style = str;
-    info[1].no_appoint.span ="爱尔眼科";
+    info[1].no_appoint[0].style = str;
+    info[1].no_appoint[0].span ="爱尔眼科";
      str = that.compute(begin3,end3,width);
-    info[1].appoint.style = str;
-    info[1].appoint.span ="爱尔眼科 6/25  5人预约";
+    info[1].appoint[0].style = str;
+    info[1].appoint[0].span ="爱尔眼科 6/25  5人预约";
     str = that.compute(begin4,end4,width);
-    info[2].free.style = str;
-    info[2].free.span ="空闲";
+    info[2].free.push({
+      style:str,
+      span:'空闲'
+    })
+    str = that.compute(begin5,end5,width);
+    info[2].free.push({
+      style:str,
+      span:'空闲'
+    })
     that.setData({
       info:info
     })
