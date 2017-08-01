@@ -4,7 +4,7 @@
 <view class="page__hd">
     <p>啊啊啊，小程序不支持上传文件</p>
     <p>烦请移步请至<span>【医途无忧】</span>公众号上传</p>
-   
+   <span>也可以直接将简历发送到ythr@molur.com</span>
 </view>
 <!--主体-->
 <view class="page__bd">

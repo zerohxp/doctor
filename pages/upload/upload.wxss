@@ -36,7 +36,13 @@ page{
     position:absolute;
     left:27px;
     top:2px;
-
+}
+.page__hd span{
+    display:block;
+    font-size:14px;
+    text-align:center;
+    color:#333;
+    font-weight:600;
 
 }
 .page__ft{
