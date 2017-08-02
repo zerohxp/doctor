@@ -4,7 +4,7 @@ var app = getApp()
 Page({
   data: {
     style:"",
-    tdStyle:'',
+    tdStyle:['',''],
     modal:false,
     homeStyle:"",
     windowWidth:0,
@@ -91,13 +91,13 @@ Page({
   },
   //计算模块left,width
   compute:function(begin,end,width){
-      var num = width / 16;
+      var num = (width - 40) / 16;
       var begin_num = begin.split(":")[0];
       begin_num = Number(begin_num);
       var left = (begin_num - 8) * num;
       var end_num = end.split(":")[0];
       end_num = Number(end_num);
-      var _width = (end_num - begin_num) * num;
+      var _width = (end_num - begin_num ) * num;
       return "left:"+left+"px;width:"+_width+"px";
   },
   //
@@ -168,7 +168,9 @@ Page({
       success: function (res) {  
         var windowWidth = res.windowWidth; 
         width = windowWidth - 30;
-        var tdStyle = "width:"+(width-40)/3+"px";
+        var td_w = (width - 40)/16;
+
+        var tdStyle = ["width:"+td_w * 5+"px","width:"+td_w * 6+"px"];
         that.setData({
           style:"width:"+width+"px",
           tdStyle:tdStyle,
@@ -198,12 +200,12 @@ Page({
     var end1 = "14:00";
     var begin2 = "9:00";
     var end2 = "12:00";
-    var begin3 = "14:00";
-    var end3 = "17:00";
+    var begin3 = "18:00";
+    var end3 = "23:00";
     var begin4 = "15:00";
     var end4 = "16:00";
-     var begin5 = "9:00";
-    var end5 = "11:00";
+     var begin5 = "13:00";
+    var end5 = "14:00";
     var str = that.compute(begin1,end1,width);
     info[0].no_appoint[0].style = str;
     info[0].no_appoint[0].span ="上海交通大学 医学院附属第 九人民医院";
