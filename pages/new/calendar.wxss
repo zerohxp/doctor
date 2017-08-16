@@ -122,8 +122,10 @@
 }
 .doctor_modal .doctor_modal_content{
     border-bottom:0;
-    height:70%;
-    max-height:70%;
+    max-height:300px;
+
+    display:block;
+
 }
 .doctor_modal .doctor_modal_content .title{
     color:#8dd0ff;
